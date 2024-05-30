@@ -18,7 +18,7 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(5rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
   }
   .cs-topper {
     display: block;
@@ -37,7 +37,7 @@
     max-width: 43.75rem;
     font-size: var(--headerFontSize);
     line-height: 1.2em;
-    font-weight: 600;
+    font-weight: 900;
     color: var(--headerColor);
     text-align: inherit;
   }
@@ -58,7 +58,7 @@
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
     color: #000;
@@ -231,7 +231,19 @@
     transition: transform 0.3s, opacity 0.3s;
   }
 }
-
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #dark-mode-toggle {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin: 0;
+  }
+  #dark-mode-toggle:hover {
+    cursor: pointer;
+  }
+}
 /*-- -------------------------- -->
 <---     Mobile Navigation      -->
 <--- -------------------------- -*/
@@ -264,13 +276,18 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-  
+    height: 100%;
+    max-width: 9.125rem;
+    width: 40%;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
   }
   #cs-navigation .cs-logo img {
-
+    height: 100%;
+    width: 100%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
     /* places the image to the left edge of the parent */
     object-position: left;
   }
@@ -461,7 +478,25 @@
     width: 100%;
   }
 }
-
+/* Dark Mode */
+@media only screen and (max-width: 63.9375rem) {
+  body.dark-mode #cs-navigation {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-logo {
+    /* makes it white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-line {
+    background-color: #fff;
+  }
+  body.dark-mode #cs-navigation .cs-ul-wrapper {
+    background-color: var(--medium);
+  }
+  body.dark-mode #cs-navigation .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
+}
 /*-- -------------------------- -->
 <---     Navigation Dropdown    -->
 <--- -------------------------- -*/
@@ -634,7 +669,19 @@
     display: none;
   }
 }
-
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-navigation .cs-drop-ul {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
+    background-color: var(--medium);
+  }
+  body.dark-mode #cs-navigation .cs-drop-icon {
+    /* turns it white */
+    filter: grayscale(1) brightness(1000%);
+  }
+}
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
@@ -671,12 +718,16 @@
     align-items: center;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
+    height: 4.0625rem;
     max-width: 21.875rem;
-   
+    width: 18.4%;
     padding: 0;
   }
   #cs-navigation .cs-logo img {
-
+    height: 100%;
+    width: 100%;
+    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
+    object-fit: contain;
   }
   #cs-navigation .cs-ul {
     display: flex;
@@ -724,7 +775,22 @@
     width: 100%;
   }
 }
-
+/* Dark Mode */
+@media only screen and (min-width: 64rem) {
+  body.dark-mode #cs-navigation {
+    background-color: var(--dark);
+  }
+  body.dark-mode #cs-navigation .cs-logo {
+    /* makes it turn white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #cs-navigation .cs-li-link {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-navigation .cs-li-link:before {
+    background-color: var(--primaryLight);
+  }
+}
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
@@ -755,7 +821,6 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: sticky;
   }
   #int-hero h1 {
     position: relative;
@@ -843,7 +908,7 @@
     margin-bottom: 2.25rem;
     font-size: min(9vw, 3rem);
     line-height: 1.2083333333em;
-    font-weight: 500;
+    font-weight: 900;
     color: #fff;
     text-align: center;
   }
@@ -922,7 +987,12 @@
     width: 125rem;
   }
 }
-
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
 /*-- -------------------------- -->
 <---           Footer           -->
 <--- -------------------------- -*/
@@ -1130,6 +1200,11 @@
     display: inline-block;
   }
 }
-
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #footer {
+    background: #061623;
+  }
+}
 
 /*# sourceMappingURL=root.css.map */
