@@ -1,23 +1,48 @@
-<!-- ============================================ -->
-<!--             Final Call to Action             -->
-<!-- ============================================ -->
+<STYLE>
+    .cs-container {text-align: center;}
+                .cs-button-solid {
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: var(--secondary);
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+   .cs-button-solid:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+   .cs-button-solid:hover {
+    color: #fff;
+  }
+   .cs-button-solid:hover:before {
+    width: 100%;
+  }
+            </STYLE>
+</STYLE>
 
-<section id="cta">
-    <div class="container">
-        <h2 class="title">
-            Get It Done
-            <br />
-            With Us Today
-        </h2>
-        <p>
-            Say something catchy, informative, and encouraging to click the button to go to the contact page. I like to add these to the bottom of all pages.
-        </p>
-        <a href="/contact" class="cs-button-solid">Get an Estimate Now</a>
-    </div>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="lazy" width="2500" height="1667">
-    </picture>
-
-</section>
+<div style="margin: 0px 0px 100px;" class="cs-container">
+    <a href="" class="cs-button-solid">Book an Appointment</a>
+</div>

@@ -1,6 +1,6 @@
 ---
-title: 'Pixel Perfect Websites'
-description: 'Meta description for the page'
+title: 'Mia Glow'
+description: 'Licensed Beauty, Cosmetic & Personal Care'
 preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 eleventyNavigation:
@@ -31,319 +31,1960 @@ eleventyNavigation:
                 });
         }
     </script>
+
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+    
+<STYLE>
+   /*-- -------------------------- -->
+<---    Side by Side Reverse    -->
+<--- -------------------------- -*/
 
-    <section id="hero">
-        <div class="cs-container">
-            <div class="cs-flex-group">
-                <span class="cs-topper">mountain hiking society</span>
-                <h1 class="cs-title">Explore the World with Exciting People</h1>
-                <p class="cs-text">
-                    Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Nibh tortor id aliquet lectus proin nibh condimentum.
-                </p>
-                <a href="/about" class="cs-button-solid">Explore More</a>
-                <a href="/contact" class="cs-button-transparent">
-                    <img
-                    class="cs-img"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
-                    alt="play icon"
-                    width="17"
-                    height="17" />
-                    Get in Touch
-                </a>
-            </div>
-        </div>
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-r-1892 {
+    width: 100%;
+    padding: var(--sectionPadding);
+    background-color: #faf6f2;
+    display: flex;
+    flex-direction: column;
+    /* aligns content to the left, set to center to centrally align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-r-1892 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 80px */
+    gap: clamp(3rem, 6vw, 5rem);
+  }
+  #sbs-r-1892 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 35.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    position: relative;
+    z-index: 3;
+  }
+  #sbs-r-1892 .cs-image-group {
+    font-size: min(2.29vw, 0.9rem);
+    width: 39.375em;
+    height: 45.625em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-r-1892 .cs-picture {
+    width: 32.625em;
+    height: 42.5em;
+    box-sizing: border-box;
+    background-color: #dab692;
+    overflow: hidden;
+    border: 8px solid #dab692;
+    border-radius: 16.25rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  #sbs-r-1892 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #sbs-r-1892 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #sbs-r-1892 .cs-brown {
+    width: 15.125em;
+    height: auto;
+    top: 1.625em;
+    left: 0.8125em;
+    z-index: -2;
+  }
+  #sbs-r-1892 .cs-peach {
+    width: 3.625em;
+    height: auto;
+    top: 0.375em;
+    left: 6.8125em;
+  }
+  #sbs-r-1892 .cs-beige {
+    width: 22em;
+    height: auto;
+    top: 4.4375em;
+    left: 1em;
+    z-index: -3;
+  }
+  #sbs-r-1892 .cs-leaf {
+    width: 14.0625em;
+    height: auto;
+    bottom: 0;
+    right: 1em;
+    z-index: 1;
+  }
+  #sbs-r-1892 .cs-lines {
+    width: 11em;
+    height: auto;
+    bottom: 0;
+    right: 0;
+  }
+  #sbs-r-1892 .cs-info {
+    width: 50%;
+    max-width: 19.0625rem;
+    padding: 6.25em 2.5em;
+    background-color: var(--primary);
+    border-radius: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  #sbs-r-1892 .cs-info-text {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 3.5vw, 1.25rem);
+    font-weight: 600;
+    line-height: 1.6em;
+    text-align: center;
+    max-width: 13.9375em;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+  #sbs-r-1892 .cs-bold {
+    /* 16px - 24x */
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.2em;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #sbs-r-1892 .cs-text-large {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+  }
+  #sbs-r-1892 .cs-text {
+    margin-bottom: 0.75rem;
+  }
+  #sbs-r-1892 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+   .cs-button-solid {
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: var(--secondary);
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+   .cs-button-solid:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+   .cs-button-solid:hover {
+    color: #fff;
+  }
+   .cs-button-solid:hover:before {
+    width: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-r-1892 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #sbs-r-1892 .cs-content {
+    /* 48px - 64px */
+    padding: clamp(3rem, 5vw, 4rem) 0;
+  }
+  #sbs-r-1892 .cs-image-group {
+    font-size: min(1.27vw, 1rem);
+    min-height: 45.625em;
+    height: auto;
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #sbs-r-1892 .cs-picture {
+    height: 93.150685%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-r-1892 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #sbs-r-1892 .cs-bold,
+  body.dark-mode #sbs-r-1892 .cs-text-large,
+  body.dark-mode #sbs-r-1892 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs-r-1892 .cs-text,
+  body.dark-mode #sbs-r-1892 .cs-info-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-r-1892 .cs-picture {
+    border-color: var(--accent);
+  }
+  body.dark-mode #sbs-r-1892 .cs-info {
+    background-color: var(--medium);
+  }
+  body.dark-mode #sbs-r-1892 .cs-graphic {
+    opacity: 0.6;
+  }
+}
+                                
+                                
+</STYLE>
 
-        <!-- Background Image -->
-        <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
-            <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
-        </picture>
-    </section>
+<!-- ============================================ -->
+<!--             Side by Side Reverse             -->
+<!-- ============================================ -->
 
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
+<section id="sbs-r-1892">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/mia.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/mia.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/mia.jpg" alt="dermatologist" width="324" height="467">
             </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
+            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/lines-reverse.svg" alt="graphic" width="208" height="203" aria-hidden="true">
+            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/blob-reverse.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+            <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-reverse.svg" alt="graphic" width="379" height="394" aria-hidden="true">
+            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+            <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg" alt="graphic" width="189" height="208" aria-hidden="true">
+            <div class="cs-info">
+                <p class="cs-info-text">
+                    <span class="cs-bold">Mia Bauer</span>
+                    Michigan Licensed Esthetician
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
-
-    <section id="sbs">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
                 </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-flex-group">
-                    <p class="cs-flex-p">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </p>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img 
-                    class="cs-quote-icon"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
-                    alt="gavel"
-                    width="136"
-                    height="77" />
-                </div>
-                <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--            Extra Content To Rank             -->
-    <!-- ============================================ -->
-
-    <section id="sbs-r">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-left">
-                <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="560">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="560">
-                </picture>
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Reset Refresh Relax</span>
+                <h2 class="cs-title">Licensed Beauty, Cosmetic & Personal Care by MiaGlow</h2>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-right">
-                <span class="cs-topper">SEO Ranking</span>
-                <h2 class="cs-title">Talk about a main service keyword</h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non tenetur, iure nihil ipsam qui atque commodi id voluptatem nesciunt, quis animi fuga cum doloribus! Eaque laboriosam, unde consectetur iure asperiores ullam. Consequuntur debitis a voluptatibus vitae optio autem explicabo quia neque est quas, in placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi laudantium voluptatibus rem libero error minus quia eligendi sapiente eos.
-                </p>
-                <a href="/blog" class="cs-button-solid">Read our Blog</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery">
-        <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
-            </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews">
-        <div class="cs-container">
-            <span class="cs-topper">Our Reviews</span>
-            <h2 class="cs-title">Words From Our Customers</h2>
-            <p class="cs-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+            <p class="cs-text-large">
+                Facicials • Dermaplane • Cupping<BR>
+                Waxing • Lash Lift/Tint • Brow Lamination/Tint
+                <BR><BR>
             </p>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jon Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img
-                    class="cs-item-img"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
-                    alt="profile picture"
-                    width="80"
-                    height="80" />
-                    <p class="cs-item-p">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <span class="cs-reviewer">
-                        Jane Doe
-                        <span class="cs-desc">Homeowner</span>
-                    </span>
-                    <img
-                    class="cs-item-stars"
-                    aria-hidden="true"
-                    loading="lazy"
-                    decoding="async"
-                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
-                    alt="stars"
-                    width="96"
-                    height="16" />
-                </li>
-            </ul>
-            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+            
+   
+  
+            <a href="" class="cs-button-solid">Book an Appointment</a>
+ 
+
+            <h3 style="margin-top: 2rem;">
+                36650 Green Street, New Baltimore, MI 48047
+           </p>
         </div>
-    </section>
+    </div>
+</section>
+                     
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                   Logos                      -->
+<!-- ============================================ -->
+
+<STYLE>
+  /*-- -------------------------- -->
+<---           Logos            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #logos-572 {
+        /* 60px - 130px */
+        padding: clamp(3.75rem, 8vw, 8.125rem) 1rem;
+        background-color: white;
+    }
+    #logos-572 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #logos-572 .cs-logo {
+        width: auto;
+        max-width: 50%;
+        height: auto;
+        margin: 0;
+        display: block;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #logos-572 .cs-container {
+        
+    }
+    #logos-572 .cs-logo {
+        width: 10%;
+        /* the max width becomes whatever the actual width of the image is */
+        max-width: max-content;
+        height: auto;
+        display: block;
+    }
+}
+
+                                
+</STYLE>
+
+
+
+<section id="logos-572">
+  <div class="cs-container">
+      <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+      <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
+
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                   Review                     -->
+<!-- ============================================ -->
+
+
+<STYLE>
+
+
+
+
+  /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #reviews-1529 {
+    padding: var(--sectionPadding);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-container {
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6.3vw, 4rem);
+  }
+  #reviews-1529 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 39.375rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #reviews-1529 .cs-review {
+    width: 100%;
+    /* 32px - 80px top & bottom, 24px to 110px sides*/
+    padding: clamp(2rem, 7vw, 5rem) clamp(1.5rem, 7vw, 6.875rem);
+    box-sizing: border-box;
+  
+    /* 32px - 100px */
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-review:before {
+    /* background-color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    /* 32px - 100px */
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    opacity: 0.1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-1529 .cs-image-group {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 1.15966387;
+  }
+  #reviews-1529 .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #reviews-1529 .cs-picture img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-1529 .cs-flex {
+    max-width: 46rem;
+  }
+  #reviews-1529 .cs-quote {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0 0 1.5rem;
+    color: #4e4b66;
+  }
+  #reviews-1529 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin-bottom: 0.25rem;
+    color: #1a1a1a;
+    display: block;
+  }
+  #reviews-1529 .cs-job {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--secondary);
+    display: block;
+  }
+  #reviews-1529 .cs-mask {
+    /* SVG Colors */
+    --maskBorder: #ffffff;
+    --maskBG:#ecede8;
+    width: 101%;
+    height: 101%;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+  }
+  #reviews-1529 .cs-mask path {
+    transition: stroke 0.3s;
+  }
+  #reviews-1529 .cs-blob-wrapper {
+    width: 100%;
+    height: 100%;
+    /* 32px - 100px */
+    border-radius: clamp(2rem, 5vw, 6.25rem);
+    overflow: hidden;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-1529 .cs-blob {
+    --blobColor: var(--secondary);
+  }
+  #reviews-1529 .cs-blob1 {
+    width: 6.25rem;
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+    top: -0.3125rem;
+    left: -1.875rem;
+  }
+  #reviews-1529 .cs-blob2 {
+    /* 239px - 461px */
+    width: clamp(14.9375rem, 40vw, 28.8125rem);
+    height: auto;
+    opacity: 0.25;
+    position: absolute;
+    right: -3.125rem;
+    bottom: -0.9375rem;
+  }
+  #reviews-1529 .cs-graphic {
+    position: absolute;
+    z-index: 1;
+  }
+  #reviews-1529 .cs-graphic-one {
+    /* 48px - 138px */
+    width: clamp(3rem, 10vw, 8.625rem);
+    height: auto;
+    top: -1.25rem;
+    right: -1.25rem;
+    transform: rotate(104deg);
+  }
+  #reviews-1529 .cs-graphic-two {
+    /* 88px - 197px */
+    width: clamp(5.5rem, 15vw, 12.3125rem);
+    height: auto;
+    bottom: -1.25rem;
+    left: -2rem;
+  }
+}
+/* Tablet - 500px */
+@media only screen and (min-width: 31.25rem) {
+  #reviews-1529 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-1529 .cs-review {
+    max-width: none;
+    flex-direction: row;
+  }
+  #reviews-1529 .cs-image-group,
+  #reviews-1529 .cs-flex {
+    flex: 1 0 0;
+  }
+  #reviews-1529 .cs-image-group {
+    max-width: 16.25rem;
+  }
+}
+/* Larger Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #reviews-1529 .cs-picture {
+    font-size: inherit;
+  }
+  #reviews-1529 .cs-blob1 {
+    width: 10rem;
+    left: 0;
+    top: 0;
+  }
+}
+                                
+</STYLE>
+
+<section id="reviews-1529">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Testimonials</span>
+          <h2 class="cs-title">Happy Customer Feedback About Our Services</h2>
+          <p class="cs-text">
+            Our highest priority is ultimate relaxation while achieving your skin goals
+      </div>
+      <div class="cs-review">
+          <div class="cs-image-group">
+              <picture class="cs-picture">
+                  <source media="(max-width: 600px)"
+                      srcset="/assets/images/test.jpg">
+                  <source media="(min-width: 601px)"
+                      srcset="/assets/images/test.jpg">
+                  <img decoding="async"
+                      src="/assets/images/test.jpg"
+                      alt="person" width="413" height="374" aria-hidden="true">
+              </picture>
+              <svg class="cs-mask" width="100%" height="100%" viewBox="0 0 264 288" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M266 0H0V288H266V0ZM22.47 277.06C-3.13 224.38 3.86 98.26 11.47 34.79C14.17 12.21 18.6 9.69 30.47 8.97C77.4 6.16 139.23 4.6 215.47 5C233.88 5.12 249.16 15.2 255.47 48.69C265.38 101.42 261.07 155.11 256.9 207.21C256.76 208.98 256.62 210.76 256.47 212.53C255.06 230.47 252.33 246.68 248.47 260.19C246.3 267.74 243.11 270.79 238.47 270.12C168.15 260.11 100.01 269.4 30.47 283.03C28.95 283.34 27.89 283.03 26.47 282.04C25.05 281.04 23.47 279.16 22.47 277.08V277.06Z"
+                      fill="var(--maskBG)" />
+                  <path
+                      d="M11.4688 34.7899C3.85881 98.2599 -3.13119 224.37 22.4688 277.06C23.4688 279.14 25.0488 281.02 26.4688 282.02C27.8888 283.02 28.9488 283.32 30.4688 283.01C100.009 269.38 168.149 260.09 238.469 270.1C243.109 270.77 246.299 267.72 248.469 260.17C252.329 246.66 255.059 230.45 256.469 212.51C260.759 158.76 265.719 103.2 255.469 48.6799C249.159 15.1999 233.879 5.10993 215.469 4.98993C139.229 4.58993 77.3988 6.15993 30.4688 8.95993C18.5988 9.66993 14.1688 12.1999 11.4688 34.7799V34.7899Z"
+                      stroke="var(--maskBorder)" stroke-width="8" />
+              </svg>
+          </div>
+          <div class="cs-flex">
+              <p class="cs-quote">
+                Mia is so so amazing, she’s very personal and makes the experience so special. She really takes her time and explains everything to you proficiently. She exceeds to provide great customer service.
+              </p>
+              <span class="cs-name">Hailey C.</span>
+              <span class="cs-job">01.17.2024</span>
+          </div>
+          <div class="cs-blob-wrapper">
+              <!--Wrapper in a div so we dont need to set overflow hidden on the cs-review to clip them, which would clip the floating graphics as well. Instead we have a sacrifical div to clip the blobs inside of-->
+              <!--Left Blob-->
+              <svg class="cs-blob cs-blob1" width="162" height="128" viewBox="0 0 162 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.578 122.409C10.381 119.368 5.92643 114.978 3.60463 109.384C0.9885 103.088 0.175877 96.0886 -0.354449 89.3761C-0.866915 82.8575 -1.24072 75.777 -5.31557 70.3659C-9.67808 64.5668 -16.4216 63.1296 -23.3033 64.3291C-39.2035 67.104 -48.514 81.3615 -62.3523 88.2493C-76.8448 95.4647 -94.4631 94.1513 -109.354 89.1531C-116.966 86.597 -124.408 83.1835 -131.334 79.1082C-138.132 75.1098 -144.284 70.2008 -149.303 64.0714C-158.733 52.5594 -162.328 36.754 -160.217 22.0489C-158.195 7.94315 -150.61 -4.57519 -139.145 -12.908C-133.368 -17.1036 -127.101 -20.3408 -120.127 -21.8691C-111.542 -23.7487 -102.778 -23.0838 -94.1272 -21.816C-76.3173 -19.2024 -59.0408 -12.8899 -41.1498 -10.7076C-33.2319 -9.74094 -24.8931 -9.53953 -17.1478 -11.6585C-11.3315 -13.2476 -6.55438 -15.5318 -2.13146 -19.6277C2.49267 -23.9098 6.35041 -29.4307 9.8992 -34.6032C13.9864 -40.5641 18.343 -45.896 23.9319 -50.5745C35.2231 -60.0189 49.3056 -65.3874 63.9625 -65.4926C64.2181 -65.4958 64.7911 -65.5969 64.9625 -65.4906C72.1959 -65.4758 78.9861 -64.3591 85.9563 -62.4476C101.309 -58.2417 116.323 -49.9956 128.911 -40.3597C140.909 -31.1783 151.882 -20.4226 157.842 -6.30045C163.027 5.98506 163.158 20.3515 157.762 32.6995C155.234 38.4881 151.818 43.9003 146.731 47.6769C141.07 51.8764 132.65 55.09 125.721 52.634C118.883 50.211 116.075 41.9996 108.746 40.5992C102.216 39.3503 95.2099 43.0425 90.7313 47.5624C85.1368 53.2059 83.2703 60.9658 81.6883 68.5439C80.0954 76.1549 79.1905 84.1586 76.6413 91.5336C72.0829 104.72 63.2704 117.033 50.5759 123.48C39.6798 129.007 26.1617 128.597 15.578 122.409Z" fill="var(--blobColor)"/>
+                  </svg>
+              <!--RIght blob-->
+              <svg class="cs-blob cs-blob2" width="423" height="152" viewBox="0 0 423 152" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M446 185.996C437.652 209.276 424.317 227.375 409 226.996C398.568 226.732 389.048 219.154 380 211.996C346.92 185.812 321.111 207.237 285 219.996C244.784 234.202 223.038 185.716 189 168.996C142.612 146.21 105.611 185.367 58.9998 204.996C34.8473 215.167 10.0832 211.93 1.9998 169.996C-9.5339 110.121 40.5169 96.6287 61.9998 87.9963C77.3226 81.8377 93.2386 72.8434 107 56.9963C119.705 42.3661 131.527 7.18936 146 0.99633C152.671 -1.85625 158.896 2.75738 164 8.99633C171.922 18.6733 177.895 32.0744 187 38.9963C204.137 52.031 224.119 57.6817 244 49.9963C263.795 42.3397 279.796 18.2702 299 7.99633C309.489 2.383 321.457 2.19178 330 10.9963C344.858 26.3211 348.113 61.1321 363 76.9963C379.775 94.8809 403.952 94.1948 424 78.9963C429.052 75.168 433.775 70.4414 439 67.9963C455.161 60.443 463.429 84.0291 462 108.996C460.542 134.291 454.106 163.405 446 185.996Z"
+                  fill="var(--blobColor)" />
+          </svg>
+          </div>
+          <!--Green Squiggles-->
+          <img class="cs-graphic cs-graphic-one"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-four.svg"
+          alt="graphic" loading="lazy" decoding="async" height="134" width="197">
+          <!--Rd Squiggle-->
+          <img class="cs-graphic cs-graphic-two"
+          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/day-care-team-graphic-three.svg"
+          alt="graphic" loading="lazy" decoding="async" height="191" width="138">
+      </div>
+  </div>
+</section>
+                              
+
+
+
+
+                              
+
+<div class="cs-container" style="margin-top:0px;text-align: center;">
+
+<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F945695943738201%2F&show_text=false&width=267&t=0" width="267" height="476" style="margin: auto;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<BR><BR>Emphasizing your natural beauty
+</div>
+
+
+<STYLE>
+  /*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+#pricing-975 {
+  padding: var(--sectionPadding);
+}
+#pricing-975 .cs-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 48px - 64px */
+  gap: clamp(3rem, 6vw, 4rem);
+}
+#pricing-975 .cs-content {
+  /* set text align to left if content needs to be left aligned */
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* centers content horizontally, set to flex-start to left align */
+  align-items: center;
+}
+#pricing-975 .cs-title {
+  margin: 0;
+}
+#pricing-975 .cs-menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 1.25rem;
+  /* 28px - 40px */
+  row-gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+#pricing-975 .cs-menu-group {
+  width: 100%;
+  max-width: 37.5rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 28px - 40px */
+  gap: clamp(1.75rem, 3vw, 2.5rem);
+}
+#pricing-975 .cs-menu-item {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+#pricing-975 .cs-h3 {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  position: relative;
+}
+#pricing-975 .cs-h3:before {
+  /* grey line */
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #e8e8e8;
+  opacity: 1;
+  position: absolute;
+  display: block;
+  top: 0.8125rem;
+  left: 0;
+  z-index: -1;
+}
+#pricing-975 .cs-header {
+  /* 20px - 25px */
+  font-size: clamp(1.25rem, 2vw, 1.5625rem);
+  line-height: 1.2em;
+  text-align: inherit;
+  font-weight: 700;
+  max-width: 25rem;
+  padding-right: 0.5rem;
+  background-color: #fff;
+  color: var(--headerColor);
+}
+#pricing-975 .cs-price {
+  font-size: 1rem;
+  line-height: 1.5em;
+  font-weight: 400;
+  padding-left: 0.5rem;
+  background-color: #fff;
+  color: var(--headerColor);
+}
+#pricing-975 .cs-menu-text {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-align: inherit;
+  margin: 0;
+  color: var(--bodyTextColor);
+}
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+#pricing-975 .cs-menu {
+  flex-direction: row;
+  justify-content: space-between;
+}
+#pricing-975 .cs-menu-group {
+  width: 100%;
+}
+}
+                              </STYLE>
+
+<section id="pricing-975">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Licensed Beauty, Cosmetic & Personal Care</span>
+          <h2 class="cs-title">Services</h2>
+          
+      </div>
+      <div class="cs-menu">
+          <!--Left Menu-->
+          <ul class="cs-menu-group">
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Glow Facial</span>
+                      <span class="cs-price">$100</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      80 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Express Facial</span>
+                      <span class="cs-price">$80</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      30 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Dermaplane Facial</span>
+                      <span class="cs-price">$39</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      120 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Lash Lift</span>
+                      <span class="cs-price">$90</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      30 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Lash Tint</span>
+                      <span class="cs-price">$30</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      30 min
+                  </p>
+              </li>
+          </ul>
+          <!--Right Menu-->
+          <ul class="cs-menu-group">
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Lash lift & Tint</span>
+                      <span class="cs-price">$110</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      50 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Brow Tint</span>
+                      <span class="cs-price">$30</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      30 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Brow Tint & Sculpt</span>
+                      <span class="cs-price">$45</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      45 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Brow Lamination</span>
+                      <span class="cs-price">$60</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      30 min
+                  </p>
+              </li>
+              <li class="cs-menu-item">
+                  <h3 class="cs-h3">
+                      <span class="cs-header">Brow Tint & Lamination</span>
+                      <span class="cs-price">$80</span>
+                  </h3>
+                  <p class="cs-menu-text">
+                      50 min
+                  </p>
+              </li>
+          </ul>
+      </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                    Events                    -->
+<!-- ============================================ -->
+
+
+
+<STYLE>
+
+  /*-- -------------------------- -->
+<---          Events            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #events-1928 {
+    width: 100%;
+    padding: var(--sectionPadding);
+    background-color: #f6eddf;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #events-1928 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 49rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+  #events-1928 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    z-index: 3;
+  }
+  #events-1928 .cs-title {
+    margin: 0;
+  }
+  #events-1928 .cs-topper {
+    color: var(--secondary);
+  }
+  #events-1928 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    overflow: hidden;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 6.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+  }
+  #events-1928 .cs-button-solid:hover {
+    background-color: var(--primary);
+    color: #fff;
+  }
+  #events-1928 .cs-image-group {
+    font-size: min(2.29vw, 1rem);
+    width: 32.9375em;
+    height: 42.5em;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+  #events-1928 .cs-picture {
+    width: 32.625em;
+    height: 42.5em;
+    box-sizing: border-box;
+    background-color: #dab692;
+    overflow: hidden;
+    border: 8px solid #dab692;
+    border-radius: 16.25rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  #events-1928 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #events-1928 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #events-1928 .cs-twirl {
+    width: 11.0625em;
+    height: auto;
+    top: 0.9375em;
+    right: 0;
+    z-index: 1;
+  }
+  #events-1928 .cs-peach {
+    width: 5.375em;
+    height: auto;
+    top: -0.5625em;
+    right: 5.6875em;
+  }
+  #events-1928 .cs-blob {
+    width: 33em;
+    height: auto;
+    right: 0;
+    bottom: -3em;
+    z-index: -2;
+  }
+  #events-1928 .cs-leaf {
+    width: 10.9375em;
+    height: auto;
+    bottom: 1em;
+    left: 0;
+  }
+  #events-1928 .cs-graphic3 {
+    /* 385.6px - 835.2px */
+    width: clamp(24.1rem, 48vw, 52.2rem);
+    height: auto;
+    opacity: 0.5;
+    display: none;
+    position: absolute;
+    top: 0rem;
+    right: -5.5rem;
+    z-index: 1;
+  }
+  #events-1928 .cs-graphic4 {
+    /* 484px - 835.2px */
+    width: clamp(30.25rem, 60vw, 52.2rem);
+    height: auto;
+    opacity: 0.5;
+    display: none;
+    position: absolute;
+    top: 5.3125rem;
+    left: -9.5rem;
+    z-index: 1;
+  }
+  #events-1928 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* 16px - 20px */
+    gap: clamp(1rem, 3vw, 1.25rem);
+  }
+  #events-1928 .cs-item {
+    text-align: left;
+    text-decoration: none;
+    list-style: none;
+    width: 100%;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    /* 16px - 24px */
+    padding: clamp(1rem, 3vw, 1.5rem);
+    background-color: #FAF6F2;
+    overflow: hidden;
+    /* 24px - 40px */
+    border-radius: clamp(1.5rem, 4vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+  }
+  #events-1928 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #events-1928 .cs-date {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.5em;
+    /* 56px - 80px */
+    width: clamp(8.313rem, 16vw, 9.5rem);
+    height: clamp(4.813rem, 10vw, 6rem);
+    margin: 0;
+    padding: 0.5rem 1rem;
+    /* clips the pseudo to remove the corners */
+    overflow: hidden;
+    color: var(--bodyTextColor);
+    border-radius: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+    flex: none;
+  }
+  #events-1928 .cs-date:before {
+    /* background color */
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #F6EDDF;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: background-color 0.3s;
+  }
+  #events-1928 .cs-date strong {
+    font-size: 1.9375rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: #000;
+  }
+  #events-1928 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    /* 4px - 16px */
+    margin: 0 0 clamp(0.5rem, 1vw, 0.75rem);
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #events-1928 .cs-time {
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #events-1928 .cs-card-group {
+    max-width: clamp(44rem, 80vw, 46.8125rem);
+  }
+  #events-1928 .cs-item {
+    flex-direction: row;
+    align-items: center;
+  }
+  #events-1928 .cs-button-solid {
+    margin-left: auto;
+  }
+  #events-1928 .cs-graphic3 {
+    display: block;
+  }
+  #events-1928 .cs-graphic4 {
+    display: block;
+  }
+}
+/* Large Desktop -1300px */
+@media only screen and (min-width: 81.25rem) {
+  #events-1928 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #events-1928 .cs-content {
+    padding: 3rem 0;
+    align-self: center;
+  }
+  #events-1928 .cs-image-group {
+    flex: none;
+    height: auto;
+  }
+  #events-1928 .cs-picture {
+    height: 100%;
+  }
+}
+/* Larger Desktop -1920px */
+@media only screen and (min-width: 120rem) {
+  #events-1928 .cs-graphic3 {
+    width: 52.1875rem;
+    margin-left: 8.875rem;
+    right: auto;
+    left: 50%;
+  }
+  #events-1928 .cs-graphic4 {
+    width: 52.1875rem;
+    margin-right: 20.5625rem;
+    top: 7.75rem;
+    right: 50%;
+    left: auto;
+  }
+}
+                                
+</STYLE>
+
+<section id="events-1928">
+  <div class="cs-container">
+      <div class="cs-image-group">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="/assets/images/facial.jpg">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="/assets/images/facial.jpg">
+              <img loading="lazy" decoding="async" src="/assets/images/facial.jpg" alt="dermatologist" width="522" height="680">
+          </picture>
+          <img class="cs-graphic cs-twirl" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/twirl.svg" alt="graphic" width="177" height="97" aria-hidden="true">
+          <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg" alt="graphic" width="86" height="65" aria-hidden="true">
+          <img class="cs-graphic cs-blob" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-beige-blob.svg" alt="graphic" width="528" height="468" aria-hidden="true">
+          <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-2.svg" alt="graphic" width="175" height="143" aria-hidden="true">
+      </div>
+      <div class="cs-content">
+          <div class="cs-flex">
+              <span class="cs-topper">Get ready for the weekend!</span>
+              <h2 class="cs-title">Facial Fridays</h2>
+          </div>
+          <ul class="cs-card-group">
+            <li class="cs-item">
+              <span class="cs-date">
+                 <s>$80</s>
+                <strong>$65</strong>
+              </span>
+              <div class="cs-info">
+                  <h3 class="cs-h3">Express Facial</h3>
+                  <span class="cs-time"><img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">30 min</span>
+              </div>
+              <a href="" class="cs-button-solid">Book Now</a>
+          </li>
+          <li class="cs-item">
+            <span class="cs-date">
+               <s>$100</s>
+              <strong>$85</strong>
+            </span>
+            <div class="cs-info">
+                <h3 class="cs-h3">Glow Facial</h3>
+                <span class="cs-time"><img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">80 min</span>
+            </div>
+            <a href="" class="cs-button-solid">Book Now</a>
+        </li>
+        <li class="cs-item">
+          <span class="cs-date">
+             <s>$110</s>
+            <strong>$95</strong>
+          </span>
+          <div class="cs-info">
+              <h3 class="cs-h3">Dermaplane Facial</h3>
+              <span class="cs-time"><img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-clock.svg" alt="icon" width="24" height="24" loading="lazy" decoding="async">110 min</span>
+          </div>
+          <a href="" class="cs-button-solid">Book Now</a>
+      </li>
+          </ul>
+      </div>
+  </div>
+  <img class="cs-graphic3" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/faces-graphic.svg" alt="graphic" loading="lazy" decoding="async" width="835" height="912">
+  <img class="cs-graphic4" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/faces-graphic-flipped.svg" alt="graphic" loading="lazy" decoding="async" width="835" height="912">
+
+</section>
+            
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                    Steps                     -->
+<!-- ============================================ -->
+
+
+<STYLE>
+  /*-- -------------------------- -->
+<---          Steps             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-1893 {
+    padding: var(--sectionPadding);
+    background-color: #F6EDDF;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-1893 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #steps-1893 .cs-image-group {
+    font-size: min(2.24vw, 0.9rem);
+    width: 30.125em;
+    height: 38.5em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #steps-1893 .cs-picture {
+    width: 25.8125em;
+    height: 37.0625em;
+    margin-top: 1.5em;
+    box-sizing: border-box;
+    background-color: #DAB692;
+    overflow: hidden;
+    border: 8px solid #DAB692;
+    border-radius: 16.25rem;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+  #steps-1893 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #steps-1893 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #steps-1893 .cs-brown {
+    width: 10.3125em;
+    height: auto;
+    top: 1.25em;
+    left: 1.5em;
+    z-index: -2;
+    transform: rotate(140deg);
+  }
+  #steps-1893 .cs-peach {
+    width: 4.3125em;
+    height: auto;
+    top: 1em;
+    left: 8.75em;
+    transform: rotate(-40deg);
+  }
+  #steps-1893 .cs-leaf {
+    width: 14em;
+    height: auto;
+    bottom: 0em;
+    right: 1em;
+    z-index: 1;
+  }
+  #steps-1893 .cs-dots {
+    width: 16.3125em;
+    height: auto;
+    left: 1em;
+    bottom: 1em;
+    z-index: -2;
+  }
+  #steps-1893 .cs-lines {
+    width: 15.375em;
+    right: 0;
+    bottom: 0em;
+  }
+  #steps-1893 .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1893 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps-1893 .cs-topper {
+    color: var(--secondary);
+  }
+  #steps-1893 .cs-title {
+    margin: 0;
+  }
+  #steps-1893 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-auto-flow: row;
+    /* 24px - 32px */
+    gap: clamp(1.5rem, 3vw, 2rem);
+  }
+  #steps-1893 .cs-item {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: #DED1BD 1px solid;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+    position: relative;
+  }
+  #steps-1893 .cs-item:last-of-type {
+    border-bottom: none;
+  }
+  #steps-1893 .cs-number {
+    /* 49px - 72px */
+    font-size: clamp(3.0625rem, 6vw, 4.5rem);
+    font-weight: 900;
+    line-height: 1.1875em;
+    color: var(--primary);
+    opacity: 0.2;
+    display: block;
+  }
+  #steps-1893 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.125em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #steps-1893 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1893 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    align-items: stretch;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
+  }
+  #steps-1893 .cs-card-group {
+    /* 16px - 32px */
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  #steps-1893 .cs-item {
+    flex-direction: row;
+  }
+  #steps-1893 .cs-image-group {
+    font-size: min(1.5vw, 1rem);
+    height: auto;
+    min-height: 38.5em;
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #steps-1893 .cs-picture {
+    height: 96.266234%;
+  }
+}
+                                
+</STYLE>
+<section id="steps-1893">
+  <div class="cs-container">
+      <div class="cs-image-group">
+          <picture class="cs-picture">
+              <!--Mobile Image-->
+              <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg">
+              <!--Tablet and above Image-->
+              <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg">
+              <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/dermatologist1.jpeg" alt="dermatologist" width="324" height="467">
+          </picture>
+          <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg" alt="graphic" width="100" height="98" aria-hidden="true">
+          <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg" alt="graphic" width="42" height="31" aria-hidden="true">
+          <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg" alt="graphic" width="136" height="171" aria-hidden="true">
+          <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-dots.svg" alt="graphic" width="159" height="88" aria-hidden="true">
+          <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg" alt="graphic" width="150" height="165" aria-hidden="true">
+      </div>
+      <div class="cs-wrapper">
+          <div class="cs-content">
+              <span class="cs-topper">How to get started</span>
+              <h2 class="cs-title">Simple Steps to Get Our Services</h2>
+          </div>
+          <ul class="cs-card-group">
+              <li class="cs-item">
+                  <span class="cs-number">01</span>
+                  <div class="cs-flex">
+                      <h3 class="cs-h3">Read our policies</h3>
+                      <p class="cs-item-text">
+                          Aside from seeing patients, Dr. Paul is dedicated to patient advocacy and education on  evidence-based medicine in dermatology, especially for skin of color. 
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-number">02</span>
+                  <div class="cs-flex">
+                      <h3 class="cs-h3">Book your appointment</h3>
+                      <p class="cs-item-text">
+                          Aside from seeing patients, Dr. Paul is dedicated to patient advocacy and education on  evidence-based medicine in dermatology, especially for skin of color. 
+                      </p>
+                  </div>
+              </li>
+              <li class="cs-item">
+                  <span class="cs-number">03</span>
+                  <div class="cs-flex">
+                      <h3 class="cs-h3">Follow your treatment plan</h3>
+                      <p class="cs-item-text">
+                          Aside from seeing patients, Dr. Paul is dedicated to patient advocacy and education on  evidence-based medicine in dermatology, especially for skin of color. 
+                      </p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+
+  <div style="margin-top: 50px;" class="cs-container">
+    <a href="" class="cs-button-solid">Book an Appointment</a>
+  </div>
+          
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ============================================ -->
+<!--                 Recent Posts                 -->
+<!-- ============================================ -->
+
+
+<STYLE>
+  /*-- -------------------------- -->
+<---        Recent Posts        -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #blog-1347 {
+        padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #blog-1347 .cs-container {
+        width: 100%;
+        /* changes to 1280px on desktop */
+        max-width: 43.75rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #blog-1347 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #blog-1347 .cs-title {
+        max-width: 20ch;
+    }
+    #blog-1347 .cs-topper {
+        color: var(--secondary);
+    }
+    #blog-1347 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+    }
+    #blog-1347 .cs-item {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        grid-column: span 12;
+    }
+    #blog-1347 .cs-item:hover .cs-h3,
+    #blog-1347 .cs-item:hover .cs-date,
+    #blog-1347 .cs-item:hover .cs-category {
+        color: #fff;
+    }
+    #blog-1347 .cs-item:hover .cs-item-text {
+        background-color: var(--primary);
+    }
+    #blog-1347 .cs-item:hover .cs-icon-wrapper {
+        border-color: #fff;
+    }
+    #blog-1347 .cs-item:hover .cs-icon,
+    #blog-1347 .cs-item:hover .cs-date-icon {
+        filter: brightness(1000%) grayscale(1);
+    }
+    #blog-1347 .cs-item:hover .cs-icon {
+        transform: rotate(45deg);
+    }
+    #blog-1347 .cs-item:hover .cs-category::before {
+        background-color: #fff;
+        opacity: 0.2;
+    }
+    #blog-1347 .cs-link {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        /* if one card has more content then the others, the card will stretch to fill the parent container */
+        flex-grow: 1;
+        gap: 1rem;
+    }
+    #blog-1347 .cs-picture {
+        width: 100%;
+        height: 20rem;
+        margin: 0;
+        border-radius: 1.5rem;
+        display: block;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    #blog-1347 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #blog-1347 .cs-item-text {
+        padding: 1.25rem;
+        background-color: #f7f7f7;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* makes the item text the element that grows to fill the container */
+        flex-grow: 1;
+        transition: background-color 0.3s;
+    }
+    #blog-1347 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+        line-height: 1.2em;
+        text-align: left;
+        margin: 0;
+        color: #1a1a1a;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        transition: color 0.3s;
+    }
+    #blog-1347 .cs-icon-wrapper {
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid #bababa;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* prevents the parent flexbox from shrinking the icon */
+        flex-shrink: 0;
+        transition: border-color 0.3s;
+    }
+    #blog-1347 .cs-icon {
+        width: auto;
+        height: 0.75rem;
+        transition:
+            filter 0.3s,
+            transform 0.3s;
+    }
+    #blog-1347 .cs-info {
+        margin: 1rem 0 0;
+        padding: 1rem 0 0;
+        border-top: 1px solid #e8e8e8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #blog-1347 .cs-date {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        text-align: left;
+        color: #1a1a1a;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: color 0.3s;
+    }
+    #blog-1347 .cs-date-icon {
+        width: auto;
+        height: 1.5rem;
+        transition: filter 0.3s;
+    }
+    #blog-1347 .cs-category {
+        font-size: 0.875rem;
+        /* centers the text if the category bullet has to span multiple lines */
+        text-align: center;
+        padding: 0.25rem 1rem;
+        color: #1a1a1a;
+        border-radius: 5rem;
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+    }
+    #blog-1347 .cs-category::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #e8e8e8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #blog-1347 .cs-bubbles {
+        width: 20.0625rem;
+        height: 26.4375rem;
+        display: none;
+        position: absolute;
+        top: 66.4375rem;
+        right: -8.75rem;
+        z-index: -1;
+    }
+    #blog-1347 .cs-bubbles:before {
+        /* white border bubble */
+        content: "";
+        width: 16.5rem;
+        height: 16.5rem;
+        background: transparent;
+        opacity: 1;
+        border: 1px solid #1a1a1a;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        animation-name: floatAnimation;
+        animation-duration: 5s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+    #blog-1347 .cs-bubbles:after {
+        /* orange bubble */
+        content: "";
+        width: 16.5rem;
+        height: 16.5rem;
+        background: var(--primary);
+        opacity: 0.1;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        animation-name: floatAnimation2;
+        animation-duration: 14s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #blog-1347 .cs-bubbles {
+        display: block;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #blog-1347 .cs-container {
+        max-width: 80rem;
+    }
+    #blog-1347 .cs-item {
+        grid-column: span 4;
+    }
+    #blog-1347 .cs-bubbles {
+        top: 17.5625rem;
+    }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #blog-1347 .cs-bubbles {
+        margin-right: -61.875rem;
+        right: 50%;
+    }
+}
+
+                                
+</STYLE>
+
+<section id="blog-1347">
+  <div class="cs-container">
+      <div class="cs-content">
+          <span class="cs-topper">Glow Blog</span>
+          <h2 class="cs-title">Important info and tips directly from Mia</h2>
+          <!--<p class="cs-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis quam eu elit lobortis ultrices. Nulla ut accumsan lorem, sed molestie justo. Praesent vehicula eleifend.
+          </p>-->
+      </div>
+      <ul class="cs-card-group">
+ 
+          <li class="cs-item">
+              <a class="cs-link" href="/blog/policies/">
+                  <picture class="cs-picture">
+                      <source media="(max-width: 600px)"
+                          srcset="/assets/images/blog/mia.jpg">
+                      <source media="(min-width: 601px)"
+                          srcset="/assets/images/blog/mia.jpg">
+                      <img decoding="async"
+                          src="assets/images/blog/mia.jpg"
+                          alt="agency" width="413" height="374" aria-hidden="true">
+                  </picture>
+                  <div class="cs-item-text">
+                      <h3 class="cs-h3">
+                          Please Read Before Booking
+                          <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" decoding="async"
+                                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                      alt="arrow" width="413" height="374" aria-hidden="true">
+                          </picture>
+                      </h3>
+                      <div class="cs-info">
+                          <span class="cs-date">
+                              <img class="cs-date-icon" decoding="async"
+                                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-calendar.svg"
+                                      alt="calendar" width="413" height="374" aria-hidden="true">
+                              07 Sep, 2022
+                          </span>
+                          <span class="cs-category">
+                              MUST READ!
+                          </span>
+                      </div>
+                  </div>
+              </a>
+          </li>
+          <li class="cs-item">
+            <a class="cs-link" href="/blog/lash-lift-and-tint-prep/">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="/assets/images/blog/eyelashes.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="/assets/images/blog/eyelashes.jpg">
+                    <img decoding="async"
+                        src="/assets/images/blog/eyelashes.jpg"
+                        alt="agency" width="413" height="374" aria-hidden="true">
+                </picture>
+                <div class="cs-item-text">
+                    <h3 class="cs-h3">
+                      Lash Lift and Tint Prep 
+                        <picture class="cs-icon-wrapper">
+                            <img class="cs-icon" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                    alt="arrow" width="413" height="374" aria-hidden="true">
+                        </picture>
+                    </h3>
+                    <div class="cs-info">
+                        <span class="cs-date">
+                            <img class="cs-date-icon" decoding="async"
+                                    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-calendar.svg"
+                                    alt="calendar" width="413" height="374" aria-hidden="true">
+                            07 Sep, 2022
+                        </span>
+                        <span class="cs-category">
+                            Important Info
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+          <li class="cs-item">
+              <a class="cs-link" href="/blog/brow-tint-lam-prep/">
+                  <picture class="cs-picture">
+                      <source media="(max-width: 600px)"
+                          srcset="/assets/images/blog/brow.jpg">
+                      <source media="(min-width: 601px)"
+                          srcset="/assets/images/blog/brow.jpg">
+                      <img decoding="async"
+                          src="/assets/images/blog/brow.jpg"
+                          alt="agency" width="413" height="374" aria-hidden="true">
+                  </picture>
+                  <div class="cs-item-text">
+                      <h3 class="cs-h3">
+                        Brow Tint/Lam. Prep 
+                          <picture class="cs-icon-wrapper">
+                              <img class="cs-icon" decoding="async"
+                                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-arrow-upper-right.svg"
+                                      alt="arrow" width="413" height="374" aria-hidden="true">
+                          </picture>
+                      </h3>
+                      <div class="cs-info">
+                          <span class="cs-date">
+                              <img class="cs-date-icon" decoding="async"
+                                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/agency-calendar.svg"
+                                      alt="calendar" width="413" height="374" aria-hidden="true">
+                              07 Sep, 2022
+                          </span>
+                          <span class="cs-category">
+                              Important Info
+                          </span>
+                      </div>
+                  </div>
+              </a>
+          </li>
+      </ul>
+  </div>
+  <div class="cs-bubbles" aria-hidden="true"></div>
+</section>
+                              
+
+
+
+
 
     {% include 'components/cta.html' %}
+
+
+
+
 {% endblock %}

@@ -1,12 +1,12 @@
 ---
-title: Acuti modo
-description: Lorem markdownum tardantis unam mitissima dissimulator inposuit   corpus sintque tura tremenda, nec coetum.
-author: Code Stitch
-date: 2023-06-08T15:26:46.705Z
+title: Lash Lift and Tint Prep
+description: Instructions for lash lift and tint
+author: Mia
+date: 2024-05-29T16:06:00.000Z
 tags:
-    - post
-image: /assets/images/blog/landing.jpg
-imageAlt: Kitchen
+  - post
+image: /assets/images/blog/eyelashes.jpg
+imageAlt: Lashes
 ---
 
 ## Lacerans aliter tetigit praeterea rite

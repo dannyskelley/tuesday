@@ -1,11 +1,11 @@
 ---
-title: 'Projects'
+title: 'Portfolio'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'projects/'
+permalink: 'portfolio/'
 eleventyNavigation:
-    key: Projects
-    order: 300
+    key: Portfolio
+    order: 400
 ---
 
 {% extends "layouts/base.html" %}
@@ -21,11 +21,11 @@ eleventyNavigation:
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Our Projects</h1>
+        <h1 id="home-h">Portfolio</h1>
         <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+            <source media="(max-width: 600px)" srcset="/assets/images/reviews.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/reviews.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/reviews.jpg" alt="portfolio" loading="eager" width="2500" height="1667">
         </picture>
     </section>
 
@@ -95,10 +95,51 @@ eleventyNavigation:
                     <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
                 </div>
             </div>
-            <a href="/contact" class="cs-button-solid">Get Free Quote</a>
+            <STYLE>
+                .cs-button-solid {
+    font-size: 1.5rem;
+    font-weight: 300;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: var(--secondary);
+    overflow: hidden;
+    color: #fff;
+    border: none;
+    border-radius: 9999px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+  }
+   .cs-button-solid:before {
+    content: "";
+    width: 0;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+   .cs-button-solid:hover {
+    color: #fff;
+  }
+   .cs-button-solid:hover:before {
+    width: 100%;
+  }
+            </STYLE>
+            <a href="/contact" class="cs-button-solid">Book Now</a>
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
 
 {% endblock %}

@@ -38,14 +38,15 @@ eleventyComputed:
             <!-- ============================================ -->
 
             <article class="blog-article">
-                <!--Main Article Image-->
+         
+                <!--Article Info-->
+                <div class="article-group">
+                    <h1 class="blog-h1">{{ title }}</h1>
+                           <!--Main Article Image-->
                 <picture class="blog-mainImage">
                     <img src="{{ image }}" alt="{{ imageAlt }}" width="795" height="400" decoding="async" />
                 </picture>
 
-                <!--Article Info-->
-                <div class="article-group">
-                    <h1 class="blog-h1">{{ title }}</h1>
                     <div class="blog-authorGroup">
                         <!--Author Image-->
                         <picture class="blog-author-img">
@@ -69,6 +70,6 @@ eleventyComputed:
         </div>
         <!-- End .main-content -->
 
-        {% include 'components/featured-post.html' %}
+
     </div>
 {% endblock %}
