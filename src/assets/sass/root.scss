@@ -326,7 +326,7 @@
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
+        padding: 0px;
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -841,7 +841,7 @@
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        padding: 0 calc(16 / 16 * 1rem);
+        padding: 0px;
         /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
         font-family: "Roboto", "Arial", sans-serif;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -869,7 +869,7 @@
             margin: 0 auto 0 0;
             height: calc(65 / 16 * 1rem);
             max-width: calc(350 / 16 * 1rem);
-            width: 18.4%;
+            width: 15.4%;
             padding: 0;
 
             img {
