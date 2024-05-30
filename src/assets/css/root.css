@@ -5,9 +5,9 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #ffba19;
-    --primaryLight: #ffd675;
-    --secondary: #001f3f;
+    --primary: #DAB692;
+    --primaryLight: #DAB692;
+    --secondary: #505B2E;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
@@ -18,7 +18,7 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(5rem, 7.82vw, 6.25rem) 1rem;
   }
   .cs-topper {
     display: block;
@@ -37,7 +37,7 @@
     max-width: 43.75rem;
     font-size: var(--headerFontSize);
     line-height: 1.2em;
-    font-weight: 900;
+    font-weight: 600;
     color: var(--headerColor);
     text-align: inherit;
   }
@@ -58,8 +58,7 @@
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 3.125em;
     font-weight: bold;
     color: #000;
@@ -277,18 +276,13 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto 0 0;
-    height: 100%;
-    max-width: 9.125rem;
-    width: 40%;
+  
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     padding: 0;
   }
   #cs-navigation .cs-logo img {
-    height: 100%;
-    width: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-    object-fit: contain;
+
     /* places the image to the left edge of the parent */
     object-position: left;
   }
@@ -484,10 +478,7 @@
   body.dark-mode #cs-navigation {
     background-color: var(--dark);
   }
-  body.dark-mode #cs-navigation .cs-logo {
-    /* makes it white */
-    filter: grayscale(1) brightness(1000%);
-  }
+
   body.dark-mode #cs-navigation .cs-line {
     background-color: #fff;
   }
@@ -719,16 +710,12 @@
     align-items: center;
     /* margin-right auto pushes everything away from it to the right */
     margin: 0 auto 0 0;
-    height: 4.0625rem;
     max-width: 21.875rem;
-    width: 18.4%;
+   
     padding: 0;
   }
   #cs-navigation .cs-logo img {
-    height: 100%;
-    width: 100%;
-    /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
-    object-fit: contain;
+
   }
   #cs-navigation .cs-ul {
     display: flex;
@@ -822,6 +809,7 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    position: sticky;
   }
   #int-hero h1 {
     position: relative;
@@ -909,7 +897,7 @@
     margin-bottom: 2.25rem;
     font-size: min(9vw, 3rem);
     line-height: 1.2083333333em;
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
     text-align: center;
   }
