@@ -14,6 +14,9 @@ eleventyNavigation:
     <link rel="stylesheet" href="/assets/css/local.css" />
     <link rel="stylesheet" href="/assets/css/critical.css" />
 
+    <link rel="stylesheet" href="/assets/aos/styles.css" />
+    <link rel="stylesheet" href="/assets/aos/aos.css" />
+
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script defer>
@@ -302,7 +305,7 @@ eleventyNavigation:
             <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-reverse.svg" alt="graphic" width="379" height="394" aria-hidden="true">
             <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg" alt="graphic" width="179" height="225" aria-hidden="true">
             <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg" alt="graphic" width="189" height="208" aria-hidden="true">
-            <div class="cs-info">
+            <div class="cs-info aos-item" data-aos="fade-up"  data-aos-easing="linear"  data-aos-once="false" data-aos-mirror="true">
                 <p class="cs-info-text">
                     <span class="cs-bold">Mia Bauer</span>
                     Michigan Licensed Esthetician
@@ -312,7 +315,7 @@ eleventyNavigation:
         </div>
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">Reset Refresh Relax</span>
+                <span class="cs-topper" >Reset Refresh Relax</span>
                 <h2 class="cs-title">Licensed Beauty, Cosmetic & Personal Care by Mia Glow</h2>
             </div>
             <p class="cs-text-large">
@@ -393,7 +396,7 @@ eleventyNavigation:
 
 
 
-<section id="logos-572">
+<section id="logos-572" data-aos="fade-up">
   <div class="cs-container">
       <!--Ideally you want to use svg's for the file path image, which is why these aren't wrapped in picture elements for different screen sizes-->
       <img class="cs-logo" src="/assets/images/logos/fur.png" alt="logo" height="55" loading="lazy" decoding="async">
@@ -634,7 +637,7 @@ eleventyNavigation:
                                 
 </STYLE>
 
-<section id="reviews-1529">
+<section id="reviews-1529" data-aos="fade-up">
   <div class="cs-container">
       <div class="cs-content">
           <span class="cs-topper">Testimonials</span>
@@ -702,7 +705,7 @@ eleventyNavigation:
 
                               
 
-<div class="cs-container" style="margin-top:0px;text-align: center;">
+<div class="cs-container" data-aos="fade-up" style="margin-top:0px;text-align: center;">
 
 <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F945695943738201%2F&show_text=false&width=267&t=0" width="267" height="476" style="margin: auto;" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
 <BR><BR>Emphasizing your natural beauty
@@ -834,7 +837,7 @@ eleventyNavigation:
 }
                               </STYLE>
 
-<section id="pricing-975">
+<section id="pricing-975" data-aos="fade-up">
   <div class="cs-container">
       <div class="cs-content">
           <span class="cs-topper">Licensed Beauty, Cosmetic & Personal Care</span>
@@ -1257,7 +1260,7 @@ eleventyNavigation:
                                 
 </STYLE>
 
-<section id="events-1928">
+<section id="events-1928" data-aos="fade-up">
   <div class="cs-container">
       <div class="cs-image-group">
           <picture class="cs-picture">
@@ -1522,7 +1525,7 @@ eleventyNavigation:
 }
                                 
 </STYLE>
-<section id="steps-1893">
+<section id="steps-1893" >
   <div class="cs-container">
       <div class="cs-image-group">
           <picture class="cs-picture">
@@ -1860,7 +1863,7 @@ eleventyNavigation:
                                 
 </STYLE>
 
-<section id="blog-1347">
+<section id="blog-1347" data-aos="fade-up">
   <div class="cs-container">
       <div class="cs-content">
           <span class="cs-topper">Glow Blog</span>
@@ -1986,6 +1989,11 @@ eleventyNavigation:
     {% include 'components/cta.html' %}
 
 
-
+    <script src="/assets/js/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+      });
+    </script>
 
 {% endblock %}
