@@ -37,7 +37,7 @@ eleventyNavigation:
   #gallery-1897 .cs-container {
     width: 100%;
     max-width: 80rem;
-    margin: auto;
+    margin: 100px auto;
     display: flex;
     flex-direction: column;
     /* 48px - 64px */
@@ -56,48 +56,9 @@ eleventyNavigation:
   }
   #gallery-1897 .cs-title {
     max-width: 25ch;
-    margin: 100px 0 0px;
+    margin: 0px 0 0px;
   }
-  #gallery-1897 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 1.5rem;
-    background-color: var(--secondary);
-    overflow: hidden;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
-  }
-  #gallery-1897 .cs-button-solid:before {
-    content: "";
-    width: 0;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #gallery-1897 .cs-button-solid:hover {
-    color: #fff;
-  }
-  #gallery-1897 .cs-button-solid:hover:before {
-    width: 100%;
-  }
+ 
   #gallery-1897 .cs-gallery {
     width: 100%;
     display: grid;
@@ -218,10 +179,10 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <div class="cs-flex">
-                <span class="cs-topper">Our Gallery</span>
+                <span class="cs-topper">Portfolio</span>
                 <h2 class="cs-title">Witness The Difference and Our Results</h2>
             </div>
-            <a class="cs-button-solid" href="">View All</a>
+            <a class="cs-button-solid" href="">Book an Appointment</a>
         </div>
         <!--Gallery-->
         <div class="cs-gallery">
@@ -305,8 +266,14 @@ eleventyNavigation:
     </div>
     <img class="cs-graphic cs-graphic-top" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-bg-1.svg" alt="graphic" width="517" height="469" loading="lazy" decoding="async" aria-hidden="true" >
     <img class="cs-graphic cs-graphic-bottom" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-bg-2.svg" alt="graphic" width="517" height="469" loading="lazy" decoding="async" aria-hidden="true" >
-</section>
-                                
 
+
+    {% include 'components/cta.html' %}
+
+</section>
+                     
+
+
+{% include 'components/testimonial.html' %}
 
 {% endblock %}
