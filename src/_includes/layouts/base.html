@@ -39,8 +39,10 @@
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
+   
         <script defer src="/assets/js/nav.js"></script>
+
+        <link type="text/css" href="/assets/aos/aos.css" />
 
         {% block head %}{% endblock %}
 
@@ -75,6 +77,18 @@
             {% block body %}{% endblock %}
         </main>
         {% include "components/footer.html" %}
+
+
+
+         
+        <script src="/assets/aos/aos.js"></script>
+
+        <script>
+          AOS.init({
+            easing: 'ease-in-out-sine',
+          });
+        </script>
+
 
     </body>
 </html>
