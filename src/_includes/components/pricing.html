@@ -1,0 +1,235 @@
+<STYLE>
+    /*-- -------------------------- -->
+  <---          Pricing           -->
+  <--- -------------------------- -*/
+  
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+  #pricing-975 {
+    padding: var(--sectionPadding);
+  }
+  #pricing-975 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #pricing-975 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #pricing-975 .cs-title {
+    margin: 0;
+  }
+  #pricing-975 .cs-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 1.25rem;
+    /* 28px - 40px */
+    row-gap: clamp(1.75rem, 3vw, 2.5rem);
+  }
+  #pricing-975 .cs-menu-group {
+    width: 100%;
+    max-width: 37.5rem;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 28px - 40px */
+    gap: clamp(1.75rem, 3vw, 2.5rem);
+  }
+  #pricing-975 .cs-menu-item {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  #pricing-975 .cs-h3 {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    position: relative;
+  }
+  #pricing-975 .cs-h3:before {
+    /* grey line */
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #e8e8e8;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0.8125rem;
+    left: 0;
+    z-index: -1;
+  }
+  #pricing-975 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 700;
+    max-width: 25rem;
+    padding-right: 0.5rem;
+    background-color: #fff;
+    color: var(--headerColor);
+  }
+  #pricing-975 .cs-price {
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    padding-left: 0.5rem;
+    background-color: #fff;
+    color: var(--headerColor);
+  }
+  #pricing-975 .cs-menu-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+  #pricing-975 .cs-menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #pricing-975 .cs-menu-group {
+    width: 100%;
+  }
+  }
+                                </STYLE>
+  
+  <section id="pricing-975" data-aos="fade-up">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Licensed Beauty, Cosmetic & Personal Care</span>
+            <h2 class="cs-title">Services</h2>
+            
+        </div>
+        <div class="cs-menu">
+            <!--Left Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Glow Facial</span>
+                        <span class="cs-price">$100</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        80 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Express Facial</span>
+                        <span class="cs-price">$80</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Dermaplane Facial</span>
+                        <span class="cs-price">$39</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        120 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lash Lift</span>
+                        <span class="cs-price">$90</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lash Tint</span>
+                        <span class="cs-price">$30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 min
+                    </p>
+                </li>
+            </ul>
+            <!--Right Menu-->
+            <ul class="cs-menu-group">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Lash lift & Tint</span>
+                        <span class="cs-price">$110</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        50 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brow Tint</span>
+                        <span class="cs-price">$30</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brow Tint & Sculpt</span>
+                        <span class="cs-price">$45</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        45 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brow Lamination</span>
+                        <span class="cs-price">$60</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        30 min
+                    </p>
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Brow Tint & Lamination</span>
+                        <span class="cs-price">$80</span>
+                    </h3>
+                    <p class="cs-menu-text">
+                        50 min
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+    
+    </section>
+  

@@ -11,88 +11,305 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/contact.css">
+    
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    LANDING                   -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+<style>
+    /*-- -------------------------- -->
+<---          Contact           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #contact-1879 {
+    padding: var(--sectionPadding);
+    background-color: #FAF6F2;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #contact-1879 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  #contact-1879 .cs-image-group {
+    font-size: min(2.24vw, 0.9em);
+    width: 39.5em;
+    height: 49.2em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #contact-1879 .cs-picture {
+    width: 34.9em;
+    height: 49.6em;
+    box-sizing: border-box;
+    background-color: #DAB692;
+    overflow: hidden;
+    border: 8px solid #DAB692;
+    border-radius: 16.25rem;
+    position: absolute;
+    z-index: -1;
+  }
+  #contact-1879 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #contact-1879 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #contact-1879 .cs-brown {
+    width: 10.3125em;
+    top: 0em;
+    right: 3em;
+    z-index: -2;
+  }
+  #contact-1879 .cs-peach {
+    width: 4.3125em;
+    top: 1em;
+    right: 10em;
+  }
+  #contact-1879 .cs-beige {
+    width: 30em;
+    top: 4em;
+    right: 10em;
+    z-index: -3;
+  }
+  #contact-1879 .cs-leaf {
+    width: 14em;
+    bottom: 0em;
+    left: 1em;
+    z-index: 1;
+  }
+  #contact-1879 .cs-dots {
+    width: 16.35em;
+    right: 1em;
+    bottom: 1em;
+    z-index: -2;
+  }
+  #contact-1879 .cs-lines {
+    width: 15.39em;
+    bottom: 0em;
+  }
+  #contact-1879 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #contact-1879 .cs-title {
+    /* 48px - 64px */
+    margin-bottom: clamp(3rem, 6.3vw, 4rem);
+  }
+  #contact-1879 .cs-form {
+    padding: 2rem 1rem;
+    background-color: #F6EDDF;
+    /* 32px - 40px */
+    border-radius: clamp(2rem, 4vw, 2.5rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    /* 16px - 20px */
+    row-gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #contact-1879 .cs-label {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    width: 100%;
+    color: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #contact-1879 .cs-input {
+    font-size: 1rem;
+    width: 100%;
+    height: 3.5rem;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    /* 11px - 16px top & bottom */
+    /* 16px - 24px left & right */
+    padding: clamp(0.6875rem, 1.5vw, 1rem) clamp(1rem, 2vw, 1.5rem);
+    background-color: #FAF6F2;
+    color: var(--headerColor);
+    border: none;
+    border-radius: 1rem;
+    transition: border-color 0.3s;
+  }
+  #contact-1879 .cs-input:hover {
+    border-color: var(--secondary);
+  }
+  #contact-1879 .cs-input:focus {
+    outline: 1px solid var(--secondary);
+  }
+  #contact-1879 .cs-input::placeholder {
+    color: #7d799c;
+    opacity: 0.6;
+  }
+  #contact-1879 .cs-textarea {
+    font-family: inherit;
+    /* 120px - 192px */
+    min-height: clamp(7.5rem, 28vw, 12rem);
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+  #contact-1879 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #contact-1879 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 6.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #contact-1879 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #contact-1879 .cs-submit {
+    line-height: 3.5rem;
+    min-width: 13.375rem;
+    border: none;
+    border-radius: 6.25rem;
+  }
+  #contact-1879 .cs-text {
+    font-size: 0.875rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #contact-1879 .cs-form {
+    /* 32px - 40px */
+    padding: clamp(2rem, 4vw, 2.5rem);
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #contact-1879 .cs-label {
+    width: 47.6%;
+  }
+  #contact-1879 .cs-message {
+    width: 100%;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-1879 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
+  }
+  #contact-1879 .cs-image-group {
+    font-size: min(0.95vw, 1em);
+    flex: none;
+  }
+  #contact-1879 .cs-form {
+    /* 514px - 738px */
+    width: clamp(32.125rem, 50vw, 46.125rem);
+  }
+}
+                                
+</style>
 
-    <!-- ============================================ -->
-    <!--                Contact Form                  -->
-    <!-- ============================================ -->
-
-    <section id="cs-contact">
-        <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-                <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br />
-                    {{client.address.lineTwo}},
-                    <br />
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
-
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
-            </div>
+<section id="contact-1879" >
+    <div class="cs-container" style="margin-top: 100px;">
+        <div class="cs-image-group">
+            <picture class="cs-picture" >
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/redmask.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/redmask.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/redmask.jpg" alt="dermatologist" width="324" height="467">
+            </picture>
+            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines.svg" alt="graphic" width="208" height="203" aria-hidden="true">
+            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg" alt="graphic" width="56" height="42" aria-hidden="true">
+            <img class="cs-graphic cs-beige" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-blob.svg" alt="graphic" width="379" height="394" aria-hidden="true">
+            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/leaf2.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+            <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-dots.svg" alt="graphic" width="187" height="104" aria-hidden="true">
+            <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-lines.svg" alt="graphic" width="189" height="208" aria-hidden="true">
         </div>
-    </section>
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Book an Appointment with Mia</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1879" name="Contact Form" method="post">
+                <label class="cs-label">
+                    First Name*
+                    <input class="cs-input" required type="text" id="name-1879" name="name" placeholder="First Name">
+                </label>
+                <label class="cs-label">
+                    Last Name*
+                    <input class="cs-input" required type="text" id="phone-1879" name="phone" placeholder="Last Name">
+                </label>
+                <label class="cs-label">
+                    Email*
+                    <input class="cs-input" required type="text" id="email-1879" name="email" placeholder="name@company.com">
+                </label>
+                <label class="cs-label">
+                    Phone*
+                    <input class="cs-input" required type="text" id="hear-1879" name="heat" placeholder="+1 (206) 987-6543">
+                </label>
+                <label class="cs-label cs-message">
+                    Message*
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1879" placeholder="Hello, I am interested..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Send Message</button>
+
+            </form>
+        </div>
+    </div>
+</section>
+                                
+
+
 {% endblock %}
