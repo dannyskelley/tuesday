@@ -10,7 +10,7 @@
 @media only screen and (min-width: 0em) {
     // Website colors
     :root {
-        --primary: #DAB692;
+        --primary: black;
         --primaryLight: #DAB692;
         --secondary: #505B2E;
         --secondaryLight: #001f3f;
@@ -76,7 +76,7 @@
         line-height: calc(50 / 16 * 1em);
         font-weight: bold;
         // Transition Properties
-        color: #000;
+        color: white;
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
@@ -322,16 +322,7 @@
     }
 
     #cs-navigation {
-        z-index: 10000;
-        position: fixed;
-        background-color: #fff;
-        width: 100%;
-        /* prevents padding from affecting height and width */
-        box-sizing: border-box;
-        padding: 0px;
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ 
 
         .cs-container {
             display: flex;
@@ -551,7 +542,6 @@
             content: "";
             opacity: 0;
             display: block;
-            background: rgba(0, 0, 0, 0.6);
             height: 100vh;
             width: 0%;
             transition: width 0.5s, opacity 0.3s;
@@ -837,16 +827,7 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #cs-navigation {
-        z-index: 10000;
-        position: fixed;
-        background-color: #fff;
-        width: 100%;
-        /* prevents padding from affecting height and width */
-        box-sizing: border-box;
-        padding: 0px;
-        /* remove the font family so the Stitch inherits the fonts from your global stylesheet */
-        font-family: "Roboto", "Arial", sans-serif;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+       
 
         .cs-container {
             display: flex;

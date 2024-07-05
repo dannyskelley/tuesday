@@ -1,0 +1,355 @@
+<!-- Usage Notes:
+We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards and the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. Here's the padding top you need to add to the section below this one and all the breakpoints to add them so this design will work with whatever comes after it:
+
+ON MOBILE (360px): add padding-top: (520/16rem); using LESS, or padding-top: calc(520 / 16 * 1rem); if you're using SCSS, or padding-top: 32.5rem; if you're just using vanilla CSS.
+
+ON TABLET (768px): Reset to padding-top: (280/16rem); using LESS, padding-top: calc(280 / 16 * 1rem) for SCSS or padding-top: 17.5rem; for CSS.
+
+Doing this will complete the overlapping "breaking the container" look.
+-->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+
+<Style>
+    /*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-1298 {
+        /* 150px - 350px */
+        padding: clamp(9rem, 30.95vw, 250px) 1rem;
+        padding-bottom: 0;
+        position: relative;
+        background-color: #EAEAEA;
+    }
+    #hero-1298 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    #hero-1298 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        max-width: 39.375rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    #hero-1298 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #hero-1298 .cs-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+        font-weight: 900;
+        line-height: 1.2em;
+        width: 100%;
+        max-width: 17ch;
+        margin: 0 0 1rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #hero-1298 .cs-text {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+        line-height: 1.5em;
+        width: 100%;
+        max-width: 43.75rem;
+        /* 28px - 40px */
+        margin: 0 0 clamp(1.75rem, 4vw, 2.5rem);
+        color: var(--bodyTextColor);
+    }
+  
+    #hero-1298 .cs-picture {
+        width: 100%;
+        /* 427px - 468px */
+        max-width: clamp(26.6875rem, 50vw, 29.25rem);
+        height: auto;
+        display: flex;
+        align-items: flex-end;
+        position: relative;
+        z-index: 7;
+    }
+    #hero-1298 .cs-picture img {
+        width: 100%;
+        height: auto;
+    }
+    #hero-1298 .cs-floater {
+        width: 68.125rem;
+        height: auto;
+        opacity: 0.1;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 4%;
+        z-index: 1;
+    }
+    #hero-1298 .cs-card-group {
+        width: 100%;
+        max-width: 80rem;
+        /* changes to -550px at tablet */
+        margin: 0 0 -28.125rem 0;
+        padding: 0 1rem;
+        /* prevents padding and border from affecting height and width */
+        background-color: #fff;
+        box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        position: relative;
+        z-index: 15;
+    }
+    #hero-1298 .cs-item {
+        text-align: left;
+        list-style: none;
+        width: 100%;
+        border-bottom: 1px solid #e8e8e8;
+        box-sizing: border-box;
+        grid-column: span 12;
+        transition:
+            background-color 0.3s,
+            border-color 0.3s;
+    }
+    #hero-1298 .cs-item:last-of-type {
+        border-bottom: none;
+    }
+    #hero-1298 .cs-link {
+        text-decoration: none;
+        /* 24px - 60px top & Bottom */
+        /* 24px - 16px top & Bottom */
+        padding: clamp(1.5rem, 5.3vw, 3.75rem) clamp(1rem, 2.7vw, 2.5rem);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #hero-1298 .cs-icon {
+        /* 32px - 40px */
+        height: clamp(2rem, 4vw, 2.5rem);
+        width: auto;
+        margin: 0 0 1rem 0;
+    }
+    #hero-1298 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        font-weight: 700;
+        text-align: inherit;
+        line-height: 1.2em;
+        margin: 0 0 0.75rem 0;
+        color: var(--headerColor);
+        transition: color 0.3s;
+    }
+    #hero-1298 .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        text-align: inherit;
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        transition:
+            color 0.3s,
+            opacity 0.3s;
+    }
+    #hero-1298 .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    #hero-1298 .cs-background:before {
+        /* background color overlay */
+        content: "";
+        position: absolute;
+        display: block;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        opacity: 0.84;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #hero-1298 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero-1298 {
+        padding-bottom: 9.375rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5.625rem;
+    }
+    #hero-1298 .cs-container {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+    #hero-1298 .cs-content {
+        text-align: left;
+        width: 60%;
+        align-items: flex-start;
+    }
+    #hero-1298 .cs-picture {
+        width: 43%;
+        position: absolute;
+    
+        right: 0rem;
+    }
+    #hero-1298 .cs-floater {
+        display: block;
+    }
+    #hero-1298 .cs-card-group {
+        margin: 0 0 -21.875rem 0;
+        padding: 0;
+    }
+    #hero-1298 .cs-item {
+        grid-column: span 4;
+        border-bottom: none;
+        border-right: 1px solid #e8e8e8;
+    }
+    #hero-1298 .cs-item:nth-of-type(3) {
+        border-bottom: none;
+        border-right: none;
+    }
+    #hero-1298 .cs-background {
+        overflow: hidden;
+    }
+    #hero-1298 .cs-background:before {
+        opacity: 1;
+        background: linear-gradient(
+            89deg,
+            rgba(255, 255, 255, 0.96) 47.66%,
+            rgba(255, 255, 255, 0) 71.43%
+        );
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-1298 .cs-item:hover {
+        background-color: #1a1a1a;
+        border-color: #1a1a1a;
+    }
+    #hero-1298 .cs-item:hover .cs-h3,
+    #hero-1298 .cs-item:hover .cs-item-text {
+        color: var(--bodyTextColorWhite);
+    }
+    #hero-1298 .cs-item:hover .cs-item-text {
+        opacity: 0.8;
+    }
+    #hero-1298 .cs-floater {
+        right: clamp(45%, 50vw, 55%);
+        top: auto;
+        bottom: 0;
+    }
+}
+/* Large Desktop - 1600px (Parallax Effect) */
+@media only screen and (min-width: 100rem) {
+    #hero-1298 .cs-background {
+        background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/buildings.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    #hero-1298 .cs-background img {
+        display: none;
+    }
+}
+
+                                
+</Style>
+
+<section id="hero-1298">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Experience the difference</span>
+            <h1 class="cs-title">Client 1st Real Estate</h1>
+            <p class="cs-text">
+                We approach every transaction with honesty, patience, and a fierce commitment to fighting for my clients. Top 5% agent in the tri-county area & a premier agent with Zillow and Realtor.com.
+            </p>
+            <a href="" class="cs-button-solid">Free Consultation</a>
+        </div>
+        <!--To make your own background crops of people use https://www.remove.bg/-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="/assets/images/susie1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/susie1.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/susie1.jpg" alt="accountant" width="468" height="658">
+        </picture>
+    </div>
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Creative Solutions</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Team</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Diverse Approach</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 1023px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/buildings-t.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/buildings.jpg">
+        <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/buildings.jpg" alt="buildings" width="1280" height="568">
+    </picture>
+</section>
+                                
