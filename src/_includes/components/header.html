@@ -9,6 +9,7 @@
 <--- -------------------------- -*/
 
 /* Mobile - 1023px */
+* {transition: all ease .2s;}
 button {background-color: transparent; border: 0px;}
 @media only screen and (max-width: 63.9375rem) {
 body {
@@ -32,15 +33,15 @@ body.scroll #cs-navigation {
   max-width: 100%;
   height: 5rem;
   top: 0;
+  transition: all ease .3s;
 }
 body.scroll #cs-navigation .cs-logo img {
   height: 30px;
-  transition: height ease .3ms;
+  transition: all ease .3ms;
 }
 
 body.scroll #cs-navigation:before {
   border-radius: 0;
-  transition: border-radius ease  .2ms;
 }
 body.scroll #cs-navigation .cs-ul-wrapper {
   top: 100%;
@@ -64,7 +65,6 @@ body.cs-open:before {
   left: 50%;
   z-index: 10000;
   transform: translateX(-50%);
-  transition: top 0.3s, border-radius 0.3s, width 0.3s, max-width 0.3s;
 }
 #cs-navigation:before {
   /* background color */
@@ -80,7 +80,7 @@ body.cs-open:before {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  transition: transform 0.2s, border-radius 0.3s ease-in-out;
+ 
 }
 #cs-navigation.cs-active:before {
   transform: translateX(-50%) scale(1.03);
@@ -121,7 +121,7 @@ body.cs-open:before {
   height: 100%;
   /* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
   object-fit: contain;
-  transition: all ease .3s;
+  
 }
 #cs-navigation .cs-toggle {
   width: 3.5rem;
@@ -228,7 +228,6 @@ body.cs-open:before {
   z-index: -1;
   transform: scaleY(0);
   transform-origin: top;
-  transition: transform .4s, opacity .3s;
 }
 #cs-navigation .cs-ul {
   margin: 0;
