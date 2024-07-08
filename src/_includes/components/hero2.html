@@ -28,7 +28,7 @@
   }
   #hero-1951 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    margin-top: 70px;
     width: 100%;
     max-width: 32.625rem;
     display: flex;
@@ -43,43 +43,7 @@
   #hero-1951 .cs-text {
     margin-bottom: 1.25rem;
   }
-  #hero-1951 .cs-button-solid {
-    font-size: 1rem;
-    font-weight: 700;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 clamp(2rem, 4vw, 3rem);
-    background-color: var(--primary);
-    overflow: hidden;
-    color: #fff;
-    border: none;
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-1951 .cs-button-solid:before {
-    content: "";
-    width: 0%;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    border-radius: 0.25rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #hero-1951 .cs-button-solid:hover:before {
-    width: 100%;
-  }
+  
   #hero-1951 .cs-reviews {
     text-align: center;
     margin-top: clamp(2.5rem, 5vw, 5rem);
@@ -220,11 +184,11 @@
 <section id="hero-1951">
     <div class="cs-container">
         <div class="cs-content">
-            <h2 class="cs-title">Detroit's Premier Client 1<small>st</small> Realtor</h2>
+            <h2 class="cs-title" data-aos="fade-down">Detroit's Premier Client 1<small>st</small> Realtor</h2>
             <p class="cs-text">
-                Dedicated to my clients, and my expertise and commitment to their best interests have earned me recognition in the industry. Top 5% real estate agent in the tri-county area & premier agent with Zillow and Realtor.com. 
+                Dedicated to my clients & their best interests. Top 5% real estate agent in the tri-county area & premier agent with Zillow and Realtor.com. 
             </p>
-            <a class="cs-button-solid" href="">Our Menu</a>
+            <a class="cs-button-solid" href="/about">About Susie</a>
             <div class="cs-reviews">
                 
                 <div class="cs-flex">
