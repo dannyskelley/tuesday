@@ -28,7 +28,7 @@
   }
   #hero-1951 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    margin-top: 70px;
+    margin-top: 0px;
     width: 100%;
     max-width: 32.625rem;
     display: flex;
@@ -101,6 +101,7 @@
   }
   #hero-1951 .cs-image-group {
     font-size: min(2.3vw, 1rem);
+    margin-top: 30px;
     width: 39.375em;
     height: 43.125em;
     position: relative;
@@ -183,6 +184,19 @@
 
 <section id="hero-1951">
     <div class="cs-container">
+      <div class="cs-image-group">
+        <picture class="cs-picture cs-left">
+            <source media="(max-width: 600px)" srcset="/assets/images/home1.png">
+            <source media="(min-width: 601px)" srcset="/assets/images/home1.png">
+            <img decoding="async" src="/assets/images/home1.png" alt="pancake" width="305" height="600" aria-hidden="true">
+        </picture>
+        <!--<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/highlight.svg" alt="icon" width="169" height="100" loading="lazy" decoding="async">-->
+        <picture class="cs-picture cs-right">
+            <source media="(max-width: 600px)" srcset="/assets/images/susie1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/susie1.jpg">
+            <img decoding="async" src="/assets/images/susie1.jpg" alt="sushi" width="305" height="600" aria-hidden="true">
+        </picture>
+    </div>
         <div class="cs-content">
             <h2 class="cs-title">Detroit's Premier Client 1<small>st</small> Realtor</h2>
             <p class="cs-text">
@@ -197,19 +211,7 @@
                 </div>
             </div>
         </div>
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-left">
-                <source media="(max-width: 600px)" srcset="/assets/images/home1.png">
-                <source media="(min-width: 601px)" srcset="/assets/images/home1.png">
-                <img decoding="async" src="/assets/images/home1.png" alt="pancake" width="305" height="600" aria-hidden="true">
-            </picture>
-            <!--<img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/highlight.svg" alt="icon" width="169" height="100" loading="lazy" decoding="async">-->
-            <picture class="cs-picture cs-right">
-                <source media="(max-width: 600px)" srcset="/assets/images/susie1.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/susie1.jpg">
-                <img decoding="async" src="/assets/images/susie1.jpg" alt="sushi" width="305" height="600" aria-hidden="true">
-            </picture>
-        </div>
+
     </div>
 
 
