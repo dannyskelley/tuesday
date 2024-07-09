@@ -5,62 +5,39 @@
 <footer id="footer">
     <div class="container">
         <div class="left-section">
-            <a class="logo" href="/"><img style="filter: invert(100%);" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="264" height="78"></a>
-            <p>
-                Michigan Licensed Beauty, Cosmetic & Personal Care
-            </p>
+            <a class="logo" href="/"><img style="filter: invert(100%); margin: auto; display: block;" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="264" height="78"></a>
+            <div class="cs-social" style="margin: 20px 0px 50px;">
+                <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                    <img style="width: 30px; margin-right: 20px;" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook">
+                </a>
+
+                <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                    <img style="width: 30px; margin-right: 20px;"  class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram">
+                </a>
+
+                <a class="cs-social-link" aria-label="visit google profile" href="">
+                    <img style="width: 30px;"  class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google">
+                </a>
+            </div>
         </div>
         <div class="right-section">
             <div class="lists">
-                <ul>
-             
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
-                    <li>
-                        <a href="/about">Services</a>
-                    </li>
-                    <li>
-                        <a href="/projects">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="/testimonials">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="/blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <h2>Our Services</h2>
-                    </li>
-                    <li>Facicials</li>
-                    <li>Dermaplane </li>
-                    <li>Cupping</li>
-                    <li>Waxing</li>
-                    <li>Lash Lift/Tint</li>
-                    <li>Brow Lamination/Tint</li>
-                </ul>
+                
                 <ul>
                     <li>
                         <h2>Contact Us</h2>
                     </li>
-                    <li>
-                        
-                            36650 Green Street<BR>New Baltimore, MI<BR>48047
-                        
-                    </li>
-                    <li>
+
+                    <li style="padding-bottom: 30px;">
                         <a href="tel:{{client.phoneForTel}}">
-                            T:
+                            Call or Text:
                             {{client.phoneFormatted}}
                         </a>
                     </li>
+
+   
                     <li>
-                        <a href="mailto:{{client.email}}">Click to Email</a>
+                        <a href="mailto:{{client.email}}">Email</a>
                     </li>
                 </ul>
 
@@ -68,11 +45,16 @@
             </div>
         </div>
     </div>
-
+    <STYLE>
+        .credit {color:white; text-align: left;}
+        .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
+    .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
+    .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
+    .back2top {font-size:2px}
+    </STYLE>
     <div class="credit">
-        <span>Website by</span>
-        <a href="https://designgandalf.com/" target="_blank" rel="noopener">Design Gandalf</a>
-        <span class="copyright">
-            Copyright {% year %} - Present</span>
+        <span>Website Designed & Hand Coded by</span>
+       
+        <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
     </div>
 </footer>
