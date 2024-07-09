@@ -1,48 +1,149 @@
-<STYLE>
-    .cs-container {text-align: center;}
-                .cs-button-solid {
-    font-size: 1.5rem;
-    font-weight: 300;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-align: center;
-    text-decoration: none;
-    min-width: 9.375rem;
-    margin: 0;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-    padding: 0 2rem;
-    background-color: var(--secondary);
-    overflow: hidden;
-    color: #fff;
-    border: none;
-    border-radius: 9999px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+
+<style>
+  /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-262 {
+    padding: var(--sectionPadding);
   }
-   .cs-button-solid:before {
-    content: "";
-    width: 0;
+  #cta-262 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    /* 32px - 88px top & bottom */
+    /* 24px - 88px left & right */
+    padding: clamp(2em, 6.3vw, 5.5em) clamp(1.5em, 5.7vw, 5.5em);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    /* clips the corners for the border radius to show */
+    overflow: hidden;
+    z-index: 1;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+  }
+  #cta-262 .cs-background {
+    width: 100%;
     height: 100%;
-    background: #000;
-    opacity: 1;
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     z-index: -1;
-    transition: width 0.3s;
   }
-   .cs-button-solid:hover {
-    color: #fff;
-  }
-   .cs-button-solid:hover:before {
+  #cta-262 .cs-background:before {
+    /* black overlay */
+    content: "";
     width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
-            </STYLE>
-</STYLE>
+  #cta-262 .cs-background:after {
+    /* brown overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primaryLight);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #cta-262 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta-262 .cs-left-section {
+    max-width: 27.125rem;
+  }
+  #cta-262 .cs-title {
+    color: var(--bodyTextColorWhite);
+    margin-bottom: clamp(1.25rem, 4.2vw, 3rem);
+  }
+  
+  #cta-262 .cs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 12px - 20px */
+    gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  }
+  #cta-262 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.4vw, 1.5625rem);
+    font-weight: bold;
+    color: var(--primaryLight);
+    display: block;
+  }
+  #cta-262 .cs-p {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-262 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #cta-262 .cs-content {
+    align-items: flex-end;
+    text-align: right;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+}
+                                
+</style>
 
-<div style="margin: 0px 0px 100px;" class="cs-container">
-    <a href="" class="cs-button-solid">Book an Appointment</a>
-</div>
+<section id="cta-262">
+  <div class="cs-container">
+      <div class="cs-left-section">
+          <h2 class="cs-title">Discover a Realtor Who Puts Your Goals First</h2>
+          <a style="background-color: #fff; color: black;" href="" class="cs-button-solid">Get Started</a>
+      </div>
+      <div class="cs-content">
+          <span class="cs-header">Available Hours</span>
+          <p class="cs-p"> 
+              Tuesday, Thursday, Friday: 9am-6pm<br>
+              ​(closed for lunch 12pm-2pm)
+          </p>
+          <p class="cs-p">
+              Appointments Preferred, Walk-Ins Welcome.<br>
+              Saturdays by Appointment Only.
+          </p>
+      </div>
+      <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth-m.jpg">
+          <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/CTA/cloth.jpg" alt="appliance" width="275" height="132">
+      </picture>
+  </div>
+</section>
+                              
