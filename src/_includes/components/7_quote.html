@@ -1,0 +1,188 @@
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+<STYLE>
+    /*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-566 {
+        padding: var(--sectionPadding);
+    }
+    #reviews-566 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #reviews-566 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 32.625rem;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #reviews-566 .cs-card-group {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* 16px - 20px */
+        gap: clamp(1rem, 2.5vw, 1.15rem);
+    }
+    #reviews-566 .cs-item {
+        list-style: none;
+        width: 100%;
+        max-width: 39.375rem;
+        /* 32px - 60px top & bottom */
+        /* 16px - 48px left & right */
+        padding: clamp(2rem, 6.15vw, 3.75rem) clamp(1rem, 4.15vw, 3rem);
+        background-color: #f1f1f4;
+        /* prevents padding from adding to height and width */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        position: relative;
+    }
+    #reviews-566 .cs-stars {
+        /* 169px - 189px */
+        width: clamp(10.5625rem, 20vw, 11.8125rem);
+        height: auto;
+        /* 20px - 24px */
+        margin-bottom: clamp(1.25rem, 3vw, 1.5rem);
+        display: block;
+    }
+    #reviews-566 .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        /* 40px - 64px */
+        margin-bottom: clamp(2.5rem, 8vw, 4rem);
+        color: var(--bodyTextColor);
+    }
+    #reviews-566 .cs-flex-group {
+        /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+        margin-top: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    #reviews-566 .cs-profile {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        /* clips image corners to make circle */
+        overflow: hidden;
+        position: relative;
+        display: block;
+    }
+    #reviews-566 .cs-profile img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* makes the image behave like a background image */
+        object-fit: cover;
+    }
+    #reviews-566 .cs-name {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.5em;
+        font-weight: 700;
+        margin: 0 0 0.5rem 0;
+        color: var(--headerColor);
+        display: block;
+    }
+    #reviews-566 .cs-job {
+        /* 13px - 16px */
+        font-size: clamp(0.8125rem, 1.6vw, 1rem);
+        line-height: 1.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+        margin: 0;
+        color: var(--bodyTextColor);
+        display: block;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48em) {
+    #reviews-566 .cs-container {
+        max-width: 80rem;
+    }
+    #reviews-566 .cs-card-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+
+                                
+</STYLE>
+<section id="reviews-566">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Trusted Zillow and Realtor.com Premier agent</span>
+            <h2 class="cs-title">What Our Clients Say</h2>
+            <p class="cs-text">
+                Real estate isn't just my profession; it's my passion. I approach each transaction with integrity, patience, and a relentless drive to advocate for my clients' best interests.            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                    Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo.
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Vera Robinson
+                        <span class="cs-job">Psychologist</span>
+                    </span>
+                </div>
+            </li>
+            <li class="cs-item">
+                <!--Blue Quote-->
+                <img class="cs-stars" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Reviews/stars3.svg" decoding="async" alt="quote icon" width="189" height="24">
+                <p class="cs-item-text">
+                    Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                </p>
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true">
+                    </picture>
+                    <span class="cs-name">
+                        Benjamin Norris
+                        <span class="cs-job">Business analyst</span>
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </div>
+<DIV style="text-align: center;">
+    {% include 'components/cta_button.html' %}
+</DIV>
+</section>
+                                
