@@ -124,6 +124,7 @@
         font-family: "Roboto", Arial, sans-serif;
         font-size: 100%;
         color: var(--bodyTextColor);
+        scroll-behavior: smooth;
     }
 
 
@@ -1264,8 +1265,10 @@
                             line-height: calc(21 / 18 * 1em);
                             color: #fff;
                             transition: color 0.3s;
+                            transition:all ease .5s;
                             &:hover {
-                                color: var(--primary);
+                                text-decoration: underline;
+                                transition:all ease .5s;
                             }
                         }
                     }

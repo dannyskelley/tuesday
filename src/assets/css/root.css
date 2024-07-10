@@ -107,6 +107,7 @@
     font-family: "Roboto", Arial, sans-serif;
     font-size: 100%;
     color: var(--bodyTextColor);
+    scroll-behavior: smooth;
   }
   *,
   *:before,
@@ -1054,9 +1055,11 @@
     line-height: 1.1666666667em;
     color: #fff;
     transition: color 0.3s;
+    transition: all ease 0.5s;
   }
   #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
+    text-decoration: underline;
+    transition: all ease 0.5s;
   }
   #footer .right-section .lists ul h2 {
     position: relative;
