@@ -117,8 +117,7 @@ eleventyNavigation:
     padding: clamp(1.25rem, 4.5vw, 2.5rem);
     /* prevents padding from affecting width and height */
     box-sizing: border-box;
-    border: 1px solid #dad9e3;
-    border-radius: 1rem;
+  
   }
   #cs-contact-490 .cs-label {
     /* 14px - 16px */
@@ -190,8 +189,9 @@ eleventyNavigation:
     <div class="cs-container">
         <!-- Contact Info -->
         <div class="cs-content">
+           
+            <h2 class="cs-title" style="margin-top:100px;">Get in touch</h2>
             <span class="cs-topper" style="margin-top: 50px;">Let me know how I can assist you.</span>
-            <h2 class="cs-title">Get in touch</h2>
             <!--<p class="cs-text">
                 Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>-->
@@ -222,22 +222,22 @@ eleventyNavigation:
             </div>
         </div>
         <!-- Form -->
-        <form id="cs-form-490" name="Contact Form" method="post">
-            <label class="cs-label">
-                Name
-                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+        <form id="cs-form-490" name="Contact Form" method="post" style="margin-top:70px;">
+            <label class="cs-label" style="margin-bottom: 60px;">
+              Name
+                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="">
             </label>
-            <label class="cs-label">
+            <label class="cs-label" style="margin-bottom: 60px;">
                 Email
-                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="">
             </label>
-            <label class="cs-label">
+            <label class="cs-label" style="margin-bottom: 60px;">
                 Phone
-                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="">
             </label>
-            <label class="cs-label -label-message">
+            <label class="cs-label -label-message" style="margin-bottom: 60px;">
                 How can I help?
-                <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
+                <textarea class="cs-input" required name="Message" id="message-490" placeholder=""></textarea>
             </label>
             <button class="cs-button-solid" type="submit">Submit Message Now</button>
         </form>
