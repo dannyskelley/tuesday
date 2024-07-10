@@ -50,6 +50,9 @@
         font-weight: 600;
         color: var(--headerColor);
         text-align: inherit;
+        font-family: "Syncopate", Arial, sans-serif;
+        text-transform: uppercase;
+        
     }
 
     .cs-text {
@@ -123,6 +126,9 @@
         color: var(--bodyTextColor);
     }
 
+
+
+
     *,
     *:before,
     *:after {
@@ -180,6 +186,18 @@
         opacity: 0;
     }
     // Grab your fonts to locally host from https://google-webfonts-helper.herokuapp.com/fonts
+
+    @font-face {
+        font-style: normal;
+        font-family: "Syncopate";
+        font-weight: 100;
+        font-display: swap;
+        src: local(""),
+            url("/assets/fonts/syncopate-v21-latin-regular.woff2") format("woff2"),
+            /* Chrome 26+, Opera 23+, Firefox 39+ */
+                url("/assets/fonts/syncopate-v21-latin-regular.woff2")
+                format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
 
     /* roboto-regular - latin */
     @font-face {
