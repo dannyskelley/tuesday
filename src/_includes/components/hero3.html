@@ -1,0 +1,225 @@
+<!-- ============================================ -->
+<!--                     Hero                     -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-1954 {
+    /* 100px - 120px */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1954 .cs-container {
+    width: 100%;
+    max-width: 107.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(1.5rem, 3vw, 3.75rem);
+  }
+  #hero-1954 .cs-content {
+    text-align: center;
+    width: 100%;
+    padding: 3.75rem 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    /* 100px - 200px */
+    gap: clamp(6.25rem, 12.5vw, 12.5rem);
+    position: relative;
+    z-index: 2;
+  }
+  #hero-1954 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.438rem, 5vw, 5.813rem);
+    max-width: 56.125rem;
+    color: var(--bodyTextColorWhite);
+  }
+  #hero-1954 .cs-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.75rem;
+  }
+  #hero-1954 .cs-title {
+    margin: 0;
+  }
+  #hero-1954 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 50.875rem;
+    color: var(--bodyTextColorWhite);
+  }
+ 
+  #hero-1954 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-top: clamp(1.5rem, 3vw, 3.75rem);
+    border-top: #E8E8E8 1px solid;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 1fr);
+    /* 24px - 70px */
+    gap: clamp(1.5rem, 3vw, 4.375rem);
+  }
+  #hero-1954 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+   
+    grid-column: span 12;
+    position: relative;
+    z-index: 1;
+    transition: border-color 0.3s;
+  }
+  #hero-1954 .cs-item:hover {
+    border-color: var(--primary);
+  }
+  #hero-1954 .cs-item:hover .cs-h3 {
+    color: var(--primary);
+  }
+  #hero-1954 .cs-item:hover .cs-icon {
+    transform: rotateY(360deg);
+  }
+  #hero-1954 .cs-link {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(0.75rem, 1.5vw, 1rem);
+  }
+  #hero-1954 .cs-icon-picture {
+    width: 100%;
+    height: 5rem;
+    overflow: hidden;
+   
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-1954 .cs-icon-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+  }
+  #hero-1954 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    margin: 0;
+    color: #1a1a1a;
+    transition: color 0.3s;
+  }
+  #hero-1954 .cs-picture {
+    width: 100%;
+    height: 100%;
+    
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-1954 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #hero-1954 .cs-picture:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Inbetween - 570px */
+@media only screen and (min-width: 35.625rem) {
+  #hero-1954 .cs-item {
+    grid-column: span 6;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #hero-1954 .cs-content {
+    text-align: left;
+    /* 578px - 778px */
+    min-height: clamp(578px, 60vw, 778px);
+  }
+  #hero-1954 .cs-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 7.5rem;
+  }
+  #hero-1954 .cs-item {
+    grid-column: span 3;
+  }
+}
+/* Large Desktop 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #hero-1954 .cs-content {
+    padding: 3.75rem 8.75rem;
+  }
+  #hero-1954 .cs-item:hover .cs-icon-picture img {
+    transform: scale(1.1);
+  }
+  #hero-1954 .cs-link {
+    flex-direction: row;
+  }
+  #hero-1954 .cs-icon-picture {
+    width: 13.75rem;
+  }
+}
+                                
+</style>
+
+<section id="hero-1954">
+    <div class="cs-container">
+       
+        <div class="cs-content">
+            <h2 class="cs-title" style="margin-top: 100px; margin-bottom: 0px">Detroit Luxury<BR> Real Estate</h2>
+                
+            <div class="cs-flex">
+                
+                              <a href="/#susie" class="cs-button-solid">Learn More</a>
+            </div>
+            <picture class="cs-picture">
+                <source media="(min-width: 601px)" srcset="/assets/images/homenew2.jpg">
+                <source media="(max-width: 600px)" srcset="/assets/images/homenew2.jpg">
+                <img aria-hidden="true" decoding="async" src="/assets/images/homenew2.jpg" alt="charcuterie" width="1280" height="510">
+            </picture>
+        </div>
+       
+    </div>
+</section>
+                                
