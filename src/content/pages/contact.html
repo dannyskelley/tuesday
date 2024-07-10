@@ -89,7 +89,7 @@ eleventyNavigation:
     /* 32px - 52px */
     width: clamp(2rem, 4vw, 3.25rem);
     height: clamp(2rem, 4vw, 3.25rem);
-    background-color: #4e4b66;
+    background-color: #000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -99,7 +99,7 @@ eleventyNavigation:
     transition: transform 0.3s, background-color 0.3s;
   }
   #cs-contact-490 .cs-social-link:hover {
-    background-color: var(--primary);
+    background-color: #666;
     transform: translateY(-0.1875rem);
   }
   #cs-contact-490 .cs-social-img {
@@ -165,45 +165,7 @@ eleventyNavigation:
     padding-top: 1.25rem;
     min-height: 7.5rem;
   }
-  #cs-contact-490 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875em, 5.5vw, 3.5em);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: auto;
-    width: 100%;
-    color: #fff;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    border: none;
-    border-radius: 0.5rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #cs-contact-490 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.5rem;
-    transition: width 0.3s;
-  }
-  #cs-contact-490 .cs-button-solid:hover {
-    cursor: pointer;
-  }
-  #cs-contact-490 .cs-button-solid:hover:before {
-    width: 100%;
-  }
+ 
 }
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75rem) {
@@ -234,17 +196,17 @@ eleventyNavigation:
                 Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>-->
             
-            <!--Address-->
+            <!--Address
             <span class="cs-header">Address</span>
             <a href="" class="cs-link">
                 PO Box 15252 Mill Creek, <br>Washington, USA 98082
-            </a>
+            </a>-->
             <!--Email-->
             <span class="cs-header">Email</span>
-            <a href="mailtp:info@iabuyer.com" class="cs-link">info@iabuyer.com</a>
+            <a href="mailtp:info@iabuyer.com" class="cs-link">Email Us</a>
             <!--Phone-->
             <span class="cs-header">Phone</span>
-            <a href="tel:425-686-9566" class="cs-link">(425) 686-9566</a>
+            <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
 
             <!--Social Buttons-->
             <div class="cs-social">
@@ -273,12 +235,8 @@ eleventyNavigation:
                 Phone
                 <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
             </label>
-            <label class="cs-label">
-                How Did You Find Us
-                <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
-            </label>
             <label class="cs-label -label-message">
-                Message
+                How can I help?
                 <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
             </label>
             <button class="cs-button-solid" type="submit">Submit Message Now</button>
