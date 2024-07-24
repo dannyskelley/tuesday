@@ -69,7 +69,7 @@ body.cs-open:before {
 #cs-navigation:before {
   /* background color */
   content: '';
-  background: darkgreen;
+  background: var(--nav);
   width: 100%;
   height: 100%;
 
@@ -189,7 +189,7 @@ body.cs-open:before {
   width: 100%;
   height: 2px;
   border-radius: 2px;
-  background-color: #000;
+  background-color: white;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -408,7 +408,7 @@ body.cs-open:before {
   opacity: 0;
   visibility: hidden;
 
-  border-bottom: 5px solid var(--primary);
+  border-bottom: 5px solid white;
   /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the cs-drop-li so they don't have weird scattered animations */
   position: absolute;
   top: 100%;
@@ -504,8 +504,7 @@ body.scroll #cs-navigation .cs-logo img {
   padding: clamp(0.75rem, 2vw, 1.5rem) 0;
   /* prevents padding from affecting height and width */
   box-sizing: border-box;
-  
-  background: darkgreen;
+  background-color:var(--nav);
   
   display: flex;
   align-items: center;
@@ -560,7 +559,7 @@ body.scroll #cs-navigation .cs-logo img {
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
-  color: var(--headerColor);
+  color:white;
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -569,6 +568,7 @@ body.scroll #cs-navigation .cs-logo img {
               color 0.3s;
 }
 #cs-navigation .cs-phone-icon {
+  filter: invert(100%);
   width: 1.5rem;
   height: auto;
   display: block;
@@ -646,16 +646,17 @@ body.scroll #cs-navigation .cs-logo img {
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
-  color: var(--headerColor);
+  color: white;
   display: block;
   position: relative;
   transition: color .3s;
 }
 #cs-navigation .cs-li-link:hover {
-  color: var(--primary);
+  color: yellow;
 }
 #cs-navigation .cs-li-link.cs-active {
-  color: var(--primary);
+  color:white;
+  font-weight: bold;
 }
 
 }
@@ -673,7 +674,7 @@ body.scroll #cs-navigation .cs-logo img {
       <!--Nav Logo-->
       <!--Logo is turned white in the css with a filter on dark mode-->
       <a href="/" class="cs-logo" aria-label="back to home">
-          <img src="/assets/images/logo_new.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+          <img style="filter: invert(100%);" src="/assets/images/logo.svg" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
       </a>
       <!--Navigation List-->
       <nav class="cs-nav" role="navigation">

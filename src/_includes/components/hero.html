@@ -4,199 +4,350 @@
 
 <style>
     /*-- -------------------------- -->
-<---            Hero            -->
+<---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-855 {
-    /* 116px - 164px top */
-    /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
-    background-color: #f7f7f7;
-    /* clips the svg wave from overflowing */
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-855 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  #hero-855 .cs-content {
-    max-width: 39.375rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #hero-855 .cs-topper {
-    font-size: 1rem;
-    line-height: 1.2em;
-    text-transform: uppercase;
-    text-align: inherit;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
-    display: block;
-  }
-  #hero-855 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
-    font-weight: 900;
-    line-height: 1.2em;
-    text-align: center;
-    /* 23 characters including spaces wide */
-    max-width: 23ch;
-    margin: 0 0 1rem 0;
-    color: var(--headerColor);
-    position: relative;
-  }
-  #hero-855 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
-    line-height: 1.5em;
-    text-align: center;
-    width: 100%;
-    max-width: 33.1875rem;
-    /* 28px - 40px */
-    margin: 0 0 clamp(1.75rem, 3.92vw, 2.5rem) 0;
-    color: var(--bodyTextColor);
-  }
-  #hero-855 .cs-button-solid {
-    font-size: 1rem;
-    /* 46px - 56px */
-    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-    text-decoration: none;
-    font-weight: 700;
-    text-align: center;
-    margin: 0;
-    color: #fff;
-    min-width: 9.375rem;
-    padding: 0 1.5rem;
-    background-color: var(--primary);
-    border-radius: 0.25rem;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    /* prevents padding from adding to the width */
-    box-sizing: border-box;
-  }
-  #hero-855 .cs-button-solid:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0%;
-    background: #000;
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    border-radius: 0.25rem;
-    transition: width 0.3s;
-  }
-  #hero-855 .cs-button-solid:hover:before {
-    width: 100%;
-  }
-  #hero-855 .cs-picture {
-    width: 100%;
-    max-width: 35.625rem;
-    /* 400px - 712px */
-    height: clamp(25rem, 95vw, 44.5rem);
-    /* 100px - 200px */
-    border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
-    box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.16);
-    /* clips the img tag corners */
-    overflow: hidden;
-    display: block;
-    position: relative;
-  }
-  #hero-855 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
-    /* ensures the top of the images is at the top of the container, no heads getting cut off */
-    object-position: top;
-  }
-  #hero-855 .cs-wave {
-    /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
-    width: 320%;
-    height: auto;
-    display: block;
-    position: absolute;
-    left: 50%;
-    bottom: -1px;
-    transform: translateX(-50%);
-    z-index: -1;
-  }
+    #hero-358 {
+        /* Centers button */
+        text-align: center;
+        /* 150px - 350px */
+        padding: clamp(9rem, 25.95vw, 11.875rem) 1rem;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+        /* prevents overflow from the lines extending past the screen width */
+        overflow: hidden;
+    }
+    @keyframes floatAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-1em);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes floatAnimation2 {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-1em);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    #hero-358 .cs-background {
+        /* Background Image */
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+    #hero-358 .cs-background:before {
+        /* White Color Overlay */
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.85;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        /* prevents the cursor from interacting with it */
+        pointer-events: none;
+    }
+    #hero-358 .cs-background img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes image act like a background-image */
+        object-fit: cover;
+        /* places the top of the image at the top of the parent */
+        object-position: top;
+    }
+    #hero-358 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 7vw, 4rem);
+    }
+    #hero-358 .cs-flex-group {
+        max-width: 39.125rem;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+    #hero-358 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--secondary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #hero-358 .cs-title {
+        /* 39px - 61px */
+        font-size: clamp(2.4375rem, 6.4vw, 4.8125rem);
+        font-weight: 900;
+        line-height: .8em;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto 2rem;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #hero-358 .cs-accent {
+        color: var(--primaryLight);
+    }
+    #hero-358 .cs-text {
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        text-align: center;
+        width: 100%;
+        /* changes to 442px at desktop */
+        max-width: 43.75rem;
+        /* 32px - 40px */
+        margin: 0 auto clamp(2rem, 4vw, 2.5rem);
+        /* 24px - 40px */
+        margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+        color: var(--bodyTextColor);
+    }
+    #hero-358 .cs-button-group {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+  
+    #hero-358 .cs-button-transparent {
+        text-decoration: none;
+        width: auto;
+        /* 46px - 56px */
+        height: clamp(2.875rem, 5.5vw, 3.5rem);
+        margin: 0;
+        padding: 0;
+        color: var(--primaryLight);
+        background-color: transparent;
+        box-sizing: border-box;
+        display: inline-flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+    #hero-358 .cs-button-transparent:before {
+        /* white hover box */
+        content: "";
+        /* 46px - 56px */
+        width: clamp(2.875em, 5.5vw, 3.5em);
+        background: #fff;
+        border-radius: 2.5rem;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        top: -6px;
+        bottom: -6px;
+        left: 6px;
+        z-index: -1;
+        transition:
+            width 0.3s,
+            box-shadow 0.3s;
+    }
+    #hero-358 .cs-button-transparent:hover:before {
+        width: 107%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    #hero-358 .cs-content {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    #hero-358 .cs-tag {
+        font-size: 0.875rem;
+        line-height: 1.5em;
+        margin: 0;
+        margin-bottom: 0.25rem;
+        color: #767676;
+    }
+    #hero-358 .cs-number {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 0.25rem;
+        color: var(--headerColor);
+    }
+    #hero-358 .cs-picture {
+        /* 46px - 56px */
+        width: clamp(2.875rem, 5.5vw, 3.5rem);
+        height: clamp(2.875rem, 5.5vw, 3.5rem);
+        margin-right: 0.5rem;
+        background-color: var(--primaryLight);
+        border-radius: 50%;
+        border: 6px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #hero-358 .cs-img {
+        width: 1.5rem;
+        height: auto;
+    }
+    #hero-358 .cs-image-group {
+        font-size: min(1.6vw, 0.7em);
+        /* using ems so we can scale this container with a font size */
+        width: 51.9375em;
+        height: 42.125em;
+        position: relative;
+    }
+    #hero-358 .cs-splash {
+        position: absolute;
+        width: 49.4375em;
+        height: 38.5em;
+        top: 1.25em;
+        right: -2.5em;
+    }
+    #hero-358 .cs-person {
+        width: auto;
+        height: 100%;
+        position: relative;
+        
+    }
+    #hero-358 .cs-person img {
+        width: 100%;
+        height: auto;
+         border-radius: 0 clamp(6.25rem, 17vw, 12.5rem) 0 clamp(6.25rem, 17vw, 12.5rem);
+    }
+    #hero-358 .cs-icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7.5em;
+        height: 7.5em;
+        border-radius: 50%;
+        position: absolute;
+       right:0px;
+       left:0px;
+        top: 700px;
+        z-index: 999;
+        animation-name: floatAnimation2;
+        animation-duration: 4s;
+        animation-delay: 0.2s;
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+    }
+    #hero-358 .cs-icon {
+        width: 33.25em;
+        height: auto;
+    }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #hero-855 {
-    text-align: left;
-  }
-  #hero-855 .cs-container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  #hero-855 .cs-content {
-    width: 40vw;
-    /* prevents flex-box from squishing it */
-    flex: none;
-    align-items: flex-start;
-  }
-  #hero-855 .cs-title,
-  #hero-855 .cs-text {
-    text-align: left;
-  }
-  #hero-855 .cs-picture {
-    /* 623px - 814px */
-    height: clamp(38.9375rem, 60vw, 50.875rem);
-  }
-  #hero-855 .cs-wave {
-    width: 100%;
-    left: 0;
-    transform: none;
-  }
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #hero-358 .cs-icon-wrapper {z-index: 999;
+    left: 100px;
+    top:600px;
 }
+    #hero-358 {
+        padding-bottom: 10rem;
+    }
+    #hero-358 .cs-container {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #hero-358 .cs-flex-group {
+        justify-content: flex-start;
+        margin: 0;
+    }
+    #hero-358 .cs-topper,
+    #hero-358 .cs-title,
+    #hero-358 .cs-text {
+        text-align: left;
+        margin-left: 0;
+    }
+    #hero-358 .cs-text {
+        max-width: 27.625rem;
+    }
+    #hero-358 .cs-button-group {
+        justify-content: flex-start;
+    }
+    #hero-358 .cs-image-group {
+        font-size: min(1.4vw, 1em);
+        position: absolute;
+        bottom: -9.375em;
+        right: -13.5625em;
+    }
+}
+
                                 
 </style>
 
-<section id="hero-855">
+<section id="hero-358">
+          <!--Icon Cirlce Group-->
+          <picture class="cs-icon-wrapper">
+            <img class="cs-icon" decoding="async" src="/assets/images/junkyrabbit.gif" alt="icon" width="52" height="52" aria-hidden="true">
+        </picture>
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">$35/Hour in the Detroit Metro Area</span>
-            <h1 class="cs-title">Reliable General Labor</h1>
+        <div class="cs-flex-group">
+            <span class="cs-topper">Detroit Metro Area - $35/Hour</span>
+            <h1 class="cs-title"> Reliable General Labor</h1>
             <p class="cs-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus unde id saepe quo. Est, ea! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, provident? Lorem ipsum dolor sit amet consectetur adipisicing.
+               We specialize in getting the job done efficiently & affordably. With years of experience in the Detroit metro area, we've earned a reputation for our hard work.
             </p>
-            <a href="" class="cs-button-solid">Free Quote</a>
+            <div class="cs-button-group">
+                <a href="" class="cs-button-solid">Book Now</a>
+                <a href="tel:(+248) 818 1130" class="cs-button-transparent">
+                    <picture class="cs-picture">
+                        <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/phone-white.svg" alt="icon" width="24" height="24" aria-hidden="true">
+                    </picture>
+                    <div class="cs-content">
+                        <span class="cs-tag">Call or Text Anytime</span>
+                        <span class="cs-number">(+248) 818 1130</span>
+                    </div>
+                </a>
+            </div>
         </div>
-        <!--Hero Image-->
-        <picture class="cs-picture">
-            <!--Mobile-->
-            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <!--Tablet-->
-            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <!--Desktop-->
-            <source media="(min-width: 1024px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg">
-            <img aria-hidden="true" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FPeople%2Ftherapy.jpg" alt="therapy" width="570" height="701">
+        <div class="cs-image-group">
+      
+
+
+            <!-- Maid Picture -->
+            <!-- To make your own crops of people, use this tool to remove the backgorund of images https://www.remove.bg/ -->
+            <picture class="cs-person">
+                <source media="(max-width: 600px)" srcset="/assets/images/home1.jpeg">
+                <source media="(min-width: 601px)" srcset="/assets/images/home1.jpeg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/home1.jpeg" alt="maid" width="831" height="674">
             </picture>
+        </div>
     </div>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
-    <svg class="cs-wave" width="1920" height="179" viewBox="0 0 1920 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"/>
-    </svg>
 </section>
                                 

@@ -9,13 +9,14 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: black;
-    --primaryLight: #DAB692;
+    --primary: red;
+    --primaryLight: green;
     --secondary: #505B2E;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
+    --nav:green ;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -44,7 +45,7 @@
     font-weight: 600;
     color: var(--headerColor);
     text-align: inherit;
-    font-family: "Syncopate", Arial, sans-serif;
+    font-family: "Darumadrop One", Arial, sans-serif;
     text-transform: uppercase;
   }
   .cs-text {
@@ -64,7 +65,7 @@
     width: auto;
     padding: 0 1.875rem;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 999px;
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
@@ -92,7 +93,7 @@
     height: 100%;
     border: 2px solid black;
     opacity: 0;
-    border-radius: 8px;
+    border-radius: 999px;
     width: 0;
     transition: width 0.3s;
   }
@@ -157,10 +158,10 @@
   }
   @font-face {
     font-style: normal;
-    font-family: "Syncopate";
+    font-family: "Darumadrop One";
     font-weight: 100;
     font-display: swap;
-    src: local(""), url("/assets/fonts/syncopate-v21-latin-regular.woff2") format("woff2"), url("/assets/fonts/syncopate-v21-latin-regular.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/darumadrop-one-v10-latin-regular.woff2") format("woff2"), url("/assets/fonts/darumadrop-one-v10-latin-regular.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-regular - latin */
   @font-face {
@@ -754,14 +755,14 @@
   }
   #cs-navigation .cs-li-link:before {
     position: absolute;
-    bottom: 0rem;
+    bottom: -20px;
     left: 0;
     /* active state underline */
     content: "";
     opacity: 1;
     display: block;
-    background: var(--primary);
-    height: 2px;
+    background: white;
+    height: 5px;
     width: 0%;
     transition: width 0.3s;
   }
