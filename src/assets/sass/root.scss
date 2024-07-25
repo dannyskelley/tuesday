@@ -18,7 +18,9 @@
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
 
-        --nav:green ;
+        --nav:white ;
+        --navLink:black ;
+        --navLinkActive:red ;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -52,7 +54,7 @@
         font-weight: 600;
         color: var(--headerColor);
         text-align: inherit;
-        font-family: "Darumadrop One", Arial, sans-serif;
+        font-family: "Alfa Slab One", Arial, sans-serif;
         text-transform: uppercase;
         
     }
@@ -192,13 +194,13 @@
 
     @font-face {
         font-style: normal;
-        font-family: "Darumadrop One";
+        font-family: "Alfa Slab One";
         font-weight: 100;
         font-display: swap;
         src: local(""),
-            url("/assets/fonts/darumadrop-one-v10-latin-regular.woff2") format("woff2"),
+            url("/assets/fonts/alfa-slab-one-v19-latin-regular.woff2") format("woff2"),
             /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url("/assets/fonts/darumadrop-one-v10-latin-regular.woff2")
+                url("/assets/fonts/alfa-slab-one-v19-latin-regular.woff2")
                 format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
