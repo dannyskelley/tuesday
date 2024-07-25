@@ -694,23 +694,14 @@ body.scroll #cs-navigation .cs-logo img {
                 </a>
             </li>
           <li class="cs-li">
-            <a target="_blank" href="/#services" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
+            <a href="#services" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
                 Services
             </a>
         </li>
-        <li class="cs-li">
-          <a target="_blank" href="/selling" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
-              Pricing
-          </a>
-      </li>
-          <li class="cs-li">
-            <a target="_blank" href="https://www.goldenkeygroupmi.com/team/susie-sharak" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
-                About Us
-            </a>
-        </li>
+
 
         <li class="cs-li">
-          <a target="_blank" href="https://www.zillow.com/profile/susiesharak" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
+          <a target="_blank" href="tel:{{client.phoneForTel}}" class="cs-li-link {{ 'cs-active' if 'artists' == page.fileSlug }}">
               Contact Us
           </a>
       </li>
@@ -727,7 +718,7 @@ body.scroll #cs-navigation .cs-logo img {
               <img class="cs-phone-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/phone-1a.svg" alt="logo" width="24" height="24" aria-hidden="true" decoding="async">
               {{client.phoneFormatted}}
           </a>
-          <a href="/contact" class="cs-button-solid">Get in touch</a>
+          <a href="tel:{{client.phoneForTel}}" class="cs-button-solid">Get in touch</a>
           <!--<div class="cs-social">
               <a href="" class="cs-social-link">
                   <img class="cs-social-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/facebook-1a.svg" alt="logo" width="12" height="12" aria-hidden="true" decoding="async">
