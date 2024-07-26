@@ -3,373 +3,178 @@
 <!-- ============================================ -->
 
 <style>
-    /*-- -------------------------- -->
-<---          Services          -->
+  /*-- -------------------------- -->
+<---         Services           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1627 {
+  #services-1644 {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
   }
-  #services-1627 .cs-container {
+  #services-1644 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375em;
+    max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: clamp(2.5rem, 4vw, 4rem);
   }
-  #services-1627 .cs-content {
+  #services-1644 .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
   }
-  #services-1627 .cs-title {
-    max-width: 20ch;
+  #services-1644 .cs-title {
+    max-width: none;
   }
-  #services-1627 .cs-text {
-    max-width: 40rem;
-    position: relative;
-    z-index: 1;
+  #services-1644 .cs-text {
+    max-width: 60ch;
   }
-  #services-1627 .cs-text:after {
-    /* divider line */
-    content: "";
-    width: 100%;
-    height: 1px;
-    margin-top: 1.5rem;
-    background: var(--primary);
-    opacity: 1;
-    display: block;
-    position: relative;
-  }
-  #services-1627 .cs-chevron {
-    --chevronColor: var(--primary);
-    width: 3rem;
-    height: auto;
-  }
-  #services-1627 .cs-card-group {
+  #services-1644 .cs-card-group {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    /* 16px - 20px */
-    column-gap: clamp(1rem, 2.5vw, 1.25rem);
-    /* 28px - 40px */
-    row-gap: clamp(1.75rem, 2.5vw, 2.5rem);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
-  #services-1627 .cs-item {
+  #services-1644 .cs-item {
     list-style: none;
     width: 100%;
-    display: flex;
-    grid-column: span 12;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #services-1627 .cs-item:hover .cs-picture img {
-    opacity: .5;
-    transform: scale(1.2);
-  }
-  #services-1627 .cs-link {
-    text-decoration: none;
-    height: 100%;
+    box-sizing: border-box;
+    /* resets at tablet */
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    /* 24px - 40px */
+    gap: clamp(1.5rem, 3vw, 2.5rem);
+    position: relative;
+    z-index: 1;
   }
-  #services-1627 .cs-picture {
+  #services-1644 .cs-item:last-of-type:before {
+    display: none;
+  }
+  #services-1644 .cs-item:before {
+    /* gradient line divider */
+    content: '';
     width: 100%;
-    height: 15rem;
-    margin-bottom: 1.5rem;
-    background-color: #000;
-    overflow: hidden;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    opacity: .6;
+    position: absolute;
     display: block;
+    bottom: 0;
+    left: 0;
+  }
+  #services-1644 .cs-item:first-of-type {
+    padding-top: 0;
+  }
+  #services-1644 .cs-item:last-of-type {
+    padding-bottom: 0;
+    border: none;
+  }
+  #services-1644 .cs-image-group {
     position: relative;
   }
-  #services-1627 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: transform .6s, opacity .3s;
+  #services-1644 .cs-icon {
+    width: 5rem;
+    height: auto;
   }
-  #services-1627 .cs-h3 {
-    font-size: 1.25rem;
+  #services-1644 .cs-h2 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    text-align: inherit;
     line-height: 1.2em;
     font-weight: 700;
-    text-align: left;
-    margin: 0 0 0.75rem 0;
+    margin: 0 0 1rem 0;
     color: var(--headerColor);
   }
-  #services-1627 .cs-item-text {
-    font-size: 1rem;
+  #services-1644 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    text-align: inherit;
     line-height: 1.5em;
-    text-align: left;
-    margin: 0 0 1.5rem 0;
-    color: var(--bodyTextColor);
-  }
-  #services-1627 .cs-fake-link {
-    font-size: 1rem;
-    line-height: 1.2em;
-    font-weight: 700;
     margin: 0;
-    margin-top: auto;
-    color: var(--primary);
-    display: inline-flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  #services-1627 .cs-fake-link:hover .cs-icon {
-    transform: translateX(0.5rem);
-  }
-  #services-1627 .cs-icon {
-    width: 1.25rem;
-    height: auto;
-    display: block;
-    transition: transform .3s;
+    color: var(--bodyTextColor);
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1627 .cs-container {
-    max-width: 80rem;
+  #services-1644 .cs-container {
+    max-width: 120rem;
   }
-  #services-1627 .cs-content {
+  #services-1644 .cs-card-group {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
-  #services-1627 .cs-flex {
-    text-align: left;
-    width: 40vw;
-    max-width: 40rem;
-    flex: none;
+  #services-1644 .cs-item {
+    /* 24px - 60px */
+    padding: 0rem clamp(1.5rem, 3vw, 3.75rem);
   }
-  #services-1627 .cs-title {
-    margin: 0;
-  }
-  #services-1627 .cs-text {
-    padding: 0.75rem 0 0.75rem 1.5rem;
-  }
-  #services-1627 .cs-text:after {
+  #services-1644 .cs-item:before {
     width: 1px;
     height: 100%;
-    margin: 0 1.5rem 0 0;
-    order: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  #services-1627 .cs-item {
-    grid-column: span 4;
-  }
-  #services-1627 .cs-picture {
-    /* 240px - 420px */
-    height: clamp(15rem, 33vw, 26.25rem);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #bababa 50%, rgba(255, 255, 255, 0) 100%);
+    left: auto;
+    right: 0;
   }
 }
                                 
 </style>
-<div id="services"></div>
-<section id="services-1627">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">$35 per hour, no hidden fees</h2>
-            </div>
-            <p class="cs-text">
-              For all your household needs, including moving, painting, junk removal, general labor and lawn service, give us a call at 248-818-1130. We provide free quotes for all services.             </p>
-        </div>                  
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="tel:{{client.phoneForTel}}" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="/assets/images/service1.jpeg">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="/assets/images/service1.jpeg">
-                        <img loading="lazy" decoding="async" src="/assets/images/service1.jpeg" alt="room" width="413" height="420">
-                    </picture>
-                    <h3 class="cs-title">Mowing</h3>
-                    <p class="cs-item-text">
-                      Our team of hardworking rabbits will take care of it for you. Sit back, relax, and enjoy your beautifully trimmed lawn! 🌿🐇
-                    </p>
-                    <span class="cs-fake-link">
-                        Get Started
-                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-                    </span>
-                </a>
-            </li>
-            
 
-
-            <li class="cs-item">
-              <a href="tel:{{client.phoneForTel}}" class="cs-link">
-                  <picture class="cs-picture">
-                      <!--Mobile Image-->
-                      <source media="(max-width: 600px)" srcset="/assets/images/service2.jpeg">
-                      <!--Tablet and above Image-->
-                      <source media="(min-width: 601px)" srcset="/assets/images/service2.jpeg">
-                      <img loading="lazy" decoding="async" src="/assets/images/service2.jpeg" alt="room" width="413" height="420">
-                  </picture>
-                  <h3 class="cs-title">Mulching</h3>
+<section id="services-1644">
+  <div class="cs-container">
+   
+      <ul class="cs-card-group">
+          <li class="cs-item">
+              <div class="cs-image-group">
+                  <img class="cs-icon" loading="lazy" decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                          height="48" aria-hidden="true">
+              </div>
+              <div class="cs-flex">
+                  <h2 class="cs-title">Upfront, transparent pricing</h2>
                   <p class="cs-item-text">
-                  Instal fresh new mulch beds to give your outdoor space a new look! For an unbeatable price, we construct flower and mulch beds. If interested, please call or text 248-818-1130
-                  to receive a free quote.
+                    with no hidden fees
                   </p>
-                  <span class="cs-fake-link">
-                      Get Started
-                      <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-                  </span>
-              </a>
+              </div>
           </li>
 
-
-
           <li class="cs-item">
-            <a href="tel:{{client.phoneForTel}}" class="cs-link">
-                <picture class="cs-picture">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="/assets/images/service3.jpeg">
-                    <!--Tablet and above Image-->
-                    <source media="(min-width: 601px)" srcset="/assets/images/service3.jpeg">
-                    <img loading="lazy" decoding="async" src="/assets/images/service3.jpeg" alt="room" width="413" height="420">
-                </picture>
-                <h3 class="cs-title">Weeding</h3>
-                <p class="cs-item-text">
-                  Looking to clear out some pesky weeds and trees? Look no further!
-                </p>
-                <span class="cs-fake-link">
-                    Get Started
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-                </span>
-            </a>
-        </li>
-
-
-                
-        <li class="cs-item">
-          <a href="tel:{{client.phoneForTel}}" class="cs-link">
-              <picture class="cs-picture">
-                  <!--Mobile Image-->
-                  <source media="(max-width: 600px)" srcset="/assets/images/service_bush.jpeg">
-                  <!--Tablet and above Image-->
-                  <source media="(min-width: 601px)" srcset="/assets/images/service_bush.jpeg">
-                  <img loading="lazy" decoding="async" src="/assets/images/service_bush.jpeg" alt="room" width="413" height="420">
-              </picture>
-              <h3 class="cs-title">Bush Trimming</h3>
-              <p class="cs-item-text">
-                For all your bush trimming needs, contact us at 248-818-1130
- to book your appointment.
-              </p>
-              <span class="cs-fake-link">
-                  Get Started
-                  <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-              </span>
-          </a>
-      </li>
-
-        
-        <li class="cs-item">
-          <a href="tel:{{client.phoneForTel}}" class="cs-link">
-              <picture class="cs-picture">
-                  <!--Mobile Image-->
-                  <source media="(max-width: 600px)" srcset="/assets/images/service4.jpeg">
-                  <!--Tablet and above Image-->
-                  <source media="(min-width: 601px)" srcset="/assets/images/service4.jpeg">
-                  <img loading="lazy" decoding="async" src="/assets/images/service4.jpeg" alt="room" width="413" height="420">
-              </picture>
-              <h3 class="cs-title">Soil Leveling</h3>
-              <p class="cs-item-text">
-                If you are in need of soil leveling in your yard, call Junky Rabbit at 248-818-1130.
-              </p>
-              <span class="cs-fake-link">
-                  Get Started
-                  <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-              </span>
-          </a>
-      </li>
-
-      <li class="cs-item">
-        <a href="tel:{{client.phoneForTel}}" class="cs-link">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/service5.jpeg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/service5.jpeg">
-                <img loading="lazy" decoding="async" src="/assets/images/service5.jpeg" alt="room" width="413" height="420">
-            </picture>
-            <h3 class="cs-title">Moving</h3>
-            <p class="cs-item-text">
-              Looking for help with moving? Give us a call or send a text to 248-818-1130
- for affordable and reliable services. We're here to make your life easier!
-            </p>
-            <span class="cs-fake-link">
-                Get Started
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-            </span>
-        </a>
-    </li>
-
-      
-      <li class="cs-item">
-        <a href="tel:{{client.phoneForTel}}" class="cs-link">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/junk.jpeg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/junk.jpeg">
-                <img loading="lazy" decoding="async" src="/assets/images/junk.jpeg" alt="room" width="413" height="420">
-            </picture>
-            <h3 class="cs-title">Junk Removal</h3>
-            <p class="cs-item-text">
-              Looking for help with getting rid of some junk? Give us a call or send a text to 248-818-1130
- for affordable and reliable services. We're here to make your life easier!
-            </p>
-            <span class="cs-fake-link">
-                Get Started
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-            </span>
-        </a>
-    </li>
-
-
-    
-    <li class="cs-item">
-      <a href="tel:{{client.phoneForTel}}" class="cs-link">
-          <picture class="cs-picture">
-              <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/assets/images/service6.jpeg">
-              <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/assets/images/service6.jpeg">
-              <img loading="lazy" decoding="async" src="/assets/images/service6.jpeg" alt="room" width="413" height="420">
-          </picture>
-          <h3 class="cs-title">Painting</h3>
-          <p class="cs-item-text">
-            Looking to add some color to your living space? We've got a great deal on paint specials for the rest of the month - just $180 per bedroom! 
-          </p>
-          <span class="cs-fake-link">
-              Get Started
-              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gold-chevron-right.svg" alt="" width="20" height="20" loading="lazy" decoding="async" aria-hidden="true">
-          </span>
-      </a>
-  </li>
-
-        </ul>
-    </div>
+              <div class="cs-image-group">
+                  <img class="cs-icon" loading="lazy" decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg" alt="icon" width="48"
+                          height="48" aria-hidden="true">
+              </div>
+              <div class="cs-flex">
+                  <h2 class="cs-title">24/7 emergency services</h2>
+                  <p class="cs-item-text">
+                   With rapid response times
+                  </p>
+              </div>
+          </li>
+          <li class="cs-item">
+              <div class="cs-image-group">
+                  <img class="cs-icon" loading="lazy" decoding="async"
+                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg" alt="icon" width="48"
+                          height="48" aria-hidden="true">
+              </div>
+              <div class="cs-flex">
+                  <h2 class="cs-title">100% satisfaction guarantee</h2>
+                  <p class="cs-item-text">
+                    On all our work
+                  </p>
+              </div>
+          </li>
+      </ul>
+  </div>                            
 </section>
-                                
+                              
