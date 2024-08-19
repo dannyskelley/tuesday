@@ -1,4 +1,5 @@
 // imports
+const eleventyPluginSharpImages = require("@codestitchofficial/eleventy-plugin-sharp-images");
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
@@ -30,6 +31,11 @@ module.exports = function (eleventyConfig) {
     if (configServer.isProduction) {
         eleventyConfig.addPlugin(pluginMinifier);
     }
+    eleventyConfig.addPlugin(eleventyPluginSharpImages, {
+        urlPath: "/assets/images",
+        outputDir: "public/assets/images",
+    });
+};
     // END PLUGINS
 
     // SERVER - Set how the eleventy dev server is run, using the options from https://www.11ty.dev/docs/dev-server/
@@ -70,4 +76,4 @@ module.exports = function (eleventyConfig) {
         },
         htmlTemplateEngine: "njk",
     };
-};
+
