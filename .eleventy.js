@@ -31,11 +31,11 @@ module.exports = function (eleventyConfig) {
     if (configServer.isProduction) {
         eleventyConfig.addPlugin(pluginMinifier);
     }
+
     eleventyConfig.addPlugin(eleventyPluginSharpImages, {
         urlPath: "/assets/images",
         outputDir: "public/assets/images",
     });
-};
     // END PLUGINS
 
     // SERVER - Set how the eleventy dev server is run, using the options from https://www.11ty.dev/docs/dev-server/
@@ -43,7 +43,7 @@ module.exports = function (eleventyConfig) {
     // END SERVER
 
     // PASSTHROUGHS - "Pass through" source files to /public, without being processed by eleventy
-    // Individually specify what asset folders are passed through. SASS is processed by it's compiler into ./src and passed through as a template for minification
+    // Individually specify what asset folders are passed through. SASS is processed by its compiler into ./src and passed through as a template for minification
     eleventyConfig.addPassthroughCopy("./src/assets/css");
     eleventyConfig.addPassthroughCopy("./src/assets/favicons");
     eleventyConfig.addPassthroughCopy("./src/assets/fonts");
@@ -76,4 +76,4 @@ module.exports = function (eleventyConfig) {
         },
         htmlTemplateEngine: "njk",
     };
-
+};
