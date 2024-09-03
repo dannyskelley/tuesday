@@ -32,7 +32,7 @@ eleventyNavigation:
             <!-- ============================================ -->
 
             {% if collections.post | length == 0 %}
-                <h1>No Recent Posts</h1>
+                <h1>No Events Scheduled at this time. Please Check back soon</h1>
             {% else %}
                 {%- for post in collections.post | reverse -%}
                     <article class="recent-articles">
@@ -47,15 +47,11 @@ eleventyNavigation:
                         </picture>
                         <!--Article Info-->
                         <div class="article-group">
-                            <div class="blog-authorGroup">
-                            
-                                
-                                <!--Blog Date-->
-                                <span class="blog-date">{{ post.date | postDate }}</span>
-                            </div>
+                
                             <h2 class="blog-h1">
                                 {{ post.data.title }}
                             </h2>
+                            <span class="blog-date">{{ post.date | postDate }}</span>
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
