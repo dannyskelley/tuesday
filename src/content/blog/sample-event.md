@@ -1,6 +1,6 @@
 ---
-title: Sample Event
-description: Sample Description
+title: Young Artist Concert
+description: St. James Catholic Church
 author: Tuesday Muiscale
 date: 2024-09-03T13:09:00.000Z
 tags:
