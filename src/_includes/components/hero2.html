@@ -13,7 +13,7 @@
         padding: var(--sectionPadding);
         /* 200px - 300px - leaving extra space for the navigation */
         padding-top: clamp(12.5rem, 31.95vw, 18.75rem);
-        padding-bottom: clamp(12.5rem, 31.95vw, 18.75rem);
+        padding-bottom: clamp(12.5rem, 31.95vw, 25.75rem);
         position: relative;
         z-index: 10;
        
@@ -217,11 +217,93 @@
   <div class="cs-container">
       <div class="cs-content">
         <DIV class="cs-topper">Since 1885</DIV>
-          <h1 class="cs-title">Detroit’s Classical Music Legacy</h1>
+          <h1 class="cs-title">Tuesday Musicale of Detroit</h1>
           <p class="cs-text">
             We're a classical music organization devoted to bringing the best in the live performance of classical music to Detroit area audiences since 1885.
           </p>
-          <a href="" class="cs-button-solid">View Events</a>
+          <style>/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
+            #button-box-839 {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+            
+            #button-box-839 .cs-button-transparent {
+                font-size: 1rem;
+                /* 46px - 56px */
+                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+                width: auto;
+                /* 46px - 56px */
+                height: clamp(2.875rem, 5.5vw, 3.5rem);
+                text-decoration: none;
+                font-weight: 700;
+                margin: 0;
+                color:white;
+                padding: 0px 30px 0px 0px;
+                background-color: transparent;
+                box-sizing: border-box;
+                display: inline-flex;
+                justify-content: flex-start;
+                align-items: center;
+                position: relative;
+                z-index: 1;
+            }
+            #button-box-839 .cs-button-transparent:before {
+                /* white hover box */
+                content: "";
+                /* 46px - 56px */
+                width: clamp(2.875rem, 5.5vw, 3.5rem);
+                background: #fff;
+                border-radius: 1.75rem;
+                opacity: 1;
+                position: absolute;
+                display: block;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                z-index: -1;
+                transition:
+                    width 0.3s,
+                    box-shadow 0.3s;
+            }
+            #button-box-839 .cs-button-transparent:hover {color:black}
+            #button-box-839 .cs-button-transparent:hover:before {
+                width: 100%;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                
+            }
+            #button-box-839 .cs-picture {
+                /* 46px - 56px */
+                width: clamp(2.875rem, 5.5vw, 3.5rem);
+                height: clamp(2.875rem, 5.5vw, 3.5rem);
+                margin-right: 0.5rem;
+                background-color: #231D68;
+                border-radius: 50%;
+                border: 6px solid #fff;
+                box-sizing: border-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #button-box-839 .cs-image {
+                width: 0.75rem;
+                height: auto;
+            }
+            
+                                            </style>
+          <div id="button-box-839">
+            <a href="" class="cs-button-solid">Buy Tickets</a>
+            <a href="" class="cs-button-transparent">
+                <picture class="cs-picture">
+                    <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/chevron-right.svg" alt="icon" width="12" height="12" aria-hidden="true">
+                </picture>
+                Our History
+            </a>
+        </div>
+                                        
       </div>
      
   </div>
