@@ -9,15 +9,15 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: red;
+    --primary: #FFC439;
     --primaryLight: green;
     --secondary: #505B2E;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
-    --nav:white ;
-    --navLink:black ;
+    --nav:#231D68 ;
+    --navLink:white ;
     --navLinkActive:red ;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -47,8 +47,7 @@
     font-weight: 600;
     color: var(--headerColor);
     text-align: inherit;
-    font-family: "Alfa Slab One", Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: "Montserrat", Arial, sans-serif;
   }
   .cs-text {
     margin: 0;
@@ -71,7 +70,7 @@
     font-size: 1rem;
     line-height: 3.125em;
     font-weight: bold;
-    color: white;
+    color: black;
     transition: color 0.3s;
     transition-delay: 0.1s;
     text-align: center;
@@ -160,10 +159,17 @@
   }
   @font-face {
     font-style: normal;
-    font-family: "Alfa Slab One";
+    font-family: "Montserrat";
     font-weight: 100;
     font-display: swap;
-    src: local(""), url("/assets/fonts/alfa-slab-one-v19-latin-regular.woff2") format("woff2"), url("/assets/fonts/alfa-slab-one-v19-latin-regular.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src: local(""), url("/assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2"), url("/assets/fonts/montserrat-v26-latin-regular.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  @font-face {
+    font-style: bold;
+    font-family: "Montserrat";
+    font-weight: 800;
+    font-display: swap;
+    src: local(""), url("/assets/fonts/montserrat-v26-latin-800.woff2") format("woff2"), url("/assets/fonts/montserrat-v26-latin-800.woff2") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* roboto-regular - latin */
   @font-face {
