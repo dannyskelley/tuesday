@@ -1,11 +1,11 @@
 ---
-title: Young Artist Concert
+title: Sample 2
 description: St. James Catholic Church
 author: Tuesday Muiscale
 date: 2024-09-03T13:09:00.000Z
 tags:
   - post
-image: /assets/images/blog/1.png
+image: /assets/images/blog/2.png
 imageAlt: Sample Caption
 ---
 Thu, May 30  |  
