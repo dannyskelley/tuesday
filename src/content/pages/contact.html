@@ -144,8 +144,8 @@ eleventyNavigation:
     margin-top: 0.25rem;
     padding-left: 1.25rem;
     /* set transparent border so on hover border doesn't make it glitch */
-    border: 1px solid transparent;
-    border-bottom: 1px solid #b4b2c7;
+    border: 2px solid #b4b2c7;
+    border-radius: 5px;
     /* prevents border & padding from affecting height */
     box-sizing: border-box;
     transition: border 0.3s;
@@ -190,8 +190,11 @@ eleventyNavigation:
         <!-- Contact Info -->
         <div class="cs-content">
            
-            <h2 class="cs-title" style="margin-top:100px;">Get in touch</h2>
-            <span class="cs-topper" style="margin-top: 50px;">Let me know how I can assist you.</span>
+            <h2 class="cs-title" style="margin-top:100px;">Contact Us</h2>
+            <span class="cs-text" style="margin-top: 50px;">If you have any questions, comments or concerns, please feel free to contact us via the contact form.
+              <BR><BR>
+
+              We look forward to reading your messages!</span>
             <!--<p class="cs-text">
                 Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
             </p>-->
@@ -201,24 +204,29 @@ eleventyNavigation:
             <a href="" class="cs-link">
                 PO Box 15252 Mill Creek, <br>Washington, USA 98082
             </a>-->
-            <!--Email-->
+            <!--Email
             <span class="cs-header">Email</span>
-            <a href="mailtp:info@iabuyer.com" class="cs-link">Email Us</a>
-            <!--Phone-->
+            <a href="mailtp:info@iabuyer.com" class="cs-link">Email Us</a>-->
+            <!--Phone
             <span class="cs-header">Phone</span>
-            <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>
+            <a href="tel:{{client.phoneForTel}}" class="cs-link">{{client.phoneFormatted}}</a>-->
 
             <!--Social Buttons-->
             <div class="cs-social">
-                <a class="cs-social-link" aria-label="visit google profile" href="">
-                    <img style="filter: grayscale(1) brightness(1000%);" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/zillow.svg" alt="google" width="11" height="11">
+
+              <a target="_blank" class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/TMD1885/">
+                <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+            </a>
+
+            <a target="_blank" class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/tuesdaymusicale">
+              <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+          </a>
+
+                <a target="_blank" class="cs-social-link" aria-label="visit twitter profile" href="https://x.com/tuesdaymusicale">
+                    <img style="filter: grayscale(1) brightness(1000%);" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-grey1.svg" alt="google" width="11" height="11">
                 </a>
-                <a class="cs-social-link" aria-label="visit facebook profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                </a>
-                <a class="cs-social-link" aria-label="visit instagram profile" href="">
-                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
-                </a>
+           
+           
             </div>
         </div>
         <!-- Form -->
@@ -236,7 +244,7 @@ eleventyNavigation:
                 <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="">
             </label>
             <label class="cs-label -label-message" style="margin-bottom: 60px;">
-                How can I help?
+                Message:
                 <textarea class="cs-input" required name="Message" id="message-490" placeholder=""></textarea>
             </label>
             <button class="cs-button-solid" type="submit">Send</button>
