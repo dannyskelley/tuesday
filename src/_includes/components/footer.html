@@ -3,59 +3,365 @@
 <!-- ============================================ -->
 
 
-<footer id="footer">
-    <div class="container">
-        <div class="left-section">
-            
-                
-            <a class="logo" href="/"><img style="filter: invert(100%); margin: auto; display: block;" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="264" height="78"></a>
-            <Div class="cs-topper" style="color:#999">Detroit General Labor</Div>
-            <Div class="cs-topper" style="color:#999; margin-bottom: 50px;">"We're here to make your life easier"</Div>
-            <div class="cs-social" style="margin: 20px 0px 50px;">
-<Div class="cs-topper">Message us on:</Div>
-                <a class="cs-social-link" aria-label="visit google profile" href="https://nextdoor.com/profile/01fYx_9bKZFb2nLMK/?is=feed_author">
-                    <img style="margin-right: 20px;width: 200px; height: 50px; filter: grayscale(1) brightness(1000%);" class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/nextdoor.svg" alt="google">
+<style>
+    /*-- -------------------------- -->
+<---          Footer            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-840 {
+    padding: var(--sectionPadding);
+    /* 30px - 50px */
+    padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+    background-color: #1a1a1a;
+  }
+  #cs-footer-840 .cs-container {
+    width: 100%;
+    /* reset on tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 2rem;
+  }
+  #cs-footer-840 .cs-logo-group {
+    /* takes up all the space, lets the other ul's wrap below it */
+    width: 100%;
+    position: relative;
+  }
+  #cs-footer-840 .cs-logo {
+    width: 13.125rem;
+    height: auto;
+    margin: 0 0 1.5rem 0;
+    display: block;
+  }
+  #cs-footer-840 .cs-text {
+    color: var(--bodyTextColorWhite);
+    opacity: .8;
+    margin: 0 0 2rem;
+  }
+  #cs-footer-840 .cs-logo-img {
+    width: 100%;
+    height: auto;
+  }
+  #cs-footer-840 .cs-social {
+    display: inline-flex;
+    justify-content: flex-start;
+    gap: 0.75em;
+  }
+  #cs-footer-840 .cs-social-link {
+    width: 2rem;
+    height: 2rem;
+    background-color: #484848;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  #cs-footer-840 .cs-social-link:hover {
+    background-color: var(--primaryLight);
+    transform: translateY(-0.1875rem);
+  }
+  #cs-footer-840 .cs-social-link:hover .cs-social-img {
+    filter: grayscale(1) brightness(1000%);
+  }
+  #cs-footer-840 .cs-social-img {
+    height: 0.75rem;
+    width: auto;
+    display: block;
+  }
+  #cs-footer-840 .cs-header {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    font-weight: 700;
+    margin: 0 0 1.25rem 0;
+    color: var(--bodyTextColorWhite);
+    display: block;
+    position: relative;
+  }
+  #cs-footer-840 .cs-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #cs-footer-840 .cs-ul-1 {
+    width: 100%;
+    max-width: 21.875rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+  }
+  #cs-footer-840 .cs-ul-1 .cs-li {
+    width: 44%;
+  }
+  #cs-footer-840 .cs-li {
+    list-style: none;
+  }
+  #cs-footer-840 .cs-link {
+    font-size: 1rem;
+    text-decoration: none;
+    line-height: 1.5em;
+    text-align: left;
+    color: #bababa;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    transition: color 0.3s;
+  }
+  #cs-footer-840 .cs-link:hover {
+    color: var(--primaryLight);
+  }
+  #cs-footer-840 .cs-icon {
+    width: 1.25rem;
+    height: auto;
+    margin-right: 0.125rem;
+    display: block;
+  }
+  #cs-footer-840 .cs-bottom {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    /* 48px - 64px */
+    margin: clamp(3rem, 7vw, 4rem) auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #484848;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  #cs-footer-840 .cs-credit,
+  #cs-footer-840 .cs-bottom-link,
+  #cs-footer-840 .cs-credit-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    color: #bababa;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s;
+  }
+  #cs-footer-840 .cs-credit {
+    width: 100%;
+  }
+  #cs-footer-840 .cs-credit-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    width: auto;
+    margin: 0;
+    color: #bababa;
+    display: inline-block;
+    position: relative;
+  }
+  #cs-footer-840 .cs-credit-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-840 .cs-bottom-links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #cs-footer-840 .cs-bottom-link {
+    display: flex;
+    align-items: center;
+  }
+  #cs-footer-840 .cs-bottom-link:hover {
+    color: var(--primary);
+  }
+  #cs-footer-840 .cs-bottom-link:last-of-type:before {
+    /* separator */
+    content: "";
+    width: 1px;
+    height: 0.875rem;
+    margin: 0 0.75rem;
+    background: currentColor;
+    opacity: 1;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-footer-840 .cs-container {
+    max-width: 80rem;
+    /* 48px - 64px */
+    row-gap: clamp(3rem, 7vw, 4rem);
+  }
+  #cs-footer-840 .cs-bottom {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  #cs-footer-840 .cs-credit {
+    text-align: left;
+  }
+  #cs-footer-840 .cs-bottom-links {
+    justify-content: flex-end;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #cs-footer-840 .cs-container {
+    /* pushes all flex children to the top */
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  #cs-footer-840 .cs-logo-group {
+    width: 30%;
+    max-width: 25rem;
+    /* pushes everything to the right of it as far as possible in a flexbox */
+    margin-right: auto;
+  }
+  #cs-footer-840 .cs-text {
+    width: 100%;
+  }
+  #cs-footer-840 .cs-social {
+    flex-direction: row;
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+}
+                                
+</style>
+
+<footer id="cs-footer-840">
+    <div class="cs-container">
+        <!-- Logo Group -->
+        <div class="cs-logo-group">
+            <a aria-label="go back to home" class="cs-logo" href="">
+                <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.svg" alt="logo" width="240" height="32">
+            </a>
+            <p class="cs-topper" style="color: white;">
+                The Tuesday Musicale of Detroit
+            </p>
+            <div class="cs-social" style="margin-top: 50px;">
+                <a target="_blank" class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/TMD1885/">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fface-grey1.svg" alt="facebook" width="11" height="11">
                 </a>
-
-
-       
+                <a target="_blank" class="cs-social-link" aria-label="visit twitter profile" href="https://www.instagram.com/tuesdaymusicale">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Finstragm-grey3.svg" alt="twitter" width="6" height="11">
+                </a>
+                <a target="_blank" class="cs-social-link" aria-label="visit instagram profile" href="https://x.com/tuesdaymusicale">
+                    <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Ftwitter-grey1.svg" alt="instagram" width="11" height="11">
+                </a>
             </div>
         </div>
+        <!-- Links -->
+        <div class="cs-ul-wrapper">
+            <span class="cs-header">Quick Links</span>
+            <ul id="cs-expanded" class="cs-ul">
+                {% set navPages = collections.all | eleventyNavigation %}
+  
+                {# Loop through all pages with a eleventyNavigation in the frontmatter #}
+                {% for entry in navPages %}
+  
+                    {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
+                    {% set hasChild = entry.children.length %}
+  
+                    {# Check the frontmatter for hideOnMobile/hideOnDesktop. Form a list of classes to be joined when the item is rendered #}
+                    {% set hideClasses = [] %}
+                    {% if entry.hideOnMobile %}
+                        {% set hideClasses = (hideClasses.push("cs-hide-on-mobile"), hideClasses) %}
+                    {% endif %}
+                    {% if entry.hideOnDesktop %}
+                        {% set hideClasses = (hideClasses.push("cs-hide-on-desktop"), hideClasses) %}
+                    {% endif %}
+  
+                    {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
+                    <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}">
+  
+                        {# If the page has child dropdown pages, render it as a <button> tag with the appropriate dropdown HTML #}
+                        {% if hasChild %}
+  
+                            {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
+                            {% set activeClass = "" %}
+                            {% for child in entry.children %}
+                                {% if child.url == page.url %}
+                                    {% set activeClass = "cs-active" %}
+                                {% endif %}
+                            {% endfor %}
+  
+                            {# Render the <button> with the active class, dropdown icon and child links #}
+                            <button 
+                                class="cs-li-link cs-dropdown-button {{ activeClass }}"
+                                aria-expanded="false"
+                                aria-controls="dropdown-{{ entry.key }}"
+                                aria-label="dropdown-{{ entry.key }}"
+                            >
+                                {{ entry.key }}
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </button>
+  
+                            {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
+                            <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
+                                {% for child in entry.children %}
+                                    <li class="cs-drop-li">
+                                        <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% else %}
+                            {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
+                            <a href="{{ entry.url }}" class="cs-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                                {{ entry.key }}
+                            </a>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="cs-ul-wrapper">
+            <!-- Contact Info -->
+            <span class="cs-header">Contact Information</span>
+            <ul class="cs-ul">
         
-        <div class="right-section">
-            <div class="lists">
-                
-                <ul>
-                    <li>
-                        <h2>Contact Us</h2>
-                    </li>
-<div class="cs-topper"> Call or Text:</div>
-                    <li style="padding-bottom: 30px;">
-                        <a href="tel:{{client.phoneForTel}}">
-                           
-                            {{client.phoneFormatted}}
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="/#top">Navigate to Top of page</a>
-                    </li>
-                </ul>
-
-                
-            </div>
+                <li class="cs-li">
+                    <a class="cs-link" href="tel:555-497-1900">
+                        <img class="cs-contact-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fphone-grey.svg" alt="phone icon" width="20" height="20">
+                        {{client.phoneFormatted}}
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a class="cs-link" href="mailto:office@email.com">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fmessage-grey.svg" alt="email icon" width="20" height="20">
+                        office@email.com
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <!--Make this link go to the google page-->
+                    <a class="cs-link" href="" target="_blank">
+                        <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fpin-grey.svg" alt="pin icon" width="20" height="20">
+                        P.O. Box 36535<BR>
+Grosse Pointe Farms, MI 48236 
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-    <STYLE>
-        .credit {color:white; text-align: left;}
-        .gandalfpill {transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
-    .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
-    .gandalfpill:hover {border:1px  solid white; background-color: black;  transform: translateY(-5px); transition: all ease .2s;}
-    .back2top {font-size:2px}
-    </STYLE>
-    <div class="credit">
-        <span>Website by</span>
-       
-        <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+    <div class="cs-bottom">
+        <span class="cs-credit">
+            © Copyright 2024 <a href="" class="cs-credit-link" target="_blank">The Tuesday Musicale of Detroit</a>
+        </span>
+        <!--<div class="cs-bottom-links">
+            <a href="" class="cs-bottom-link">Privacy Policy</a>
+            <a href="" class="cs-bottom-link">Terms Of Use</a>
+        </div>-->
     </div>
 </footer>
+                                

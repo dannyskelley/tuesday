@@ -1,15 +1,15 @@
 {
-    "name": "Junky Rabbit",
-    "email": "JunkyRabbit@gmail.com",
-    "phoneForTel": "(+248) 818 1130",
-    "phoneFormatted": "(+248) 818 1130",
+    "name": "The Tuesday Musicale of Detroit",
+    "email": "tom@tuesdaymusicaleofdetroit.org",
+    "phoneForTel": "313-520-8663",
+    "phoneFormatted": "313-520-8663",
     "address": {
         "lineOne": "",
         "lineTwo": "",
         "city": "",
         "state": "MI",
         "zip": "",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "mapLink": ""
     },
     "domain": "https://www.codestitch.app"
 }
