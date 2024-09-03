@@ -195,7 +195,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .blog-container {
-    padding: clamp(60px, 7vw, 100px) 0;
+    padding: clamp(60px, 7vw, 100px) 1.5rem;
   }
   .main-content-wrapper {
     display: flex;
