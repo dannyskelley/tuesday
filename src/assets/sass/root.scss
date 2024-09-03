@@ -20,10 +20,10 @@
 
         --nav:#231D68 ;
         --navLink:white ;
-        --navLinkActive:red ;
+        --navLinkActive:white ;
 
         /* 13px - 16px */
-        --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+        --topperFontSize: clamp(0.8125rem, 1.6vw, 4rem);
         /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1.1rem;
@@ -41,7 +41,7 @@
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 700;
-        color: var(--primary);
+        color:#231D68;
         text-align: inherit;
     }
 
