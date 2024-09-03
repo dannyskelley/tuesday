@@ -18,14 +18,7 @@ eleventyNavigation:
     <!--                    LANDING                   -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Blog</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/reviews.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/reviews.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/reviews.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
-        </picture>
-    </section>
+    <h1 id="home-h">Upcoming Events</h1>
 
     <!-- ============================================ -->
     <!--              Main Blog Content               -->
@@ -55,17 +48,8 @@ eleventyNavigation:
                         <!--Article Info-->
                         <div class="article-group">
                             <div class="blog-authorGroup">
-                                <!--Author Image-->
-                                <picture class="blog-author-img">
-                                    <img
-                                    src="/assets/svgs/profile.svg"
-                                    alt="house"
-                                    width="32"
-                                    height="32"
-                                    decoding="async" />
-                                </picture>
-                                <span class="blog-author">{{ post.data.author }}</span>
-                                <span aria-hidden="true" class="blog-dot"></span>
+                            
+                                
                                 <!--Blog Date-->
                                 <span class="blog-date">{{ post.date | postDate }}</span>
                             </div>
@@ -75,7 +59,7 @@ eleventyNavigation:
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="blog-link">Continue Reading</a>
+                            <a href="{{ post.url }}" class="blog-link">Learn More</a>
                         </div>
                     </article>
                 {%- endfor -%}
