@@ -85,7 +85,7 @@
     position: relative;
   }
   #services-1644 .cs-icon {
-    width: 5rem;
+    width: 3rem;
     height: auto;
   }
   #services-1644 .cs-h2 {
@@ -99,7 +99,7 @@
   }
   #services-1644 .cs-item-text {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.6vw, 1rem);
+    font-size: clamp(1.2rem, 1.6vw, 1rem);
     text-align: inherit;
     line-height: 1.5em;
     margin: 0;
@@ -132,8 +132,28 @@
 
 <section id="services-1644">
   <div class="cs-container">
-   
-      <ul class="cs-card-group">
+      <div class="cs-content">
+          <span class="cs-topper">The Tuesday Musicale of Detroit</span>
+          <h2 class="cs-title">Our Performers</h2>
+          <!--<p class="cs-text">
+              Designed to maintain your current colour, blend out a growing root or balance your blonde while providing full and demi-permanent coverage.
+          </p>-->
+      </div>
+      <ul class="cs-card-group" style="max-width: 1200px;">
+
+        <li class="cs-item">
+          <div class="cs-image-group">
+              <img class="cs-icon" loading="lazy" decoding="async"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                      height="48" aria-hidden="true">
+          </div>
+          <div class="cs-flex">
+              <h2 class="cs-h2">Professional Musicians<BR><BR></h2>
+              <p class="cs-item-text">
+                Who appreciate the opportunity to perform for an appreciative and informed audience
+              </p>
+          </div>
+      </li>
           <li class="cs-item">
               <div class="cs-image-group">
                   <img class="cs-icon" loading="lazy" decoding="async"
@@ -141,40 +161,30 @@
                           height="48" aria-hidden="true">
               </div>
               <div class="cs-flex">
-                  <h2 class="cs-title">Upfront, transparent pricing</h2>
+                  <h2 class="cs-h2">High performing non professional musicians</h2>
                   <p class="cs-item-text">
-                    with no hidden fees
+                    Who value the chance to perform for each other and for their friends.
                   </p>
               </div>
           </li>
 
-          <li class="cs-item">
-              <div class="cs-image-group">
-                  <img class="cs-icon" loading="lazy" decoding="async"
-                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Lifebuoy-gold.svg" alt="icon" width="48"
-                          height="48" aria-hidden="true">
-              </div>
-              <div class="cs-flex">
-                  <h2 class="cs-title">24/7 emergency services</h2>
-                  <p class="cs-item-text">
-                   With rapid response times
-                  </p>
-              </div>
-          </li>
-          <li class="cs-item">
-              <div class="cs-image-group">
-                  <img class="cs-icon" loading="lazy" decoding="async"
-                          src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/Like-gold.svg" alt="icon" width="48"
-                          height="48" aria-hidden="true">
-              </div>
-              <div class="cs-flex">
-                  <h2 class="cs-title">100% satisfaction guarantee</h2>
-                  <p class="cs-item-text">
-                    On all our work
-                  </p>
-              </div>
-          </li>
+        <li class="cs-item">
+          <div class="cs-image-group">
+              <img class="cs-icon" loading="lazy" decoding="async"
+                      src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/checkmark-circle-gold.svg" alt="icon" width="48"
+                      height="48" aria-hidden="true">
+          </div>
+          <div class="cs-flex">
+              <h2 class="cs-h2">High-performing teenage musicians</h2>
+              <p class="cs-item-text">
+                From our Student League who benefit from the experience of performing in a concert setting.
+              </p>
+          </div>
+      </li>
       </ul>
+
+      
+{% include 'components/cta_button.html' %}
   </div>                            
 </section>
                               

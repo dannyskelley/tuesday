@@ -1,0 +1,280 @@
+<!-- ============================================ -->
+<!--                  Pricing                     -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #pricing-1028 {
+        padding: var(--sectionPadding);
+    }
+    #pricing-1028 .cs-container {
+        width: 100%;
+        max-width: 80rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #pricing-1028 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        max-width: 46.125rem;
+        /* 24px - 48px */
+        padding: 3rem clamp(1.5rem, 3.5vw, 3rem);
+        /* prevents padding and border from affecting height and width */
+        box-sizing: border-box;
+        border: 1px solid #c7c7c7;
+        border-top: none;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+
+    #pricing-1028 .cs-title {
+        margin: 0;
+        /* frees the :after element from the cs-title parent. It's now relative to the cs-content parent */
+        display: contents;
+    }
+    #pricing-1028 .cs-title:after {
+        /* underline */
+        content: "";
+        width: 100%;
+        height: 1px;
+        /* 20px - 32px */
+        margin: clamp(1.25rem, 3vw, 2rem) 0;
+        background: #c7c7c7;
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    #pricing-1028 .cs-menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1.25rem;
+        /* 28px - 40px */
+        row-gap: clamp(1.75rem, 3vw, 2.5rem);
+    }
+    #pricing-1028 .cs-menu-group {
+        width: 100%;
+        max-width: 39.375rem;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* 28px - 40px */
+        gap: clamp(1.75rem, 3vw, 2.5rem);
+    }
+    #pricing-1028 .cs-menu-item {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    #pricing-1028 .cs-h3 {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    #pricing-1028 .cs-h3:before {
+        /* grey line */
+        content: "";
+        width: 60%;
+        height: 1px;
+        background-image: linear-gradient(
+            90deg,
+            #c7c7c7,
+            #c7c7c7 75%,
+            transparent 75%,
+            transparent 100%
+        );
+        background-size: 6px 6px;
+        border: none;
+        opacity: 1;
+        display: block;
+        order: 2;
+        z-index: -1;
+    }
+    #pricing-1028 .cs-header {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        line-height: 1.2em;
+        text-align: inherit;
+        font-weight: 700;
+        width: auto;
+        max-width: 70%;
+        color: var(--headerColor);
+        display: block;
+        flex: none;
+    }
+    #pricing-1028 .cs-price {
+        /* 25px - 31px */
+        font-size: clamp(1.6525rem, 2.5vw, 1.9375rem);
+        line-height: 1.2em;
+        font-weight: bold;
+        color: var(--nav);
+        order: 3;
+        min-width: 80px;
+    }
+    #pricing-1028 .cs-menu-text {
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
+        line-height: 1.5em;
+        text-align: inherit;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #pricing-1028 .cs-picture {
+        width: 100%;
+        height: 72vw;
+        display: block;
+        /* sends it to the top */
+        order: -1;
+        position: relative;
+    }
+    #pricing-1028 .cs-picture img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #pricing-1028 .cs-container {
+        max-width: 80rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    #pricing-1028 .cs-content {
+        width: 66%;
+        border: 1px solid #c7c7c7;
+        border-right: none;
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+    #pricing-1028 .cs-menu-group {
+        width: 100%;
+    }
+    #pricing-1028 .cs-picture {
+        width: 100%;
+        height: auto;
+        max-width: 33.875rem;
+        max-height: 1000%;
+        /* sends it to the right in the 2nd position */
+        order: 2;
+    }
+}
+
+                                
+</style>
+
+<section id="pricing-1028">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Fees:</h2>
+            <p class="cs-text">We do have some irreducible expenses; the financial support of our members makes our concert year possible.</p>
+            <!--Menu-->
+            <ul class="cs-menu-group" style="margin-top:30px;">
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Regular membership</span>
+                        <span class="cs-price">$50 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Friend membership</span>
+                        <span class="cs-price">$75 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Patron membership</span>
+                        <span class="cs-price">$100 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+
+
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Sponsor membership</span>
+                        <span class="cs-price">$100 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Benefactor membership</span>
+                        <span class="cs-price">$500 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+
+
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Student League Membership</span>
+                        <span class="cs-price">$35 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+
+                <li class="cs-menu-item">
+                    <h3 class="cs-h3">
+                        <span class="cs-header">Student High School & University Membership</span>
+                        <span class="cs-price">$25 <div style="font-size:1rem;">/ Year</div></span>
+                    </h3>
+                
+                </li>
+
+            </ul>
+        </div>
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/home3.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/home3.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/home3.jpg" alt="steak" width="542" height="743">
+        </picture>
+    </div>
+
+
+    <DIV class="cs-text" style="text-align: center; max-width: 900px; margin: 100px auto 0px;">
+        Details regarding membership may be found by clicking Members on the blue website header.
+    </DIV>
+</section>
+                                
+

@@ -1,0 +1,181 @@
+<!-- ============================================ -->
+<!--                  Projects                    -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #projects-582 {
+        padding: var(--sectionPadding);
+        background-color: var(--nav);
+    }
+    #projects-582 .cs-container {
+        width: 100%;
+        /* changes to 1280px at tablet */
+        max-width: 34.375rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #projects-582 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    #projects-582 .cs-topper {
+        color: var(--bodyTextColorWhite);
+    }
+    #projects-582 .cs-title {
+        max-width: 15ch;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+    }
+    #projects-582 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 1.25rem;
+        row-gap: 2.5rem;
+    }
+    #projects-582 .cs-item {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #projects-582 .cs-picture {
+        width: 100%;
+        height: 20rem;
+        margin-bottom: 1.5rem;
+        display: block;
+        position: relative;
+    }
+    #projects-582 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    #projects-582 .cs-number {
+        font-size: 1rem;
+        line-height: 1.2em;
+        font-weight: 500;
+        margin: 0 0 0.25rem 0;
+        color: var(--bodyTextColorWhite);
+        display: block;
+    }
+    #projects-582 .cs-h3 {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        text-align: left;
+        margin: 0 0 0.75rem 0;
+        color: var(--bodyTextColorWhite);
+    }
+    #projects-582 .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0;
+        color: var(--bodyTextColorWhite);
+    }
+    
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #projects-582 .cs-container {
+        max-width: 80rem;
+    }
+    #projects-582 .cs-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    #projects-582 .cs-card-group {
+        flex-direction: row;
+    }
+}
+
+                                
+</style>
+
+<section id="projects-582">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                
+                <h2 class="cs-title">Who are the members</h2>
+
+                <span class="cs-topper">of Tuesday Musicale?</span>
+            </div>
+            <a href="" class="cs-button-solid">Become a Member</a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="room" width="413" height="320">
+                </picture>
+                <span class="cs-number">01</span>
+                <h3 class="cs-h3">Adult performer members</h3>
+                <p class="cs-item-text">
+                    Adult performer members who are accepted into this category either by audition or on the basis of their standing in the world of professional musicians.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="room" width="413" height="320">
+                </picture>
+                <span class="cs-number">02</span>
+                <h3 class="cs-h3">Student League members</h3>
+                <p class="cs-item-text">
+                    Student League members who are outstandingly talented teenage musicians who are accepted into this category on the basis of audition.
+                </p>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="room" width="413" height="320">
+                </picture>
+                <span class="cs-number">03</span>
+                <h3 class="cs-h3">Associate members</h3>
+                <p class="cs-item-text">
+                    Associate members whose interest is in hearing fine performances of an unusually broad range of Concert repertoire in acoustically satisfying rooms.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
