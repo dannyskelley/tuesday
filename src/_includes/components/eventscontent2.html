@@ -1,0 +1,301 @@
+<!-- ============================================ -->
+<!--                  Reviews                     -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---          Reviews           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #reviews-989 {
+        padding: var(--sectionPadding);
+        margin-top: 100px;
+    }
+    #reviews-989 .cs-container {
+        width: 100%;
+        /* changes to 1280px at desktop */
+        max-width: 36.5rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* 48px - 64px */
+        gap: clamp(3rem, 6vw, 4rem);
+    }
+    #reviews-989 .cs-content {
+        /* set text align to left if content needs to be left aligned */
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: center;
+    }
+
+    #reviews-989 .cs-title {
+        margin: 0;
+        max-width: 24ch;
+    }
+    #reviews-989 .cs-button-solid {
+        font-size: 1rem;
+        /* 46px - 56px */
+        line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        min-width: 9.375rem;
+        padding: 0 2rem;
+        background-color: var(--primary);
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* prevents padding from adding to the width */
+        box-sizing: border-box;
+    }
+    #reviews-989 .cs-button-solid:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: #000;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 0.3s;
+    }
+    #reviews-989 .cs-button-solid:hover:before {
+        width: 100%;
+    }
+    #reviews-989 .cs-card-group {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* 16px - 20px */
+        gap: clamp(1rem, 2vw, 1.25rem);
+    }
+    #reviews-989 .cs-item {
+        list-style: none;
+        width: 100%;
+        grid-column: span 12;
+        grid-row: span 1;
+    }
+    #reviews-989 .cs-picture {
+        width: 100%;
+        /* 260px - 300px */
+        min-height: clamp(16.25rem, 30vw, 18.75rem);
+        aspect-ratio: 1.26153846;
+        display: block;
+        position: relative;
+    }
+    #reviews-989 .cs-picture img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* Makes img tag act as a background image */
+        object-fit: cover;
+        /* pushes the top of the image to the top of the container */
+        object-position: top;
+    }
+    #reviews-989 .cs-flex {
+        text-align: left;
+        width: 100%;
+        /* 16px - 32px */
+        padding: clamp(1rem, 3vw, 2rem);
+        /* prevents padding from affecting height and wodth */
+        box-sizing: border-box;
+        border: 1px solid #e8e8e8;
+        border-top: none;
+        display: flex;
+        
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #reviews-989 .cs-name {
+        /* 20px - 25px */
+        font-size: clamp(1.25rem, 2.3vw, 1.5625rem);
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+        color: var(--headerColor);
+    }
+    #reviews-989 .cs-desc {
+        font-size: 1rem;
+        line-height: 1.5em;
+        font-weight: 400;
+        /* 8px - 28px */
+        margin: 0 0 clamp(0.5rem, 3.2vw, 1.75rem);
+        color: var(--bodyTextColor);
+        display: block;
+    }
+    #reviews-989 .cs-item-text {
+        /* 14px - 16px */
+        font-size: clamp(0.875rem, 1.5vw, 1rem);
+        line-height: 1.5em;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+}
+/* Tablet - 600px */
+@media only screen and (min-width: 37.5rem) {
+    #reviews-989 .cs-item {
+        display: flex;
+        flex-direction: row;
+        grid-column: span 6;
+    }
+    #reviews-989 .cs-picture {
+        max-width: 15rem;
+        aspect-ratio: initial;
+    }
+    #reviews-989 .cs-flex {
+        width: 65%;
+        max-width: 24.375rem;
+        flex: none;
+        border-top: 1px solid #e8e8e8;
+        border-left: none;
+    }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+
+    #reviews-989 {margin-top: 50px;}
+    #reviews-989 .cs-container {
+        max-width: 80rem;
+    }
+    #reviews-989 .cs-card-group {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+}
+
+                                
+</style>
+
+<section id="reviews-989">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Tuesday Musicale of Detroit</span>
+            <h2 class="cs-title">Upcoming Events</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+            <li class="cs-item">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bg2.jpg" alt="person" width="240" height="300">
+                </picture>
+                <div class="cs-flex" style="vertical-align: top;">
+                    <span class="cs-topper">Sample Event Title</span>
+                    <span class="cs-name" style="margin-top: 20px;">September 10, 2024</span>
+                    <p class="cs-item-text" style="margin-top: 30px;">
+                        7pm |  St. Cecilia's Chapel
+                    </p>
+                </div>
+            </li>
+
+
+        </ul>
+    </div>
+</section>
+                                
