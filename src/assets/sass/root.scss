@@ -75,11 +75,11 @@
         display: inline-block;
         background-color: var(--primary);
         width: auto;
-        padding: 0 calc(30 / 16 * .8rem);
+        padding: 10px calc(30 / 16 * .8rem);
         text-decoration: none;
     border-radius: 999px;
         font-size: calc(16 / 16 * 1rem);
-        line-height: calc(50 / 16 * 1em);
+        line-height: 24px;
         font-weight: bold;
         // Transition Properties
         color: black;
