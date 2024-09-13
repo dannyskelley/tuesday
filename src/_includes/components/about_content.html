@@ -1,0 +1,178 @@
+<!-- ============================================ -->
+<!--                    Quote                     -->
+<!-- ============================================ -->
+
+
+<style>
+    /*-- -------------------------- -->
+<!--           Quote            -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #quote-1891 {
+   
+    /* 340px - 660px */
+    padding-top: clamp(1.25rem, 49vw, 31.25rem);
+    background-color: #FAF6F2;
+    overflow-x: clip;
+    position: relative;
+    margin-top: 150px;
+  }
+  #quote-1891 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #quote-1891 .cs-item {
+    width: 100%;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
+    /* 32px - 80px top & bottom */
+    /* 24px - 80px left & right */
+    padding: clamp(2rem, 6vw, 5rem) clamp(1.5rem, 6vw, 5rem);
+    background-color: #FFFFFF;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 32px - 40px */
+    gap: clamp(2rem, 4vw, 2.5rem);
+    position: relative;
+    z-index: 1;
+  }
+  #quote-1891 .cs-review {
+    /* 31px - 39px */
+    font-size: clamp(1.9375rem, 4vw, 2.4375rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--headerColor);
+    z-index: 1;
+  }
+  #quote-1891 .cs-flex-group {
+    /* this margin top auto will push everything up and force the cs-flex-group to the bottom of the container. This is to account for review cards with different heights because of more or less text and makes the cards more responsive to changing text */
+    margin-top: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #quote-1891 .cs-profile {
+    width: 3.25rem;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+  }
+  #quote-1891 .cs-profile img {
+    width: 100%;
+    height:auto;
+    /* makes the image behave like a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #quote-1891 .cs-name {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0;
+    /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
+    margin-top: auto;
+    color: var(--secondary);
+    display: block;
+  }
+  #quote-1891 .cs-job {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #quote-1891 .cs-quote {
+    width: 5.375rem;
+    height: auto;
+    position: absolute;
+    right: 0rem;
+    bottom: 7.25rem;
+    z-index: -1;
+  }
+  #quote-1891 .cs-background {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #quote-1891 .cs-background img {
+    width: 100%;
+    height: auto;
+    /* makes image act as a background image */
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #quote-1891 {margin-top: 100px;}
+  #quote-1891 .cs-container {
+    max-width: 80rem;
+  }
+  #quote-1891 .cs-quote {
+    /* 64px - 80px */
+    right: clamp(4rem, 8vw, 5rem);
+    /* 64px - 80px */
+    bottom: clamp(4rem, 8vw, 5rem);
+  }
+  #quote-1891 .cs-background {
+    height: clamp(56.7%, 60vw, 65%);
+  }
+}
+                                
+</style>
+
+<section id="quote-1891" style="padding-bottom: 100px;">
+    <div class="cs-container">
+        <div class="cs-item">
+            <DIV class="cs-topper">About The Tuesday Musicale of Detroit</DIV>
+            <DIV class="cs-title">Our History</DIV>
+            <p class="cs-review">
+                In 1885, a dozen women pianists gathered to establish a music club in Detroit. They sought to improve their performance skills and promote good music in a city that had no symphony orchestra. At first limited to pianists, Tuesday Musicale soon admitted other instrumentalists and singers. 
+
+                <BR><BR>
+
+                Later, it added a Student League Program to meet the needs of high-performing teenage musicians. Along with the Performing and Associate Members, Student League members encourage the enthusiastic audiences at the regular Tuesday concerts each season. Each year there is one Artist of the Year Concert and one Young Artist of the Year Concert showcasing an established and rising star in the classical music firmament. Additionally, we host one opera concert each year.
+                
+                <BR><BR>
+                
+                Tuesday Musicale began introducing artist concerts to Detroit audiences in 1888. An impressive list of artists was presented over the years including Jan Paderewski, Claudio Arrau, Fritz Kreisler, Myra Hess, Schumann-Heink, Blanche Thebom, Marcella Sembrich, Ruth Laredo, Peter Serkin, Irina Mishura, James Tocco and Yoonshin Song. In 1914, the re-establishment of the Detroit Symphony Orchestra, which had ceased to exist in 1910, was spearheaded by the President of our organization.
+                
+                <BR><BR>
+                
+                Tuesday Musicale supports the musical community by making contributions to the Michigan Opera Theatre and the Detroit Symphony Civic Orchestra. We give two scholarships annually to University of Michigan students, as well as several annual awards to members of the Student League. Members serve music in the metropolitan Detroit area as teachers, and as vocal and instrumental performers in professional and community orchestras, chamber groups and churches. 
+                <BR><BR>
+                 
+                
+                Tuesday Musicale is over 135 years old.  Many changes have marked its growth, including the addition of men. Tuesday Musicale will remain dedicated to promoting great music in the Metropolitan Detroit area.
+            </p>
+            
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="/assets/images/about.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/about.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/about.jpg" alt="body builder" width="630" height="877">
+    </picture>
+</section>
+                                
