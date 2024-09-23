@@ -354,7 +354,7 @@ body.cs-open:before {
   height: 0;
   margin: 0;
   padding: 0;
-  background-color: var(--primary);
+  text-align: left;
   border-radius: 1rem;
   overflow: hidden;
   opacity: 0;
@@ -362,16 +362,19 @@ body.cs-open:before {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center;
+  
   gap: 0.75rem;
   transition: padding .3s, margin .3s, height .3s, opacity .3s, visibility .3s;
 }
 #cs-navigation .cs-drop-li {
   list-style: none;
+  text-align: left;
+  border-bottom:1px solid #666;
+  padding:10px 0px 10px 0px;
 }
 #cs-navigation .cs-li-link.cs-drop-link {
   /* 14px - 16px */
-  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  font-size: clamp(1.875rem, 2vw, 1.25rem);
   color: #fff;
 }
 }
@@ -470,7 +473,7 @@ body.cs-open:before {
 }
 #cs-navigation .cs-li-link.cs-drop-link:hover {
   background-color: var(--primary);
-  color: var(--bodyTextColorWhite);
+  color: black;
 }
 #cs-navigation .cs-li-link.cs-drop-link:before {
   display: none;
@@ -712,7 +715,7 @@ body.scroll #cs-navigation .cs-logo img {
                       {% if hasChild %}
 
                           {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
-                          {% set activeClass = page.url %}
+                          {% set activeClass = "" %}
                           {% for child in entry.children %}
                               {% if child.url == page.url %}
                                   {% set activeClass = "cs-active" %}
@@ -720,7 +723,7 @@ body.scroll #cs-navigation .cs-logo img {
                           {% endfor %}
 
                           {# Render the <button> with the active class, dropdown icon and child links #}
-                            <a href="{{ entry.url }}"><button 
+                            <button 
                               class="cs-li-link cs-dropdown-button {{ activeClass }}"
                               aria-expanded="false"
                               aria-controls="dropdown-{{ entry.key }}"
@@ -728,7 +731,7 @@ body.scroll #cs-navigation .cs-logo img {
                           >
                               {{ entry.key }}
                               <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </button></a>
+                          </button>
 
                           {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
                           <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
