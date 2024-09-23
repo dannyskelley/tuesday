@@ -646,14 +646,17 @@ body.scroll #cs-navigation .cs-logo img {
   display: block;
   position: relative;
   transition: color .3s;
+  font-family: "Roboto", Arial, sans-serif;
 }
 #cs-navigation .cs-li-link:hover {
   color: var(--navLinkActive);
+  text-decoration: none;
 }
 #cs-navigation .cs-li-link.cs-active {
   color:var(--navLinkActive);
   font-weight: bold;
   font-family: "Roboto", Arial, sans-serif;
+  text-decoration: none;
 }
 
 }
@@ -709,7 +712,7 @@ body.scroll #cs-navigation .cs-logo img {
                       {% if hasChild %}
 
                           {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
-                          {% set activeClass = "" %}
+                          {% set activeClass = page.url %}
                           {% for child in entry.children %}
                               {% if child.url == page.url %}
                                   {% set activeClass = "cs-active" %}
@@ -717,7 +720,7 @@ body.scroll #cs-navigation .cs-logo img {
                           {% endfor %}
 
                           {# Render the <button> with the active class, dropdown icon and child links #}
-                          <button 
+                            <a href="{{ entry.url }}"><button 
                               class="cs-li-link cs-dropdown-button {{ activeClass }}"
                               aria-expanded="false"
                               aria-controls="dropdown-{{ entry.key }}"
@@ -725,7 +728,7 @@ body.scroll #cs-navigation .cs-logo img {
                           >
                               {{ entry.key }}
                               <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </button>
+                          </button></a>
 
                           {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
                           <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
