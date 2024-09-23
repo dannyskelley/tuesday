@@ -1,0 +1,117 @@
+<style>
+    .container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1000px;
+            flex-wrap: wrap;
+        }
+        .section {
+            width: 48%;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .blocks {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+        }
+        .block {
+            width: 30%;
+            padding: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+        @media (max-width: 800px) {
+            .section {
+                width: 100%;
+            }
+            .blocks {
+                flex-direction: column;
+                align-items: center;
+            }
+            .block {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+</style>
+<h1 class="cs-topper" style="margin:auto; margin-top: 150px; padding: 1rem; text-align: center;">Join Online!</h1>
+<h1 class="cs-title" style="margin:auto;padding: 1rem; text-align: center;">Our Memberships</h1>
+<div class="container" style="padding: 1rem; margin: auto;">
+    <div class="section">
+        
+        <h1>Performing Members</h1>
+        <img style="max-width: 100%; margin-bottom: 30px" src="/assets/images/member1.jpg">
+        <p>If you are an accomplished musician, conductor or composer, this is the place for you! Performing members are the heart of the Tuesday Musicale: we are an organization of musicians for musicians. Performing Members are either auditioned for membership or accepted based on public recognition. Each of our performing members will be part of a network of musicians who have crossed a certain threshold of musical achievement. All areas of specialization are included.</p>
+
+        <h2>Benefits of Performer Membership:</h2>
+        <p>Many fine performers make music as members of orchestras and other fine ensembles. At Tuesday Musicale, performing members choose the ensemble and solo music that they would like to present.</p>
+        <a style="margin-top: 30px;" class="cs-button-solid" href="/members/performing">Our Performing Members</a>
+    </div>
+
+    <div class="section">
+        <h1>Associate Members</h1>
+        <img style="max-width: 100%; margin-bottom: 30px;" src="/assets/images/member2.jpg">
+        <p>If you would like to celebrate, support and enjoy outstanding musical performances in southeast Michigan, this is the place for you! Whether you are a musician who is not yet ready to apply for performer status, or a casual musician, or even if you cannot carry a tune, we will welcome you as an Associate member.</p>
+
+        <h2>Benefits of Associate Membership:</h2>
+        <p>As an Associate member you get to enjoy about 9 high quality concerts per year. You get to associate with the excellent musicians who perform in our monthly concerts; and you also get to enjoy the camaraderie of like-minded enthusiasts for classical and semi-classical music performed to a high standard. Quarterly lunches provide additional opportunities for our members to extend their circle of musical acquaintances. In addition to hearing our adult members perform, you also get to hear performances by supremely talented teenage members of our Student League. By becoming a member you help us to support the next generation of outstanding instrumentalists and singers.</p>
+        <p>Dues for Associate Membership for the concert year are $50. For the right to attend 9 concerts, Associate Membership in Tuesday Musicale is undoubtedly the best classical music value around!</p>
+    </div>
+</div>
+
+<div class="blocks" style="margin-bottom: 100px;">
+    <div class="block">
+        <h2>Membership Payment&nbsp;</h2>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="ET7JJ7QSAQP3E">
+            <table>
+                <tr><td><input type="hidden" name="on0" value="Membership">Membership</td></tr>
+                <tr><td><select name="os0">
+                    <option value="Regular">Regular $50.00 USD</option>
+                    <option value="Friend">Friend $75.00 USD</option>
+                    <option value="Patron">Patron $100.00 USD</option>
+                    <option value="Patron">Patron $150.00 USD</option>
+                    <option value="Sponsor">Sponsor $200.00 USD</option>
+                    <option value="Sponsor">Sponsor $250.00 USD</option>
+                    <option value="Benefactor">Benefactor $500.00 USD</option>
+                    <option value="Benefactor">Benefactor $1,000.00 USD</option>
+                </select> </td></tr>
+            </table>
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynow_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+    </div>
+
+    <div class="block">
+        <h2>Online<BR>
+        New Member Form</h2>
+        <a target="_blank" style="margin-top: 10px;" class="cs-button-solid" href="https://forms.gle/HDRhYN6r9pxzMQwH7">Online Form</a> </p>
+  </div>
+    <div class="block">
+        <h2>Printable<br>
+          New Member Form
+        </h2>
+        <a target="_blank" style="margin-top: 10px;" class="cs-button-solid" href="/assets/images/membership_application.pdf">Printable Form</a>
+  </div>
+</div>
