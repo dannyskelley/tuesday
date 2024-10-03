@@ -1,0 +1,87 @@
+<!-- ============================================ -->
+<!--                     CTA                      -->
+<!-- ============================================ -->
+<style>
+
+    /*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-1693 {
+    padding: 150px 30px 30px;
+    background-color: var(--primary);
+    position: relative;
+    overflow: hidden;
+  }
+  #cta-1693 .cs-container {
+    width: 100%;
+    max-width: 86rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #cta-1693 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #cta-1693 .cs-title {
+    max-width: 30ch;
+    margin: 0;
+    color: #000;
+  }
+
+  #cta-1693 .cs-wrapper {
+    width: 100%;
+    max-width: 120rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    /* prevents the mouse from interacting with it */
+    pointer-events: none;
+    transform: translateX(-50%);
+  }
+  #cta-1693 .cs-graphic {
+    width: 23.25rem;
+    height: 23.25rem;
+    opacity: 0.1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cta-1693 {padding: 10px;}
+  #cta-1693 .cs-content {
+    text-align: left;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}
+                                
+</style>
+<section id="cta-1693">
+    <div class="cs-container">
+        <div class="cs-content">
+            <a class="cs-link" href="/news" style="font-weight: 900; color:black">Upcoming concert: October 8th 7:00 PM</a>
+            <a href="/news" class="cs-button-solid" style="border:2px solid black">Read More</a>
+        </div>
+    </div>
+
+</section>
+                                
