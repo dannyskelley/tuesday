@@ -140,17 +140,19 @@ body.cs-open:before {
   order: 3;
 }
 #cs-navigation .cs-contact-group {
-  display: none;
+  
   position: relative;
   z-index: 1;
 }
 #cs-navigation .cs-phone {
+ 
   font-size: 1rem;
   line-height: 1.5em;
   text-decoration: none;
   margin: 0;
   color: var(--headerColor);
   display: flex;
+  display: none;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
@@ -302,7 +304,22 @@ body.cs-open:before {
   display: block;
 }
 #cs-navigation .cs-button-solid {
-  display: none;
+  z-index: 1;
+    position: relative;
+    display: inline-block;
+    background-color: var(--primary);
+    width: auto;
+    padding: 10px 1.5rem;
+    text-decoration: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: bold;
+    color: black;
+    transition: color 0.3s;
+    transition-delay: 0s;
+    transition-delay: 0.1s;
+    text-align: center;
 }
 }
 /* Tablet - 768px */
@@ -323,6 +340,7 @@ body.cs-open:before {
   width: 100%;
   display: block;
 }
+
 #cs-navigation .cs-dropdown {
   position: relative;
   color: var(--bodyTextColorWhite);
@@ -486,6 +504,11 @@ body.cs-open:before {
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
+
+  #cs-navigation .cs-phone {
+  display: block;
+}
+
 body.scroll #cs-navigation {
   width: 100%;
   max-width: 100%;
@@ -560,12 +583,13 @@ body.scroll #cs-navigation .cs-logo img {
   text-decoration: none;
   margin: 0;
   color:var(--navLink);
-  display: none;
+  
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
   transition: opacity 0.3s,
               color 0.3s;
+              display: none;
 }
 #cs-navigation .cs-phone-icon {
   width: 1.5rem;
