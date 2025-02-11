@@ -127,12 +127,80 @@
     right: 0;
   }
 }
-                                
+@media only screen and (min-width: 1500px) {
+  .hideMobile {display: none;}
+
+}           
+               
 </style>
 <span id="about"></span>
 <section id="services-1644">
+  <div class="cs-ul-wrapper">
+    <div class="hideMobile">        <span class="cs-title">Quick Links</span>
+      <ul id="cs-expanded" class="cs-ul" style="padding: 20px; text-align: left;">
+          {% set navPages = collections.all | eleventyNavigation %}
+  
+          {# Loop through all pages with a eleventyNavigation in the frontmatter #}
+          {% for entry in navPages %}
+  
+              {# Define a hasChild variable to make it easier to test what navigation items are have child dropdown pages #}
+              {% set hasChild = entry.children.length %}
+  
+              {# Check the frontmatter for hideOnMobile/hideOnDesktop. Form a list of classes to be joined when the item is rendered #}
+              {% set hideClasses = [] %}
+              {% if entry.hideOnMobile %}
+                  {% set hideClasses = (hideClasses.push("cs-hide-on-mobile"), hideClasses) %}
+              {% endif %}
+              {% if entry.hideOnDesktop %}
+                  {% set hideClasses = (hideClasses.push("cs-hide-on-desktop"), hideClasses) %}
+              {% endif %}
+  
+              {# If this page is a dropdown, give it the appropriate classes, icons and accessibility attributes #}
+              <li class="cs-li {% if hasChild %} cs-dropdown {% endif %} {{ hideClasses | join(" ") }}" style="margin-bottom:10px;">
+  
+                  {# If the page has child dropdown pages, render it as a <button> tag with the appropriate dropdown HTML #}
+                  {% if hasChild %}
+  
+                      {# Check to see if the user's current page is one of the child pages. If so, apply the cs-active class to the dropdown parent #}
+                      {% set activeClass = "" %}
+                      {% for child in entry.children %}
+                          {% if child.url == page.url %}
+                              {% set activeClass = "cs-active" %}
+                          {% endif %}
+                      {% endfor %}
+  
+                      {# Render the <button> with the active class, dropdown icon and child links #}
+                      <button 
+                          class="cs-li-link cs-dropdown-button {{ activeClass }}"
+                          aria-expanded="false"
+                          aria-controls="dropdown-{{ entry.key }}"
+                          aria-label="dropdown-{{ entry.key }}"
+                      >
+                          {{ entry.key }}
+                          <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                      </button>
+  
+                      {# Dropdowns have another ul/li set up within the parent li, which gets rendered in the same way as a normal link #}
+                      <ul class="cs-drop-ul" id="dropdown-{{ entry.key }}">
+                          {% for child in entry.children %}
+                              <li class="cs-drop-li" style="margin-bottom: 10px;">
+                                  <a href="{{ child.url }}" class="cs-li-link cs-drop-link">{{ child.key }}</a>
+                              </li>
+                          {% endfor %}
+                      </ul>
+                  {% else %}
+                      {# Normal pages are rendered as <a> tags, in the normal way you'd expect #}
+                      <a href="{{ entry.url }}" class="cs-link {% if entry.url == page.url %} cs-active {% endif %}" {% if entry.url == page.url %} aria-current="page" {% endif %}>
+                          {{ entry.key }}
+                      </a>
+                  {% endif %}
+              </li>
+          {% endfor %}
+      </ul>
+      </div>
   <div class="cs-container">
       <div class="cs-content">
+
        <!-- <a target="_blank" href="/assets/images/flyer3.jpg"><img style="max-width: 600px!important; margin-bottom: 100px; width:100%" src="/assets/images/flyer3.jpg"></a>
           --><span class="cs-topper">Dear Members & Friends of Tuesday Musicale of Detroit</span>
           <p class="cs-text">
