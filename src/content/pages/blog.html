@@ -26,7 +26,7 @@ permalink: 'blog/'
         <div class="main-content" style="padding: clamp(5.75rem, 7.82vw, 1.25rem) 1rem;">
 
 
-            <h1 class="cs-title">Upcoming Events</h1>
+            <h1 class="cs-title">Tuesday Muiscale Blog</h1>
 
 
             <!-- ============================================ -->
@@ -50,14 +50,14 @@ permalink: 'blog/'
                         <!--Article Info-->
                         <div class="article-group">
                 
-                            <h2 class="blog-h1">
+                            <a href="{{ post.url }}" class="cs-title">
                                 {{ post.data.title }}
-                            </h2>
-                            <span class="blog-date">{{ post.date | postDate }}</span>
+                            </a>
+                           
                             <p class="blog-desc">
                                 {{ post.data.description }}
                             </p>
-                            <a href="{{ post.url }}" class="blog-link">Learn More</a>
+                            <a href="{{ post.url }}" class="cs-button-solid">Read More</a>
                         </div>
                     </article>
                 {%- endfor -%}
