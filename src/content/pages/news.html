@@ -2,7 +2,10 @@
 title: 'News'
 description: 'Tuesday Musicale of Detroit News'
 permalink: 'news/'
-
+eleventyNavigation:
+    key: Newsletter
+    order: 3100
+    parent: About
 ---
 
 
@@ -14,5 +17,5 @@ permalink: 'news/'
 {% endblock %}
 
 {% block body %}
-{% include 'components/newscontent.html' %}
+{% include 'components/newscontent_new.html' %}
 {% endblock %}
