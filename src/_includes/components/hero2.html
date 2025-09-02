@@ -2,317 +2,335 @@
 <!--                    Hero                      -->
 <!-- ============================================ -->
 
-<STYLE>
+<style>
   /*-- -------------------------- -->
-<---           Hero             -->
-<--- -------------------------- -*/
+  /*            Hero              */
+  /*-- -------------------------- -*/
 
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
     #hero-1061 {
-        padding: var(--sectionPadding);
-        /* 200px - 300px - leaving extra space for the navigation */
-        padding-top: clamp(9.5rem, 31.95vw, 18.75rem);
-        padding-bottom: clamp(12.5rem, 31.95vw, 25.75rem);
-        position: relative;
-        z-index: 10;
-       
+      padding: var(--sectionPadding);
+      /* 200px - 300px - leaving extra space for the navigation */
+      padding-top: clamp(9.5rem, 31.95vw, 18.75rem);
+      padding-bottom: clamp(12.5rem, 31.95vw, 25.75rem);
+      position: relative;
+      z-index: 10;
     }
 
-    #hero-1061 .cs-topper {color: #B3AEE8;}
+    #hero-1061 .cs-topper { color: #B3AEE8; }
+
     #hero-1061 .cs-background {
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -2;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
     }
     #hero-1061 .cs-background:before {
-        /* Overlay */
-        content: "";
-        width: 100%;
-        height: 100%;
-        background: #1a1a1a;
-        opacity: 0.74;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        /* prevents the cursor from interacting with it */
-        pointer-events: none;
+      /* Overlay */
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: #1a1a1a;
+      opacity: 0.74;
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      /* prevents the cursor from interacting with it */
+      pointer-events: none;
     }
     #hero-1061 .cs-background img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        /* makes the top of the image start at the top of the parent */
-        object-position: top;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      /* makes the top of the image start at the top of the parent */
+      object-position: top;
     }
+
     #hero-1061 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: clamp(6.25rem, 9vw, 7.5rem);
+      width: 100%;
+      max-width: 80rem;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: clamp(6.25rem, 9vw, 7.5rem);
     }
+
+    /* Updated to allow two columns later */
     #hero-1061 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: center;
-        width: 100%;
-        max-width: 39.375rem;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: center;
+      width: 100%;
+      max-width: 80rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 1.5rem;
     }
+
     #hero-1061 .cs-title {
-        /* 39px - 61px */
-        font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-        font-weight: 700;
-        line-height: 1.2em;
-        text-align: inherit;
-        max-width: 51.8125rem;
-        margin: 0 auto 1rem 0;
-        color: #fff;
-        position: relative;
+      /* 39px - 61px */
+      font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+      font-weight: 700;
+      line-height: 1.2em;
+      text-align: inherit;
+      max-width: 51.8125rem;
+      margin: 0 auto 1rem 0;
+      color: #fff;
+      position: relative;
     }
     #hero-1061 .cs-text {
-        /* 16px - 20px */
-        font-size: clamp(1.5rem, 1.95vw, 1.25rem);
-        line-height: 1.5em;
-        text-align: inherit;
-        width: 100%;
-        /* 464px - 622px */
-        max-width: clamp(29rem, 60vw, 38.785rem);
-        margin: 0 0 2.5rem 0;
-        color: #fff;
+      /* 16px - 20px */
+      font-size: clamp(1.5rem, 1.95vw, 1.25rem);
+      line-height: 1.5em;
+      text-align: inherit;
+      width: 100%;
+      /* 464px - 622px */
+      max-width: clamp(29rem, 60vw, 38.785rem);
+      margin: 0 0 2.5rem 0;
+      color: #fff;
     }
-   
+
     #hero-1061 .cs-card-group {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        row-gap: 1.875rem;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      row-gap: 1.875rem;
     }
     #hero-1061 .cs-item {
-        width: 100%;
-        text-align: left;
-        list-style: none;
-        margin: 0;
-        /* 24px - 32px */
-        padding: clamp(1.5rem, 3vw, 2rem);
-        background-color: #fff;
-        box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
-        /* prevents padding and border from affecting height and width */
-        box-sizing: border-box;
-        grid-column: span 12;
-        grid-row: span 1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
+      width: 100%;
+      text-align: left;
+      list-style: none;
+      margin: 0;
+      /* 24px - 32px */
+      padding: clamp(1.5rem, 3vw, 2rem);
+      background-color: #fff;
+      box-shadow: 0px 12px 80px 0px rgba(26, 26, 26, 0.08);
+      /* prevents padding and border from affecting height and width */
+      box-sizing: border-box;
+      grid-column: span 12;
+      grid-row: span 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
     }
     #hero-1061 .cs-icon-wrapper {
-        width: 4.25rem;
-        height: 4.25rem;
-        margin: 0 0 1.5rem 0;
-        background-color: #B3AEE8;
-        border-radius: 999px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+      width: 4.25rem;
+      height: 4.25rem;
+      margin: 0 0 1.5rem 0;
+      background-color: #B3AEE8;
+      border-radius: 999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
     }
     #hero-1061 .cs-icon {
-        width: 3rem;
-        height: auto;
+      width: 3rem;
+      height: auto;
     }
     #hero-1061 .cs-h3 {
-        /* 20px - 25px */
-        font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
-        line-height: 1.2em;
-        font-weight: bold;
-        text-align: inherit;
-        margin: 0 0 0.75rem 0;
-        color: var(--headerColor);
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+      line-height: 1.2em;
+      font-weight: bold;
+      text-align: inherit;
+      margin: 0 0 0.75rem 0;
+      color: var(--headerColor);
     }
     #hero-1061 .cs-item-text {
-        /* 14px - 16px */
-        font-size: clamp(0.875rem, 1.5vw, 1rem);
-        line-height: 1.5em;
-        max-width: 28.125rem;
-        margin: 0;
-        padding: 0;
-        color: var(--bodyTextColor);
+      /* 14px - 16px */
+      font-size: clamp(0.875rem, 1.5vw, 1rem);
+      line-height: 1.5em;
+      max-width: 28.125rem;
+      margin: 0;
+      padding: 0;
+      color: var(--bodyTextColor);
     }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #hero-1061 .cs-container {
-        align-items: flex-start;
+
+    /* Buttons (kept from your snippet) */
+    #button-box-839 {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
     }
+    #button-box-839 .cs-button-transparent {
+      font-size: 1rem;
+      /* 46px - 56px */
+      line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+      width: auto;
+      /* 46px - 56px */
+      height: clamp(2.875rem, 5.5vw, 3.5rem);
+      text-decoration: none;
+      font-weight: 700;
+      margin: 0;
+      color: white;
+      padding: 0px 20px 0px 0px;
+      background-color: transparent;
+      box-sizing: border-box;
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+    #button-box-839 .cs-button-transparent:before {
+      /* white hover box */
+      content: "";
+      /* 46px - 56px */
+      width: clamp(2.875rem, 5.5vw, 3.5rem);
+      background: #fff;
+      border-radius: 1.75rem;
+      opacity: 1;
+      position: absolute;
+      display: block;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      z-index: -1;
+      transition: width 0.3s, box-shadow 0.3s;
+    }
+    #button-box-839 .cs-button-transparent:hover { color: black; }
+    #button-box-839 .cs-button-transparent:hover:before {
+      width: 100%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    #button-box-839 .cs-picture {
+      /* 46px - 56px */
+      width: clamp(2.875rem, 5.5vw, 3.5rem);
+      height: clamp(2.875rem, 5.5vw, 3.5rem);
+      margin-right: 0.5rem;
+      background-color: #231D68;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #button-box-839 .cs-img {
+      width: 0.75rem;
+      height: auto;
+    }
+
+    /* New: columns + responsive video base styles */
+    #hero-1061 .cs-text-col,
+    #hero-1061 .cs-video-col {
+      width: 100%;
+      padding-top: 30px;
+    }
+    #hero-1061 .cs-video-col iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      height: auto;
+      border: 0;
+      border-radius: 12px;
+    }
+  }
+
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #hero-1061 .cs-container { align-items: flex-start; }
     #hero-1061 .cs-content {
-        text-align: left;
-        margin-left: 0;
-        align-items: flex-start;
+      text-align: left;
+      align-items: stretch;
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* text left, video right */
+      gap: 2rem;
     }
-    #hero-1061 .cs-card-group {
-        column-gap: 1.875rem;
-    }
-    #hero-1061 .cs-item {
-        grid-column: span 6;
-    }
+    #hero-1061 .cs-text-col { display: flex; flex-direction: column; justify-content: center; }
+    #hero-1061 .cs-video-col { display: flex; align-items: center; justify-content: flex-end; }
+
+    #hero-1061 .cs-card-group { column-gap: 1.875rem; }
+    #hero-1061 .cs-item { grid-column: span 6; }
 
     #hero-1061 .cs-background:before {
-        background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0.94) 0%,
-            rgba(0, 0, 0, 0.94) 2%,
-            rgba(0, 0, 0, 0) 80%
-        );
-        opacity: 1;
+      background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.94) 2%,
+        rgba(0, 0, 0, 0) 80%
+      );
+      opacity: 1;
     }
-}
-/* Desktop - 1300px */
-@media only screen and (min-width: 81.25rem) {
-    #hero-1061 .cs-item {
-        grid-column: span 3;
-    }
-    #hero-1061 .cs-background {
-        height: 100%;
-    }
-}
-/* Large Desktop Parallax Effect - 100px */
-@media only screen and (min-width: 100rem) {
-    #hero-1061 .cs-background {
-        background: url("/assets/images/bg2.jpg");
-        background-size: cover;
-        background-position: right center;
-        background-repeat: no-repeat;
-        /* creates the parallax effect */
-        background-attachment: fixed;
-    }
-    #hero-1061 .cs-background img {
-        display: none;
-    }
-}
+  }
 
-                                
-</STYLE>
+  /* Desktop - 1300px */
+  @media only screen and (min-width: 81.25rem) {
+    #hero-1061 .cs-item { grid-column: span 3; }
+    #hero-1061 .cs-background { height: 100%; }
+  }
+
+  /* Large Desktop Parallax Effect - 100rem */
+  @media only screen and (min-width: 100rem) {
+    #hero-1061 .cs-background {
+      background: url("/assets/images/bg2.jpg");
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      /* creates the parallax effect */
+      background-attachment: fixed;
+    }
+    #hero-1061 .cs-background img { display: none; }
+  }
+</style>
 
 <section id="hero-1061">
   <div class="cs-container">
-      <div class="cs-content">
-        <DIV class="cs-topper">Founded 1885</DIV>
-          <h1 class="cs-title">Tuesday Musicale of Detroit</h1>
-          <p class="cs-text">
-            We're a classical music organization devoted to bringing the best in the live performance of classical music to Detroit area audiences since 1885. Please scroll down for current information.
-          </p>
-          <style>/* you can copy and paste this into your global stylesheet to be used everywhere in your site */
-            #button-box-839 {
-                width: 100%;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                flex-wrap: wrap;
-                gap: 1rem;
-            }
-            
-            #button-box-839 .cs-button-transparent {
-                font-size: 1rem;
-                /* 46px - 56px */
-                line-height: clamp(2.875rem, 5.5vw, 3.5rem);
-                width: auto;
-                /* 46px - 56px */
-                height: clamp(2.875rem, 5.5vw, 3.5rem);
-                text-decoration: none;
-                font-weight: 700;
-                margin: 0;
-                color:white;
-                padding: 0px 20px 0px 0px;
-                background-color: transparent;
-                box-sizing: border-box;
-                display: inline-flex;
-                justify-content: flex-start;
-                align-items: center;
-                position: relative;
-                z-index: 1;
-            }
-            #button-box-839 .cs-button-transparent:before {
-                /* white hover box */
-                content: "";
-                /* 46px - 56px */
-                width: clamp(2.875rem, 5.5vw, 3.5rem);
-                background: #fff;
-                border-radius: 1.75rem;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                top: 0px;
-                bottom: 0px;
-                left: 0px;
-                z-index: -1;
-                transition:
-                    width 0.3s,
-                    box-shadow 0.3s;
-            }
-            #button-box-839 .cs-button-transparent:hover {color:black}
-            #button-box-839 .cs-button-transparent:hover:before {
-                width: 100%;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                
-            }
-            #button-box-839 .cs-picture {
-                /* 46px - 56px */
-                width: clamp(2.875rem, 5.5vw, 3.5rem);
-                height: clamp(2.875rem, 5.5vw, 3.5rem);
-                margin-right: 0.5rem;
-                background-color: #231D68;
-                border-radius: 50%;
-                border: 2px solid #fff;
-                box-sizing: border-box;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            #button-box-839 .cs-image {
-                width: 0.75rem;
-                height: auto;
-            }
-            
-                                            </style>
-          <div id="button-box-839">
-            <a target="" href="/events" class="cs-button-solid">View Events</a>
-            <a href="/#about" class="cs-button-transparent">
-                <picture class="cs-picture">
-                    <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/chevron-right.svg" alt="icon" width="12" height="12" aria-hidden="true">
-                </picture>
-                Learn More
-            </a>
+    <div class="cs-content">
+      <!-- LEFT: Text -->
+      <div class="cs-text-col">
+        <div class="cs-topper">Founded 1885</div>
+        <h1 class="cs-title">Tuesday Musicale of Detroit</h1>
+        <p class="cs-text">
+          We're a classical music organization devoted to bringing the best in the live performance of classical music to Detroit area audiences since 1885. Please scroll down for current information.
+        </p>
+
+        <div id="button-box-839">
+          <a target="" href="/events" class="cs-button-solid">View Events</a>
+          <a href="/#about" class="cs-button-transparent">
+            <picture class="cs-picture">
+              <img class="cs-img" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/chevron-right.svg" alt="icon" width="12" height="12" aria-hidden="true">
+            </picture>
+            Learn More
+          </a>
         </div>
-                                        
       </div>
-     
+
+      <!-- RIGHT: Video -->
+      <div class="cs-video-col">
+        <iframe
+          src="https://www.youtube.com/embed/jJ48vEDok3o?si=QLitgYkASvvtzjoh"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
   </div>
 
   <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
   <picture class="cs-background">
-      <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
-      <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
-      <img decoding="async" src="/assets/images/bg2.jpg" alt="mechanic" width="2250" height="1500" aria-hidden="true">
+    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
+    <img decoding="async" src="/assets/images/bg2.jpg" alt="mechanic" width="2250" height="1500" aria-hidden="true">
   </picture>
 </section>
-                              
