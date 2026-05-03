@@ -1,0 +1,5 @@
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "tuesdaymusicaleofdetroit.org",
+  "Id": "39a9ee62-1247-489c-8ba4-739ff4fffb6e"
+}

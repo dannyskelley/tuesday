@@ -55,6 +55,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/admin");
     eleventyConfig.addPassthroughCopy("./src/_redirects");
     eleventyConfig.addPassthroughCopy({ "./src/robots.txt": "/robots.txt" });
+    // Microsoft 365 domain verification (must be at site root with this exact filename)
+    eleventyConfig.addPassthroughCopy({ "./src/ms90496417.txt": "/ms90496417.txt" });
     // END PASSTHROUGHS
 
     // FILTERS - Modify data in template files at build time
