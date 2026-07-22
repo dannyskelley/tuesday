@@ -1,3 +1,6 @@
+// Wrapped in an IIFE so re-execution (e.g. Eleventy dev-server live reload)
+// doesn't throw "redeclaration of const" errors.
+(function () {
 // add classes for mobile navigation toggling
 var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
@@ -45,4 +48,4 @@ const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropd
 	}
 	item.addEventListener('click', onClick)
 	}
-							
+})();
