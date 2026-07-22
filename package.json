@@ -10,6 +10,7 @@
         "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
         "watch:cms": "npx decap-server",
         "start": "del-cli ./public --force && npm-run-all --parallel watch:*",
+        "start:replit": "del-cli ./public --force && npm-run-all --parallel watch:sass watch:eleventy",
         "build": "run-s build:*"
     },
     "repository": {
@@ -23,6 +24,11 @@
         "url": "https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS/issues"
     },
     "homepage": "https://github.com/CodeStitchOfficial/Intermediate-Website-Kit-SASS#readme",
+    "overrides": {
+        "liquidjs": "^10.27.2",
+        "shell-quote": "^1.8.2",
+        "handlebars": "^4.7.9"
+    },
     "dependencies": {
         "@11ty/eleventy": "^2.0.1",
         "@11ty/eleventy-navigation": "^0.3.5",
@@ -30,10 +36,9 @@
         "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
         "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "cross-env": "^7.0.3",
-        "decap-server": "^3.0.1",
         "del-cli": "^5.0.0",
         "netlify-plugin-cache": "^1.0.3",
-        "npm-run-all": "^4.1.5",
+        "npm-run-all2": "^9.0.2",
         "sass": "^1.63.3"
     }
 }
