@@ -1,0 +1,1 @@
+- [Netlify deploys from Replit lockfile](netlify-replit-deploy.md) — rewrite package-firewall URLs in package-lock.json to registry.npmjs.org before pushing; CVE overrides must stay.

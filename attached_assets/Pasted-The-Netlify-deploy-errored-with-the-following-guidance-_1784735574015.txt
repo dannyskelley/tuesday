@@ -1,0 +1,66 @@
+The Netlify deploy errored, with the following guidance provided:
+
+The build is failing due to a network error at [line 51](#L51), where npm is attempting to fetch a package from `http://package-firewall.replit.local` — a Replit-internal proxy URL that is not accessible in the Netlify build environment.
+
+This suggests the `package-lock.json` was generated inside a Replit environment, which injected its local npm registry/proxy into the lockfile. When Netlify tries to use that lockfile, it attempts to fetch packages from that unreachable Replit-internal address.
+
+**Solution:**
+
+1. Outside of Replit (i.e., in a standard local development environment or via GitHub Codespaces/etc.), delete your existing `package-lock.json`.
+2. Run `npm install` to regenerate a clean `package-lock.json` that points to the standard npm registry (`https://registry.npmjs.org`).
+3. Commit and push the new `package-lock.json` to your repo.
+
+```bash
+rm package-lock.json
+npm install
+git add package-lock.json
+git commit -m "Regenerate lockfile outside of Replit"
+git push
+```
+
+Additionally, the warnings at [lines 33–46](#L33-L46) indicate some dependencies require Node.js v22 or higher, but Netlify is using v18. After fixing the lockfile issue, if the build still fails due to engine incompatibilities, you should upgrade your Node.js version. See the [Netlify docs on changing Node versions](https://docs.netlify.com/configure-builds/manage-dependencies/#node-js-and-javascript) for how to set a higher Node version (e.g., `22`) in your Netlify configuration.
+
+The relevant error logs are:
+
+Line 0: build-image version: 969defd95f3977f8de9cb1f48802a7e6f3d8c0b3 (noble-new-builds)
+Line 1: buildbot version: 36b7fd889cffd65924ae7fb50f4d1018f3181c8e
+Line 2: Fetching cached dependencies
+Line 3: Failed to fetch cache, continuing with build
+Line 4: Starting to prepare the repo for build
+Line 5: No cached dependencies found. Cloning fresh repo
+Line 6: git clone --filter=blob:none https://github.com/dannyskelley/tuesday
+Line 7: Preparing Git Reference refs/heads/main
+Line 8: Installing dependencies
+Line 9: mise ~/.config/mise/config.toml tools: python@3.14.3
+Line 10: mise ~/.config/mise/config.toml tools: ruby@3.4.8
+Line 11: mise ~/.config/mise/config.toml tools: go@1.26.2
+Line 12: v18.20.8 is already installed.
+Line 13: Now using node v18.20.8 (npm v10.8.2)
+Line 33: npm warn EBADENGINE   package: 'which@7.0.0',
+Line 34: npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+Line 35: npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+Line 36: npm warn EBADENGINE }
+Line 37: npm warn EBADENGINE Unsupported engine {
+Line 38: npm warn EBADENGINE   package: 'read-package-json-fast@6.0.0',
+Line 39: npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+Line 40: npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+Line 41: npm warn EBADENGINE }
+Line 42: npm warn EBADENGINE Unsupported engine {
+Line 43: npm warn EBADENGINE   package: 'json-parse-even-better-errors@6.0.0',
+Line 44: npm warn EBADENGINE   required: { node: '^22.22.2 || ^24.15.0 || >=26.0.0' },
+Line 45: npm warn EBADENGINE   current: { node: 'v18.20.8', npm: '10.8.2' }
+Line 46: npm warn EBADENGINE }
+Line 47: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+Line 48: npm error code ENOTFOUND
+Line 49: npm error syscall getaddrinfo
+Line 50: npm error errno ENOTFOUND
+Line 51: npm error network request to http://package-firewall.replit.local/npm/shell-quote/-/shell-quote-1.10.0.tgz failed, reason: getad
+Line 52: npm error network This is a problem related to network connectivity.
+Line 53: npm error network In most cases you are behind a proxy or have bad network settings.
+Line 54: npm error network
+Line 55: npm error network If you are behind a proxy, please make sure that the
+Line 56: npm error network 'proxy' config is set properly.  See: 'npm help config'
+Line 57: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2026-07-22T15_50_03_032Z-debug-0.log
+Line 58: Error during npm install
+Line 59: Failing build: Failed to install dependencies
+Line 60: Finished processing build request in 1m15.928s
