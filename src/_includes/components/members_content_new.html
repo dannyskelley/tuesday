@@ -119,10 +119,17 @@
         <a target="_blank" style="margin-top: 10px;" class="cs-button-solid" href="https://forms.gle/HDRhYN6r9pxzMQwH7">Online Form</a> </p>
   </div>
   <div class="block" >
+    {% if '/renew/' in page.url %}
+    <h2>Printable<br>
+      Membership Renewal Form
+    </h2>
+    <a target="_blank" style="margin-top: 10px;" class="cs-button-solid" href="/assets/images/membership_renewal_form.pdf">Printable Form</a>
+    {% else %}
     <h2>Printable<br>
       Membership Form
     </h2>
     <a target="_blank" style="margin-top: 10px;" class="cs-button-solid" href="/assets/images/membership_application.pdf">Printable Form</a>
+    {% endif %}
 </div>
 <a id="renew"></a>
 
