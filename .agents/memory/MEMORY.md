@@ -1,1 +1,2 @@
 - [Netlify deploys from Replit lockfile](netlify-replit-deploy.md) — rewrite package-firewall URLs in package-lock.json to registry.npmjs.org before pushing; CVE overrides must stay.
+- [Event date automation](event-date-automation.md) — judge event days in Detroit time at visit, not at static build; keep TBA events out of next-event selection.
