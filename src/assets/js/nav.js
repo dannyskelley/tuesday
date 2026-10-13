@@ -6,6 +6,9 @@ var CSbody = document.querySelector("body");
 const CSnavbarMenu = document.querySelector("#cs-navigation");
 const CShamburgerMenu = document.querySelector("#cs-navigation .cs-toggle");
 
+if (!CSnavbarMenu || !CShamburgerMenu || CSnavbarMenu.dataset.navInitialized) return;
+CSnavbarMenu.dataset.navInitialized = "true";
+
 CShamburgerMenu.addEventListener('click', function() {
 	CShamburgerMenu.classList.toggle("cs-active");
 	CSnavbarMenu.classList.toggle("cs-active");
@@ -14,16 +17,9 @@ CShamburgerMenu.addEventListener('click', function() {
 	ariaExpanded();
 });
 
-// checks the value of aria expanded on the cs-ul and changes it accordingly whether it is expanded or not 
+// Keep the button's accessible state in sync with the visible menu.
 function ariaExpanded() {
-	const csUL = document.querySelector('#cs-expanded');
-	const csExpanded = csUL.getAttribute('aria-expanded');
-
-	if (csExpanded === 'false') {
-		csUL.setAttribute('aria-expanded', 'true');
-	} else {
-		csUL.setAttribute('aria-expanded', 'false');
-	}
+CShamburgerMenu.setAttribute('aria-expanded', String(CSnavbarMenu.classList.contains('cs-active')));
 }
 
 	// This script adds a class to the body after scrolling 100px
@@ -32,7 +28,7 @@ function ariaExpanded() {
 
 document.addEventListener('scroll', (e) => { 
 	const scroll = document.documentElement.scrollTop;
-	if(scroll >= 100){
+if(scroll >= 30){
 document.querySelector('body').classList.add('scroll')
 	} else {
 	document.querySelector('body').classList.remove('scroll')
