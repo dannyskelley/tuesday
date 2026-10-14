@@ -1,7 +1,7 @@
 ---
 title: 'The Tuesday Musicale of Detroit'
 description: 'Detroit Area Classical music organization devoted to bringing the best in the live performance of classical music to Detroit area audiences since 1885. '
-preloadImg: '/assets/images/landing.jpg'
+preloadImg: '/assets/images/bg2.webp'
 permalink: '/'
 eleventyNavigation:
   key: Home
@@ -11,25 +11,20 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <style>{% inlineCss "local" %}</style>
+    <style>{% inlineCss "critical" %}</style>
 
   
     <!-- Script for Netlify Identity -->
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    <script defer>
-        if (window.netlifyIdentity) {
-            window
-                .netlifyIdentity
-                .on('init', (user) => {
-                    if (!user) {
-                        window
-                            .netlifyIdentity
-                            .on('login', () => {
-                                document.location.href = '/admin/';
-                            });
-                    }
-                });
+    <script>
+        // Only load the CMS login widget for invitation/recovery links.
+        if (/(?:invite_token|recovery_token|confirmation_token|access_token)=/.test(location.hash)) {
+            const script = document.createElement('script');
+            script.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+            script.onload = () => {
+                window.netlifyIdentity.on('login', () => { location.href = '/admin/'; });
+            };
+            document.head.appendChild(script);
         }
     </script>
 

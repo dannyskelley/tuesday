@@ -281,7 +281,7 @@
   /* Large Desktop Parallax Effect - 100rem */
   @media only screen and (min-width: 100rem) {
     #hero-1061 .cs-background {
-      background: url("/assets/images/bg2.jpg");
+      background: url("/assets/images/bg2.webp");
       background-size: cover;
       background-position: right center;
       background-repeat: no-repeat;
@@ -316,21 +316,18 @@
 
       <!-- RIGHT: Video -->
       <div class="cs-video-col">
-        <iframe
-          src="https://www.youtube.com/embed/jJ48vEDok3o?si=QLitgYkASvvtzjoh"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+        <a class="video-preview" href="https://www.youtube.com/watch?v=jJ48vEDok3o" data-video-id="jJ48vEDok3o" aria-label="Play video: Tuesday Musicale of Detroit">
+          <img src="/assets/images/video-preview.webp" alt="" width="480" height="360" loading="lazy">
+          <span class="video-play">Play video</span>
+        </a>
       </div>
     </div>
   </div>
 
   <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
   <picture class="cs-background">
-    <source media="(max-width: 600px)" srcset="/assets/images/bg2.jpg">
-    <source media="(min-width: 601px)" srcset="/assets/images/bg2.jpg">
-    <img decoding="async" src="/assets/images/bg2.jpg" alt="mechanic" width="2250" height="1500" aria-hidden="true">
+    <source media="(max-width: 600px)" srcset="/assets/images/bg2-mobile.webp">
+    <source media="(min-width: 601px)" srcset="/assets/images/bg2.webp">
+    <img fetchpriority="high" decoding="async" src="/assets/images/bg2.webp" alt="" width="1600" height="1067">
   </picture>
 </section>

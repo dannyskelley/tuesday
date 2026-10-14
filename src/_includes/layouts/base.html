@@ -33,28 +33,30 @@
         <meta property="og:image:secure_url" content="/assets/images/logo-small.png" />
 
         <!--Favicons-->
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons//apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons//favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons//favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicons//site.webmanifest">
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
 
         <!-- Preloads -->
-        <link rel="preload" as="image" href="/assets/svgs/logo-white.svg">
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/montserrat-v26-latin-800.woff2" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-900.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
         <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
         <!-- Preload an image - tag not rendered if preloadImg is blank to stop console errors -->
-        {% if preloadImg != '' %}
-            <link rel="preload" as="image" href="{{ preloadImg }}" />
+        {% if page.url == '/' %}
+            <link rel="preload" as="image" href="/assets/images/bg2-mobile.webp" media="(max-width: 600px)" fetchpriority="high">
+            <link rel="preload" as="image" href="/assets/images/bg2.webp" media="(min-width: 601px)" fetchpriority="high">
+        {% elif preloadImg %}
+            <link rel="preload" as="image" href="{{ preloadImg }}" fetchpriority="high" />
         {% endif %}
 
         <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css">
+        <style>{% inlineCss "root" %}</style>
 
-        <link rel="stylesheet" href="/assets/aos/aos.css" />
-   
         <script defer src="/assets/js/nav.js"></script>
         <script defer src="/assets/js/event-schedule.js"></script>
+        <script defer src="/assets/js/video-preview.js"></script>
 
 
         {% block head %}{% endblock %}
@@ -94,12 +96,18 @@
 
 
             
-        <script src="/assets/js/aos.js"></script>
-
         <script>
-          AOS.init({
-            easing: 'ease-in-out-sine',
-          });
+          // Only download animation assets on pages that actually use them.
+          if (document.querySelector('[data-aos]')) {
+            const css = document.createElement('link');
+            css.rel = 'stylesheet';
+            css.href = '/assets/aos/aos.css';
+            document.head.appendChild(css);
+            const script = document.createElement('script');
+            script.src = '/assets/js/aos.js';
+            script.onload = () => AOS.init({ easing: 'ease-in-out-sine' });
+            document.body.appendChild(script);
+          }
         </script>
 
 
