@@ -1,0 +1,46 @@
+<style>
+    #december-flyer {
+        padding: clamp(2.5rem, 6vw, 5rem) 1.25rem;
+        background: #faf9f6;
+        scroll-margin-top: 6rem;
+    }
+    #december-flyer .flyer-container {
+        max-width: 44rem;
+        margin: auto;
+    }
+    #december-flyer .flyer-image {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 1000 / 1290;
+        object-fit: contain;
+        margin: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1.75rem rgb(35 29 104 / 14%);
+    }
+    #december-flyer .flyer-image-link:focus-visible {
+        outline: 3px solid #231d68;
+        outline-offset: 4px;
+    }
+    @media (min-width: 48.001rem) {
+        #december-flyer .flyer-image {
+            max-width: 40rem;
+        }
+    }
+</style>
+
+<section id="december-flyer" aria-label="December 2026 holiday concert flyer">
+    <div class="flyer-container">
+        <a class="flyer-image-link" href="/assets/images/december-2026-concert-flyer.jpg" aria-label="Open the full December 2026 concert flyer">
+            <img
+                class="flyer-image"
+                src="/assets/images/december-2026-concert-flyer.jpg"
+                alt="Celebrate the Holidays concert flyer for Tuesday, December 15, 2026 at 10:30 a.m. at First United Methodist Church of Birmingham."
+                width="1000"
+                height="1290"
+                loading="lazy"
+                decoding="async">
+        </a>
+    </div>
+</section>
